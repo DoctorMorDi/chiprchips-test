@@ -1,0 +1,952 @@
+{
+ "characters": [
+  {
+   "character": "einar",
+   "id": "ep00-canteen_wave",
+   "kind": "scene",
+   "source": "einar_ep00-canteen_wave.png",
+   "image": "characters/einar/ep00-canteen_wave.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "einar",
+   "id": "ep00-peeler_deadpan",
+   "kind": "scene",
+   "source": "einar_ep00-peeler_deadpan.png",
+   "image": "characters/einar/ep00-peeler_deadpan.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "einar",
+   "id": "ep01-canteen_singing",
+   "kind": "scene",
+   "source": "einar_ep01-canteen_singing.png",
+   "image": "characters/einar/ep01-canteen_singing.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "johannes",
+   "id": "ep00-handover_relieved",
+   "kind": "scene",
+   "source": "johannes_ep00-handover_relieved.png",
+   "image": "characters/johannes/ep00-handover_relieved.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "johannes",
+   "id": "ep00-hygiene_stop",
+   "kind": "scene",
+   "source": "johannes_ep00-hygiene_stop.png",
+   "image": "characters/johannes/ep00-hygiene_stop.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "johannes",
+   "id": "ep00-line_clipboard",
+   "kind": "scene",
+   "source": "johannes_ep00-line_clipboard.png",
+   "image": "characters/johannes/ep00-line_clipboard.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "jorunn",
+   "id": "ep00-reception_aside",
+   "kind": "scene",
+   "source": "jorunn_ep00-reception_aside.png",
+   "image": "characters/jorunn/ep00-reception_aside.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "jorunn",
+   "id": "ep00-reception_greet",
+   "kind": "scene",
+   "source": "jorunn_ep00-reception_greet.png",
+   "image": "characters/jorunn/ep00-reception_greet.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "jorunn",
+   "id": "ep01-reception_postponed",
+   "kind": "scene",
+   "source": "jorunn_ep01-reception_postponed.png",
+   "image": "characters/jorunn/ep01-reception_postponed.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lars-owe",
+   "id": "ep00-peeler_arms",
+   "kind": "scene",
+   "source": "lars-owe_ep00-peeler_arms.png",
+   "image": "characters/lars-owe/ep00-peeler_arms.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lars-owe",
+   "id": "ep00-reception_dry",
+   "kind": "scene",
+   "source": "lars-owe_ep00-reception_dry.png",
+   "image": "characters/lars-owe/ep00-reception_dry.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lars-owe",
+   "id": "ep00-reception_storm",
+   "kind": "scene",
+   "source": "lars-owe_ep00-reception_storm.png",
+   "image": "characters/lars-owe/ep00-reception_storm.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lars-owe",
+   "id": "ep00-rehearsal_earplugs",
+   "kind": "scene",
+   "source": "lars-owe_ep00-rehearsal_earplugs.png",
+   "image": "characters/lars-owe/ep00-rehearsal_earplugs.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lars-owe",
+   "id": "ep01-board_arms",
+   "kind": "scene",
+   "source": "lars-owe_ep01-board_arms.png",
+   "image": "characters/lars-owe/ep01-board_arms.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lars-owe",
+   "id": "ep01-board_quote",
+   "kind": "scene",
+   "source": "lars-owe_ep01-board_quote.png",
+   "image": "characters/lars-owe/ep01-board_quote.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lars-owe",
+   "id": "ep01-canteen_klonk",
+   "kind": "scene",
+   "source": "lars-owe_ep01-canteen_klonk.png",
+   "image": "characters/lars-owe/ep01-canteen_klonk.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lars-owe",
+   "id": "ep01-workshop_listen",
+   "kind": "scene",
+   "source": "lars-owe_ep01-workshop_listen.png",
+   "image": "characters/lars-owe/ep01-workshop_listen.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "marie",
+   "id": "ep00-canteen_smile",
+   "kind": "scene",
+   "source": "marie_ep00-canteen_smile.png",
+   "image": "characters/marie/ep00-canteen_smile.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "marie",
+   "id": "ep01-floor_guarded",
+   "kind": "scene",
+   "source": "marie_ep01-floor_guarded.png",
+   "image": "characters/marie/ep01-floor_guarded.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "per",
+   "id": "ep00-office_welcome",
+   "kind": "scene",
+   "source": "per_ep00-office_welcome.png",
+   "image": "characters/per/ep00-office_welcome.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "per",
+   "id": "ep01-board_sign",
+   "kind": "scene",
+   "source": "per_ep01-board_sign.png",
+   "image": "characters/per/ep01-board_sign.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "per",
+   "id": "ep01-office_list",
+   "kind": "scene",
+   "source": "per_ep01-office_list.png",
+   "image": "characters/per/ep01-office_list.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "einar",
+   "id": "pose-01-neutral",
+   "kind": "pose",
+   "source": "einar_pose-01-neutral.png",
+   "image": "characters/einar/pose-01-neutral.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "einar",
+   "id": "pose-02-talking",
+   "kind": "pose",
+   "source": "einar_pose-02-talking.png",
+   "image": "characters/einar/pose-02-talking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "einar",
+   "id": "pose-03-listening",
+   "kind": "pose",
+   "source": "einar_pose-03-listening.png",
+   "image": "characters/einar/pose-03-listening.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "einar",
+   "id": "pose-04-happy",
+   "kind": "pose",
+   "source": "einar_pose-04-happy.png",
+   "image": "characters/einar/pose-04-happy.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "einar",
+   "id": "pose-05-worried",
+   "kind": "pose",
+   "source": "einar_pose-05-worried.png",
+   "image": "characters/einar/pose-05-worried.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "einar",
+   "id": "pose-06-annoyed",
+   "kind": "pose",
+   "source": "einar_pose-06-annoyed.png",
+   "image": "characters/einar/pose-06-annoyed.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "einar",
+   "id": "pose-07-thinking",
+   "kind": "pose",
+   "source": "einar_pose-07-thinking.png",
+   "image": "characters/einar/pose-07-thinking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "einar",
+   "id": "pose-08-pointing",
+   "kind": "pose",
+   "source": "einar_pose-08-pointing.png",
+   "image": "characters/einar/pose-08-pointing.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "johannes",
+   "id": "pose-01-neutral",
+   "kind": "pose",
+   "source": "johannes_pose-01-neutral.png",
+   "image": "characters/johannes/pose-01-neutral.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "johannes",
+   "id": "pose-02-talking",
+   "kind": "pose",
+   "source": "johannes_pose-02-talking.png",
+   "image": "characters/johannes/pose-02-talking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "johannes",
+   "id": "pose-03-listening",
+   "kind": "pose",
+   "source": "johannes_pose-03-listening.png",
+   "image": "characters/johannes/pose-03-listening.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "johannes",
+   "id": "pose-04-happy",
+   "kind": "pose",
+   "source": "johannes_pose-04-happy.png",
+   "image": "characters/johannes/pose-04-happy.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "johannes",
+   "id": "pose-05-worried",
+   "kind": "pose",
+   "source": "johannes_pose-05-worried.png",
+   "image": "characters/johannes/pose-05-worried.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "johannes",
+   "id": "pose-06-annoyed",
+   "kind": "pose",
+   "source": "johannes_pose-06-annoyed.png",
+   "image": "characters/johannes/pose-06-annoyed.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "johannes",
+   "id": "pose-07-thinking",
+   "kind": "pose",
+   "source": "johannes_pose-07-thinking.png",
+   "image": "characters/johannes/pose-07-thinking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "johannes",
+   "id": "pose-08-pointing",
+   "kind": "pose",
+   "source": "johannes_pose-08-pointing.png",
+   "image": "characters/johannes/pose-08-pointing.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "jorunn",
+   "id": "pose-01-neutral",
+   "kind": "pose",
+   "source": "jorunn_pose-01-neutral.png",
+   "image": "characters/jorunn/pose-01-neutral.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "jorunn",
+   "id": "pose-02-talking",
+   "kind": "pose",
+   "source": "jorunn_pose-02-talking.png",
+   "image": "characters/jorunn/pose-02-talking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "jorunn",
+   "id": "pose-03-listening",
+   "kind": "pose",
+   "source": "jorunn_pose-03-listening.png",
+   "image": "characters/jorunn/pose-03-listening.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "jorunn",
+   "id": "pose-04-happy",
+   "kind": "pose",
+   "source": "jorunn_pose-04-happy.png",
+   "image": "characters/jorunn/pose-04-happy.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "jorunn",
+   "id": "pose-05-worried",
+   "kind": "pose",
+   "source": "jorunn_pose-05-worried.png",
+   "image": "characters/jorunn/pose-05-worried.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "jorunn",
+   "id": "pose-06-annoyed",
+   "kind": "pose",
+   "source": "jorunn_pose-06-annoyed.png",
+   "image": "characters/jorunn/pose-06-annoyed.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "jorunn",
+   "id": "pose-07-thinking",
+   "kind": "pose",
+   "source": "jorunn_pose-07-thinking.png",
+   "image": "characters/jorunn/pose-07-thinking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "jorunn",
+   "id": "pose-08-pointing",
+   "kind": "pose",
+   "source": "jorunn_pose-08-pointing.png",
+   "image": "characters/jorunn/pose-08-pointing.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lars-owe",
+   "id": "pose-01-neutral",
+   "kind": "pose",
+   "source": "lars-owe_pose-01-neutral.png",
+   "image": "characters/lars-owe/pose-01-neutral.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lars-owe",
+   "id": "pose-02-talking",
+   "kind": "pose",
+   "source": "lars-owe_pose-02-talking.png",
+   "image": "characters/lars-owe/pose-02-talking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lars-owe",
+   "id": "pose-03-listening",
+   "kind": "pose",
+   "source": "lars-owe_pose-03-listening.png",
+   "image": "characters/lars-owe/pose-03-listening.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lars-owe",
+   "id": "pose-04-happy",
+   "kind": "pose",
+   "source": "lars-owe_pose-04-happy.png",
+   "image": "characters/lars-owe/pose-04-happy.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lars-owe",
+   "id": "pose-05-worried",
+   "kind": "pose",
+   "source": "lars-owe_pose-05-worried.png",
+   "image": "characters/lars-owe/pose-05-worried.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lars-owe",
+   "id": "pose-06-annoyed",
+   "kind": "pose",
+   "source": "lars-owe_pose-06-annoyed.png",
+   "image": "characters/lars-owe/pose-06-annoyed.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lars-owe",
+   "id": "pose-07-thinking",
+   "kind": "pose",
+   "source": "lars-owe_pose-07-thinking.png",
+   "image": "characters/lars-owe/pose-07-thinking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lars-owe",
+   "id": "pose-08-pointing",
+   "kind": "pose",
+   "source": "lars-owe_pose-08-pointing.png",
+   "image": "characters/lars-owe/pose-08-pointing.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "marie",
+   "id": "pose-01-neutral",
+   "kind": "pose",
+   "source": "marie_pose-01-neutral.png",
+   "image": "characters/marie/pose-01-neutral.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "marie",
+   "id": "pose-02-talking",
+   "kind": "pose",
+   "source": "marie_pose-02-talking.png",
+   "image": "characters/marie/pose-02-talking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "marie",
+   "id": "pose-03-listening",
+   "kind": "pose",
+   "source": "marie_pose-03-listening.png",
+   "image": "characters/marie/pose-03-listening.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "marie",
+   "id": "pose-04-happy",
+   "kind": "pose",
+   "source": "marie_pose-04-happy.png",
+   "image": "characters/marie/pose-04-happy.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "marie",
+   "id": "pose-05-worried",
+   "kind": "pose",
+   "source": "marie_pose-05-worried.png",
+   "image": "characters/marie/pose-05-worried.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "marie",
+   "id": "pose-06-annoyed",
+   "kind": "pose",
+   "source": "marie_pose-06-annoyed.png",
+   "image": "characters/marie/pose-06-annoyed.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "marie",
+   "id": "pose-07-thinking",
+   "kind": "pose",
+   "source": "marie_pose-07-thinking.png",
+   "image": "characters/marie/pose-07-thinking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "marie",
+   "id": "pose-08-pointing",
+   "kind": "pose",
+   "source": "marie_pose-08-pointing.png",
+   "image": "characters/marie/pose-08-pointing.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "per",
+   "id": "pose-01-neutral",
+   "kind": "pose",
+   "source": "per_pose-01-neutral.png",
+   "image": "characters/per/pose-01-neutral.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "per",
+   "id": "pose-02-talking",
+   "kind": "pose",
+   "source": "per_pose-02-talking.png",
+   "image": "characters/per/pose-02-talking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "per",
+   "id": "pose-03-listening",
+   "kind": "pose",
+   "source": "per_pose-03-listening.png",
+   "image": "characters/per/pose-03-listening.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "per",
+   "id": "pose-04-happy",
+   "kind": "pose",
+   "source": "per_pose-04-happy.png",
+   "image": "characters/per/pose-04-happy.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "per",
+   "id": "pose-05-worried",
+   "kind": "pose",
+   "source": "per_pose-05-worried.png",
+   "image": "characters/per/pose-05-worried.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "per",
+   "id": "pose-06-annoyed",
+   "kind": "pose",
+   "source": "per_pose-06-annoyed.png",
+   "image": "characters/per/pose-06-annoyed.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "per",
+   "id": "pose-07-thinking",
+   "kind": "pose",
+   "source": "per_pose-07-thinking.png",
+   "image": "characters/per/pose-07-thinking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "per",
+   "id": "pose-08-pointing",
+   "kind": "pose",
+   "source": "per_pose-08-pointing.png",
+   "image": "characters/per/pose-08-pointing.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  }
+ ],
+ "backgrounds": {
+  "reception": [
+   "pano_reception",
+   "reception_wide",
+   "reception_desk",
+   "reception_door"
+  ],
+  "per_office": [
+   "per_office_desk",
+   "per_office_door",
+   "corridor_main",
+   "corridor_main_rev"
+  ],
+  "canteen": [
+   "pano_canteen",
+   "canteen_wide",
+   "canteen_serving",
+   "canteen_tables"
+  ],
+  "hygiene_barrier": [
+   "hygiene_lock",
+   "garderobe"
+  ],
+  "production_floor": [
+   "pano_production_south",
+   "pano_production_line",
+   "production_wide",
+   "production_north",
+   "production_fryer"
+  ],
+  "peeling_machine": [
+   "pano_peeler",
+   "peeler",
+   "peeler_wide"
+  ],
+  "morning_meeting": [
+   "pano_huddle",
+   "huddle_boards",
+   "huddle_side",
+   "huddle_office"
+  ],
+  "raw_goods": [
+   "pano_rvl",
+   "rvl_potatoes",
+   "rvl_racks",
+   "rvl_docks"
+  ],
+  "workshop": [
+   "pano_workshop",
+   "workshop_wide",
+   "workshop_rev",
+   "workshop_bench"
+  ],
+  "friday_meeting": [
+   "pano_meeting",
+   "meeting_room",
+   "meeting_room_rev"
+  ]
+ },
+ "peeler_states": {
+  "inspect": [
+   "peeler_hatch"
+  ],
+  "lockout": [
+   "peeler",
+   "peeler_isolator"
+  ],
+  "normal_lot": [
+   "peeler_hopper"
+  ],
+  "overfeed": [
+   "peeler",
+   "peeler_hopper"
+  ],
+  "running": [
+   "pano_peeler",
+   "peeler",
+   "peeler_bearing"
+  ],
+  "small": [
+   "peeler_hopper"
+  ],
+  "stop": [
+   "pano_peeler",
+   "peeler",
+   "peeler_hatch",
+   "peeler_isolator",
+   "peeler_wide"
+  ]
+ },
+ "ep3_states": {
+  "brown": [
+   "ep3_bench",
+   "ep3_chips",
+   "ep3_frytest",
+   "ep3_sorter",
+   "ep3_sorter_hmi",
+   "ep3_store"
+  ],
+  "normal": [
+   "ep3_bench",
+   "ep3_chips",
+   "ep3_frytest",
+   "ep3_sorter",
+   "ep3_sorter_hmi",
+   "ep3_store"
+  ]
+ }
+}

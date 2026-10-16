@@ -1,5 +1,5 @@
 {
- "_doc": "Top-down people for the walk map (issue #62), rendered by D:/Assets/Blender/Projects/CRC/scripts/gamemap/sprites (build_sprites.py + compose_sprites.py). People: one row each, frame 0 idle, then the walk cycle. All sprites face DOWN on the map; the game rotates them to the direction of travel. Rows 10-14 are stand-ins until their own figures are rendered: marek, nemanja and noor copy einar, johannes and jorunn; meiling and eeli copy marie and anntu.",
+ "_doc": "Top-down people for the walk map (issue #62), rendered by D:/Assets/Blender/Projects/CRC/scripts/gamemap/sprites (build_sprites.py + compose_sprites.py). People: one row each, frame 0 idle, then the walk cycle. All sprites face DOWN on the map; the game rotates them to the direction of travel.",
  "px_per_tile": 64,
  "people": {
   "file": "people.png",
