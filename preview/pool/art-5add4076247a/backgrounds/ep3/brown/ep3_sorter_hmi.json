@@ -1,0 +1,80 @@
+{
+ "id": "ep3_sorter_hmi",
+ "image": "ep3_sorter_hmi.webp",
+ "size": [
+  1920,
+  1080
+ ],
+ "scene_blend": "crc_plant_bg.blend",
+ "peeler_state": null,
+ "story_state": "brown",
+ "use": "ep03 the sorter's screen: reject rate against what it is set to",
+ "camera": {
+  "pos_m": [
+   -8.9,
+   23.4,
+   1.6
+  ],
+  "target_m": [
+   -10.18,
+   22.76,
+   1.4
+  ],
+  "lens_mm": 30,
+  "sensor_mm": 36.0,
+  "fit": "horizontal",
+  "exposure": 0.0,
+  "rot_euler_deg": [
+   82.04,
+   -0.0,
+   116.57
+  ]
+ },
+ "horizon_y_px": 316.4,
+ "eye_height_m": 1.6,
+ "placement": [
+  {
+   "dist_m": 4.0,
+   "feet_y_px": 934.3,
+   "head_y_px": 254.9,
+   "person_175_px": 679.4
+  },
+  {
+   "dist_m": 5.0,
+   "feet_y_px": 816.1,
+   "head_y_px": 267.2,
+   "person_175_px": 548.8
+  },
+  {
+   "dist_m": 6.0,
+   "feet_y_px": 735.8,
+   "head_y_px": 275.5,
+   "person_175_px": 460.3
+  },
+  {
+   "dist_m": 8.0,
+   "feet_y_px": 633.8,
+   "head_y_px": 285.8,
+   "person_175_px": 348.0
+  },
+  {
+   "dist_m": 10.0,
+   "feet_y_px": 571.7,
+   "head_y_px": 291.9,
+   "person_175_px": 279.8
+  },
+  {
+   "dist_m": 14.0,
+   "feet_y_px": 499.9,
+   "head_y_px": 298.9,
+   "person_175_px": 201.0
+  }
+ ],
+ "note": "Web copy at 0.7500 x the render; all *_px values and px_per_* are already scaled to this image. Web cutouts (public/art/characters) are 768 x 1152 with feet at 97 % of the height. Character cutouts (crc-learning-game assets-and-references/characters/*/scenes, 1024 x 1536, feet at ~97 % of the image height, head near the top): scale = person_px / (0.97 * cutout_height_px) where person_px = person_175_px scaled by the character's height / 1.75 m; place the cutout so its bottom edge is at feet_y_px + 0.03 * scaled_height (interpolate person_175_px / feet_y_px between rows). The table is projection only: it says nothing about furniture or walls, so pick a spot with clear floor (or draw foreground objects over the character with a mask). Rows are measured straight ahead of the camera; for this roll-free camera a figure standing anywhere on the same image row has the same height (only its width foreshortens towards the frame edges).",
+ "source_size": [
+  2560,
+  1440
+ ],
+ "source_image": "ep3_sorter_hmi.png",
+ "web_scale": 0.75
+}

@@ -1,0 +1,79 @@
+{
+ "id": "peeler_hatch",
+ "image": "peeler_hatch.webp",
+ "size": [
+  1920,
+  1080
+ ],
+ "scene_blend": "crc_plant_bg.blend",
+ "peeler_state": "inspect",
+ "use": "ep01 peeler mystery close-up: the open middle hood, rollers (worn), the jam",
+ "camera": {
+  "pos_m": [
+   -10.05,
+   -12.35,
+   3.45
+  ],
+  "target_m": [
+   -11.3,
+   -11.85,
+   1.5
+  ],
+  "lens_mm": 26,
+  "sensor_mm": 36.0,
+  "fit": "horizontal",
+  "exposure": 0.5,
+  "rot_euler_deg": [
+   34.62,
+   -0.0,
+   68.2
+  ]
+ },
+ "horizon_y_px": -1468.5,
+ "eye_height_m": 3.45,
+ "placement": [
+  {
+   "dist_m": 1.5,
+   "feet_y_px": 812.6,
+   "head_y_px": 374.6,
+   "person_175_px": 438.0
+  },
+  {
+   "dist_m": 2.0,
+   "feet_y_px": 649.7,
+   "head_y_px": 168.1,
+   "person_175_px": 481.6
+  },
+  {
+   "dist_m": 2.5,
+   "feet_y_px": 508.3,
+   "head_y_px": 3.2,
+   "person_175_px": 505.2
+  },
+  {
+   "dist_m": 3.0,
+   "feet_y_px": 384.8,
+   "head_y_px": -131.6,
+   "person_175_px": 516.3
+  },
+  {
+   "dist_m": 4.0,
+   "feet_y_px": 178.8,
+   "head_y_px": -338.4,
+   "person_175_px": 517.2
+  },
+  {
+   "dist_m": 5.0,
+   "feet_y_px": 14.0,
+   "head_y_px": -489.8,
+   "person_175_px": 503.8
+  }
+ ],
+ "note": "Web copy at 0.7500 x the render; all *_px values and px_per_* are already scaled to this image. Web cutouts (public/art/characters) are 768 x 1152 with feet at 97 % of the height. Character cutouts (crc-learning-game assets-and-references/characters/*/scenes, 1024 x 1536, feet at ~97 % of the image height, head near the top): scale = person_px / (0.97 * cutout_height_px) where person_px = person_175_px scaled by the character's height / 1.75 m; place the cutout so its bottom edge is at feet_y_px + 0.03 * scaled_height (interpolate person_175_px / feet_y_px between rows). The table is projection only: it says nothing about furniture or walls, so pick a spot with clear floor (or draw foreground objects over the character with a mask). Rows are measured straight ahead of the camera; for this roll-free camera a figure standing anywhere on the same image row has the same height (only its width foreshortens towards the frame edges).",
+ "source_size": [
+  2560,
+  1440
+ ],
+ "source_image": "peeler_hatch.png",
+ "web_scale": 0.75
+}
