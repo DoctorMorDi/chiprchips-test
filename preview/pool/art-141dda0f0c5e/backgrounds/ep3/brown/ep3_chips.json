@@ -1,0 +1,86 @@
+{
+ "id": "ep3_chips",
+ "image": "ep3_chips.webp",
+ "size": [
+  1920,
+  1080
+ ],
+ "scene_blend": "crc_plant_bg.blend",
+ "peeler_state": null,
+ "story_state": "brown",
+ "use": "ep03 close-up: the chips on the sorter belt (golden, or too many dark ones)",
+ "camera": {
+  "pos_m": [
+   -12.4,
+   22.0,
+   1.35
+  ],
+  "target_m": [
+   -11.2,
+   22.3,
+   0.7
+  ],
+  "lens_mm": 32,
+  "sensor_mm": 36.0,
+  "fit": "horizontal",
+  "exposure": 0.0,
+  "rot_euler_deg": [
+   62.28,
+   0.0,
+   -75.96
+  ]
+ },
+ "horizon_y_px": -356.9,
+ "eye_height_m": 1.35,
+ "placement": [
+  {
+   "dist_m": 1.5,
+   "feet_y_px": 973.9,
+   "head_y_px": -1032.3,
+   "person_175_px": 2006.2
+  },
+  {
+   "dist_m": 2.0,
+   "feet_y_px": 728.3,
+   "head_y_px": -843.6,
+   "person_175_px": 1571.9
+  },
+  {
+   "dist_m": 2.5,
+   "feet_y_px": 559.3,
+   "head_y_px": -737.3,
+   "person_175_px": 1296.6
+  },
+  {
+   "dist_m": 3.0,
+   "feet_y_px": 435.8,
+   "head_y_px": -669.2,
+   "person_175_px": 1105.0
+  },
+  {
+   "dist_m": 4.0,
+   "feet_y_px": 267.5,
+   "head_y_px": -586.7,
+   "person_175_px": 854.2
+  },
+  {
+   "dist_m": 5.0,
+   "feet_y_px": 158.1,
+   "head_y_px": -538.7,
+   "person_175_px": 696.8
+  },
+  {
+   "dist_m": 6.0,
+   "feet_y_px": 81.4,
+   "head_y_px": -507.3,
+   "person_175_px": 588.7
+  }
+ ],
+ "note": "Web copy at 0.7500 x the render; all *_px values and px_per_* are already scaled to this image. Web cutouts (public/art/characters) are 768 x 1152 with feet at 97 % of the height. Character cutouts (crc-learning-game assets-and-references/characters/*/scenes, 1024 x 1536, feet at ~97 % of the image height, head near the top): scale = person_px / (0.97 * cutout_height_px) where person_px = person_175_px scaled by the character's height / 1.75 m; place the cutout so its bottom edge is at feet_y_px + 0.03 * scaled_height (interpolate person_175_px / feet_y_px between rows). The table is projection only: it says nothing about furniture or walls, so pick a spot with clear floor (or draw foreground objects over the character with a mask). Rows are measured straight ahead of the camera; for this roll-free camera a figure standing anywhere on the same image row has the same height (only its width foreshortens towards the frame edges).",
+ "source_size": [
+  2560,
+  1440
+ ],
+ "source_image": "ep3_chips.png",
+ "web_scale": 0.75
+}

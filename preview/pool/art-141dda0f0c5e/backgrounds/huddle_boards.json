@@ -1,0 +1,78 @@
+{
+ "id": "huddle_boards",
+ "image": "huddle_boards.webp",
+ "size": [
+  1920,
+  1080
+ ],
+ "scene_blend": "crc_plant_bg.blend",
+ "use": "ep01 morning_meeting at the boards (tavlem\u00f8te)",
+ "camera": {
+  "pos_m": [
+   8.6,
+   6.4,
+   1.6
+  ],
+  "target_m": [
+   8.6,
+   11.0,
+   1.55
+  ],
+  "lens_mm": 26,
+  "sensor_mm": 36.0,
+  "fit": "horizontal",
+  "exposure": 0.0,
+  "rot_euler_deg": [
+   89.38,
+   -0.0,
+   0.0
+  ]
+ },
+ "horizon_y_px": 524.9,
+ "eye_height_m": 1.6,
+ "placement": [
+  {
+   "dist_m": 4.0,
+   "feet_y_px": 1077.2,
+   "head_y_px": 472.9,
+   "person_175_px": 604.3
+  },
+  {
+   "dist_m": 5.0,
+   "feet_y_px": 967.2,
+   "head_y_px": 483.3,
+   "person_175_px": 483.9
+  },
+  {
+   "dist_m": 6.0,
+   "feet_y_px": 893.7,
+   "head_y_px": 490.3,
+   "person_175_px": 403.4
+  },
+  {
+   "dist_m": 8.0,
+   "feet_y_px": 801.7,
+   "head_y_px": 498.9,
+   "person_175_px": 302.8
+  },
+  {
+   "dist_m": 10.0,
+   "feet_y_px": 746.4,
+   "head_y_px": 504.2,
+   "person_175_px": 242.2
+  },
+  {
+   "dist_m": 14.0,
+   "feet_y_px": 683.2,
+   "head_y_px": 510.1,
+   "person_175_px": 173.2
+  }
+ ],
+ "note": "Web copy at 0.7500 x the render; all *_px values and px_per_* are already scaled to this image. Web cutouts (public/art/characters) are 768 x 1152 with feet at 97 % of the height. Character cutouts (crc-learning-game assets-and-references/characters/*/scenes, 1024 x 1536, feet at ~97 % of the image height, head near the top): scale = person_px / (0.97 * cutout_height_px) where person_px = person_175_px scaled by the character's height / 1.75 m; place the cutout so its bottom edge is at feet_y_px + 0.03 * scaled_height (interpolate person_175_px / feet_y_px between rows). The table is projection only: it says nothing about furniture or walls, so pick a spot with clear floor (or draw foreground objects over the character with a mask). Rows are measured straight ahead of the camera; for this roll-free camera a figure standing anywhere on the same image row has the same height (only its width foreshortens towards the frame edges).",
+ "source_size": [
+  2560,
+  1440
+ ],
+ "source_image": "huddle_boards.png",
+ "web_scale": 0.75
+}
