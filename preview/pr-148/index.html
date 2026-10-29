@@ -4,9 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Første dag på Chip’R Chips</title>
+    <script>
+      // The robot fight sandbox (#147) has its own page, robot.html; ?robot is the short way in. Stop this page first
+      // so the game never starts (or touches the save) on the way.
+      if (new URLSearchParams(location.search).has('robot')) {
+        window.stop();
+        location.replace('robot.html' + location.search);
+      }
+    </script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥔</text></svg>" />
-    <script type="module" crossorigin src="./assets/index-BYXE04X6.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CqDrsSQ1.css">
+    <script type="module" crossorigin src="./assets/main-Px2UMFi7.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/dice-C1nq-Yp7.js">
+    <link rel="stylesheet" crossorigin href="./assets/dice-CqDrsSQ1.css">
+    <link rel="stylesheet" crossorigin href="./assets/main-mgvqHJs-.css">
   </head>
   <body>
     <div id="stage"></div>
