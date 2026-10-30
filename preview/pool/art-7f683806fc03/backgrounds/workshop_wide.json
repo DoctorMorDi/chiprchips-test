@@ -1,0 +1,78 @@
+{
+ "id": "workshop_wide",
+ "image": "workshop_wide.webp",
+ "size": [
+  1920,
+  1080
+ ],
+ "scene_blend": "crc_plant_bg.blend",
+ "use": "ep01 workshop (Lars)",
+ "camera": {
+  "pos_m": [
+   10.8,
+   -14.6,
+   1.6
+  ],
+  "target_m": [
+   17.0,
+   -26.0,
+   1.0
+  ],
+  "lens_mm": 22,
+  "sensor_mm": 36.0,
+  "fit": "horizontal",
+  "exposure": -0.5,
+  "rot_euler_deg": [
+   87.35,
+   0.0,
+   -151.46
+  ]
+ },
+ "horizon_y_px": 485.8,
+ "eye_height_m": 1.6,
+ "placement": [
+  {
+   "dist_m": 4.0,
+   "feet_y_px": 947.6,
+   "head_y_px": 441.6,
+   "person_175_px": 506.0
+  },
+  {
+   "dist_m": 5.0,
+   "feet_y_px": 856.5,
+   "head_y_px": 450.5,
+   "person_175_px": 406.0
+  },
+  {
+   "dist_m": 6.0,
+   "feet_y_px": 795.5,
+   "head_y_px": 456.3,
+   "person_175_px": 339.2
+  },
+  {
+   "dist_m": 8.0,
+   "feet_y_px": 718.8,
+   "head_y_px": 463.7,
+   "person_175_px": 255.1
+  },
+  {
+   "dist_m": 10.0,
+   "feet_y_px": 672.5,
+   "head_y_px": 468.1,
+   "person_175_px": 204.5
+  },
+  {
+   "dist_m": 14.0,
+   "feet_y_px": 619.4,
+   "head_y_px": 473.2,
+   "person_175_px": 146.2
+  }
+ ],
+ "note": "Web copy at 0.7500 x the render; all *_px values and px_per_* are already scaled to this image. Web cutouts (public/art/characters) are 768 x 1152 with feet at 97 % of the height. Character cutouts (crc-learning-game assets-and-references/characters/*/scenes, 1024 x 1536, feet at ~97 % of the image height, head near the top): scale = person_px / (0.97 * cutout_height_px) where person_px = person_175_px scaled by the character's height / 1.75 m; place the cutout so its bottom edge is at feet_y_px + 0.03 * scaled_height (interpolate person_175_px / feet_y_px between rows). The table is projection only: it says nothing about furniture or walls, so pick a spot with clear floor (or draw foreground objects over the character with a mask). Rows are measured straight ahead of the camera; for this roll-free camera a figure standing anywhere on the same image row has the same height (only its width foreshortens towards the frame edges).",
+ "source_size": [
+  2560,
+  1440
+ ],
+ "source_image": "workshop_wide.png",
+ "web_scale": 0.75
+}

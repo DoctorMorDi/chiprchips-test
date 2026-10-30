@@ -1,0 +1,78 @@
+{
+ "id": "peeler_wide",
+ "image": "peeler_wide.webp",
+ "size": [
+  1920,
+  1080
+ ],
+ "scene_blend": "crc_plant_bg.blend",
+ "use": "peeler and washer, wider",
+ "camera": {
+  "pos_m": [
+   -7.4,
+   -16.0,
+   1.6
+  ],
+  "target_m": [
+   -11.25,
+   -10.5,
+   1.0
+  ],
+  "lens_mm": 24,
+  "sensor_mm": 36.0,
+  "fit": "horizontal",
+  "exposure": 0.0,
+  "rot_euler_deg": [
+   84.89,
+   -0.0,
+   34.99
+  ]
+ },
+ "horizon_y_px": 425.6,
+ "eye_height_m": 1.6,
+ "placement": [
+  {
+   "dist_m": 4.0,
+   "feet_y_px": 923.8,
+   "head_y_px": 377.0,
+   "person_175_px": 546.8
+  },
+  {
+   "dist_m": 5.0,
+   "feet_y_px": 827.0,
+   "head_y_px": 386.8,
+   "person_175_px": 440.2
+  },
+  {
+   "dist_m": 6.0,
+   "feet_y_px": 761.6,
+   "head_y_px": 393.3,
+   "person_175_px": 368.3
+  },
+  {
+   "dist_m": 8.0,
+   "feet_y_px": 679.1,
+   "head_y_px": 401.4,
+   "person_175_px": 277.7
+  },
+  {
+   "dist_m": 10.0,
+   "feet_y_px": 629.1,
+   "head_y_px": 406.2,
+   "person_175_px": 222.9
+  },
+  {
+   "dist_m": 14.0,
+   "feet_y_px": 571.6,
+   "head_y_px": 411.8,
+   "person_175_px": 159.8
+  }
+ ],
+ "note": "Web copy at 0.7500 x the render; all *_px values and px_per_* are already scaled to this image. Web cutouts (public/art/characters) are 768 x 1152 with feet at 97 % of the height. Character cutouts (crc-learning-game assets-and-references/characters/*/scenes, 1024 x 1536, feet at ~97 % of the image height, head near the top): scale = person_px / (0.97 * cutout_height_px) where person_px = person_175_px scaled by the character's height / 1.75 m; place the cutout so its bottom edge is at feet_y_px + 0.03 * scaled_height (interpolate person_175_px / feet_y_px between rows). The table is projection only: it says nothing about furniture or walls, so pick a spot with clear floor (or draw foreground objects over the character with a mask). Rows are measured straight ahead of the camera; for this roll-free camera a figure standing anywhere on the same image row has the same height (only its width foreshortens towards the frame edges).",
+ "source_size": [
+  2560,
+  1440
+ ],
+ "source_image": "peeler_wide.png",
+ "web_scale": 0.75
+}
