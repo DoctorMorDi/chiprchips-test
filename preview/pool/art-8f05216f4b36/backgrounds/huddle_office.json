@@ -1,0 +1,78 @@
+{
+ "id": "huddle_office",
+ "image": "huddle_office.webp",
+ "size": [
+  1920,
+  1080
+ ],
+ "scene_blend": "crc_plant_bg.blend",
+ "use": "shift-leader office beside the boards",
+ "camera": {
+  "pos_m": [
+   10.6,
+   6.0,
+   1.6
+  ],
+  "target_m": [
+   15.6,
+   10.6,
+   1.3
+  ],
+  "lens_mm": 26,
+  "sensor_mm": 36.0,
+  "fit": "horizontal",
+  "exposure": 0.0,
+  "rot_euler_deg": [
+   87.47,
+   -0.0,
+   -47.39
+  ]
+ },
+ "horizon_y_px": 478.8,
+ "eye_height_m": 1.6,
+ "placement": [
+  {
+   "dist_m": 4.0,
+   "feet_y_px": 1024.9,
+   "head_y_px": 426.6,
+   "person_175_px": 598.3
+  },
+  {
+   "dist_m": 5.0,
+   "feet_y_px": 917.2,
+   "head_y_px": 437.0,
+   "person_175_px": 480.2
+  },
+  {
+   "dist_m": 6.0,
+   "feet_y_px": 844.9,
+   "head_y_px": 444.0,
+   "person_175_px": 401.0
+  },
+  {
+   "dist_m": 8.0,
+   "feet_y_px": 754.2,
+   "head_y_px": 452.7,
+   "person_175_px": 301.5
+  },
+  {
+   "dist_m": 10.0,
+   "feet_y_px": 699.5,
+   "head_y_px": 458.0,
+   "person_175_px": 241.6
+  },
+  {
+   "dist_m": 14.0,
+   "feet_y_px": 636.8,
+   "head_y_px": 463.9,
+   "person_175_px": 172.9
+  }
+ ],
+ "note": "Web copy at 0.7500 x the render; all *_px values and px_per_* are already scaled to this image. Web cutouts (public/art/characters) are 768 x 1152 with feet at 97 % of the height. Character cutouts (crc-learning-game assets-and-references/characters/*/scenes, 1024 x 1536, feet at ~97 % of the image height, head near the top): scale = person_px / (0.97 * cutout_height_px) where person_px = person_175_px scaled by the character's height / 1.75 m; place the cutout so its bottom edge is at feet_y_px + 0.03 * scaled_height (interpolate person_175_px / feet_y_px between rows). The table is projection only: it says nothing about furniture or walls, so pick a spot with clear floor (or draw foreground objects over the character with a mask). Rows are measured straight ahead of the camera; for this roll-free camera a figure standing anywhere on the same image row has the same height (only its width foreshortens towards the frame edges).",
+ "source_size": [
+  2560,
+  1440
+ ],
+ "source_image": "huddle_office.png",
+ "web_scale": 0.75
+}
