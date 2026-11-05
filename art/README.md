@@ -28,3 +28,18 @@ Built by `tools/art/build_web_pack.py` (issue #55) from local-only sources; reru
 
 Placing a character: pick a placement row (or interpolate), scale the cutout so `0.97 * height` =
 `person_175_px * character_height_m / 1.75`, and put its bottom edge at `feet_y_px + 0.03 * scaled_height`.
+
+## Kickabout (#143)
+
+Built by `tools/art/build_football_pack.py` from the project folder `art/football/` (AI-generated with Codex image_gen,
+2026-10-29/30, own work): `football/pitch.webp` (the top-down pitch in the match), `backgrounds/kickabout_fence.webp`
++ `.json` (after the match), `characters/<slug>/football/<look|talking|happy>.webp` (the players in kit, same cutout
+format as above) and the BuddyZone photos `content/buddyzone/photos/r-kickabout-happy*.webp`.
+
+## Guitar sandbox (#169)
+
+Built by `tools/art/build_guitar_pack.py` from the project folder `art/guitar/` (AI-generated with Codex image_gen,
+2026-10-29, own work; prompts in `art/guitar/image-prompts.md`, approved by the owner 2026-10-30):
+`guitar/highway.webp` (stage floor behind the lanes), `guitar/gem_<0|1|2>.webp` (notes, left to right),
+`guitar/hitline.webp` + `hitline_lit.webp` (hit bar, idle and lit; where its pick targets sit: `BAR` in
+`src/guitar/main.ts`) and `guitar/fx_hit.webp`, `fx_miss.webp`.
