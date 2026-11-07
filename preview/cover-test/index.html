@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chip'R Chips – cover-test</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #0d1020; color: #f7f5ef; font-family: system-ui, sans-serif; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+  /* The stage keeps the cover's 1664x936 frame; every layer and effect is placed in that frame. */
+  .stage { position: relative; width: min(100vw, calc(100vh * 16 / 9 - 40px)); aspect-ratio: 16 / 9; overflow: hidden; }
+  .stage > * { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  .layer { object-fit: cover; transition: transform 0.6s ease-out; will-change: transform; }
+  /* Light drifting over the sky: a warm and a cool glow that slowly trade places. */
+  .light { background: radial-gradient(60% 70% at 30% 30%, rgba(255, 170, 90, 0.55), transparent 70%),
+                       radial-gradient(60% 70% at 75% 25%, rgba(120, 140, 255, 0.45), transparent 70%);
+           mix-blend-mode: soft-light; animation: drift 18s ease-in-out infinite alternate; }
+  @keyframes drift { from { transform: translateX(-6%); opacity: 0.6; } to { transform: translateX(6%); opacity: 1; } }
+  .gull { animation: glide 6s ease-in-out infinite; transform-origin: 84% 12%; }
+  @keyframes glide { 0%, 100% { translate: 0 0; rotate: 0deg; } 50% { translate: -0.6% 1.4%; rotate: -2deg; } }
+  .note { font-size: 13px; opacity: 0.75; text-align: center; padding: 0 16px; }
+  @media (prefers-reduced-motion: reduce) { .light, .gull { animation: none; } .layer { transition: none; } }
+</style>
+</head>
+<body>
+<div class="stage" id="stage">
+  <img class="layer" data-depth="0" src="layers/01-sky.png" alt="">
+  <div class="light"></div>
+  <img class="layer" data-depth="0.2" src="layers/02-sea-town.png" alt="" id="sea">
+  <canvas id="glitter"></canvas>
+  <img class="layer" data-depth="0.3" src="layers/03-mountain-bear.png" alt="">
+  <img class="layer" data-depth="0.5" src="layers/04-factory.png" alt="">
+  <img class="layer" data-depth="0.5" src="layers/05-pitch.png" alt="">
+  <img class="layer" data-depth="0.6" src="layers/06-robots.png" alt="">
+  <canvas id="sparks"></canvas>
+  <img class="layer" data-depth="0.8" src="layers/07-people.png" alt="">
+  <img class="layer" data-depth="0.9" src="layers/08-luffe.png" alt="">
+  <img class="layer gull" data-depth="0.7" src="layers/09-seagull.png" alt="">
+  <img class="layer" data-depth="1" src="layers/10-title.png" alt="Chip'R Chips">
+</div>
+<div class="note">Testside for animert cover: lys over himmelen, glitter i havet, gnister mellom robotene, måsen som glir og litt dybde når du beveger musa. Håret kommer senere.</div>
+<script>
+const W = 1664, H = 936;
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const stage = document.getElementById('stage');
+
+// A canvas in the cover's own pixel frame, scaled with the stage.
+function frameCanvas(id) {
+  const c = document.getElementById(id);
+  c.width = W; c.height = H;
+  return c.getContext('2d');
+}
+
+// Sea glitter: twinkles only on pixels of the sea layer that are water (blue and dark), not on the town.
+const glitter = frameCanvas('glitter');
+const seaImg = document.getElementById('sea');
+let water = [];
+function findWater() {
+  const c = document.createElement('canvas'); c.width = W; c.height = H;
+  const g = c.getContext('2d'); g.drawImage(seaImg, 0, 0, W, H);
+  const d = g.getImageData(0, 780, W, H - 780).data;
+  for (let y = 0; y < H - 780; y += 3) for (let x = 0; x < W; x += 3) {
+    const i = (y * W + x) * 4, [r, gr, b, a] = [d[i], d[i + 1], d[i + 2], d[i + 3]];
+    if (a > 200 && b > r + 15 && b > gr && r + gr + b < 420) water.push([x, y + 780]);
+  }
+}
+const twinkles = [];
+function drawGlitter(t) {
+  glitter.clearRect(0, 0, W, H);
+  if (water.length && twinkles.length < 70 && Math.random() < 0.6) {
+    const [x, y] = water[(Math.random() * water.length) | 0];
+    twinkles.push({ x, y, born: t, life: 600 + Math.random() * 900 });
+  }
+  for (let i = twinkles.length - 1; i >= 0; i--) {
+    const p = twinkles[i], k = (t - p.born) / p.life;
+    if (k >= 1) { twinkles.splice(i, 1); continue; }
+    const a = Math.sin(Math.PI * k);
+    glitter.fillStyle = `rgba(255, 236, 190, ${0.85 * a})`;
+    glitter.fillRect(p.x - 3, p.y, 6, 1.5);
+    glitter.fillRect(p.x - 0.75, p.y - 2, 1.5, 5.5);
+  }
+}
+
+// Sparks: short bursts where the two robots meet, every couple of seconds.
+const sparks = frameCanvas('sparks');
+const SPARK = { x: 336, y: 795 };
+const bits = [];
+let nextBurst = 0;
+function drawSparks(t) {
+  sparks.clearRect(0, 0, W, H);
+  if (t > nextBurst) {
+    for (let i = 0; i < 40; i++) {
+      const a = -Math.PI / 2 + (Math.random() - 0.5) * 2.6, v = 2 + Math.random() * 6;
+      bits.push({ x: SPARK.x, y: SPARK.y, vx: Math.cos(a) * v, vy: Math.sin(a) * v, born: t, life: 300 + Math.random() * 500 });
+    }
+    nextBurst = t + 1200 + Math.random() * 2200;
+  }
+  sparks.globalCompositeOperation = 'lighter';
+  for (let i = bits.length - 1; i >= 0; i--) {
+    const b = bits[i], k = (t - b.born) / b.life;
+    if (k >= 1) { bits.splice(i, 1); continue; }
+    b.x += b.vx; b.y += b.vy; b.vy += 0.25;
+    sparks.strokeStyle = `rgba(255, ${200 - 120 * k | 0}, 80, ${1 - k})`;
+    sparks.lineWidth = 2;
+    sparks.beginPath(); sparks.moveTo(b.x, b.y); sparks.lineTo(b.x - b.vx * 2, b.y - b.vy * 2); sparks.stroke();
+  }
+  if (bits.length) {
+    const g = sparks.createRadialGradient(SPARK.x, SPARK.y, 0, SPARK.x, SPARK.y, 60);
+    g.addColorStop(0, `rgba(255, 220, 140, ${0.5 * Math.min(1, bits.length / 30)})`); g.addColorStop(1, 'rgba(255, 180, 80, 0)');
+    sparks.fillStyle = g; sparks.fillRect(SPARK.x - 60, SPARK.y - 60, 120, 120);
+  }
+  sparks.globalCompositeOperation = 'source-over';
+}
+
+// Depth: layers move a little against the mouse, nearer layers more.
+if (!reduced) stage.parentElement.addEventListener('pointermove', (e) => {
+  const r = stage.getBoundingClientRect();
+  const dx = (e.clientX - r.left) / r.width - 0.5, dy = (e.clientY - r.top) / r.height - 0.5;
+  for (const el of stage.querySelectorAll('.layer')) {
+    const d = +el.dataset.depth;
+    el.style.transform = `translate(${-dx * d * 14}px, ${-dy * d * 8}px)`;
+  }
+});
+
+function frame(t) {
+  drawGlitter(t);
+  drawSparks(t);
+  if (!reduced) requestAnimationFrame(frame);
+}
+(seaImg.complete ? Promise.resolve() : new Promise((ok) => seaImg.addEventListener('load', ok))).then(() => {
+  findWater();
+  requestAnimationFrame(frame);
+});
+</script>
+</body>
+</html>
