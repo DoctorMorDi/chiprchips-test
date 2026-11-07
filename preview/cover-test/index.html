@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chip'R Chips – cover-test 2</title>
+<title>Chip'R Chips – cover-test 3</title>
 <link rel="icon" href="data:,">
 <style>
   html, body { margin: 0; height: 100%; background: #0d1020; color: #f7f5ef; font-family: system-ui, sans-serif; }
@@ -13,36 +13,43 @@
   .stage > * { position: absolute; pointer-events: none; }
   .full { inset: 0; width: 100%; height: 100%; }
   /* Sunset glow that breathes over the horizon, and a soft light drifting across the top sky. */
-  .sun { inset: 0; background: radial-gradient(28% 22% at 49.5% 91%, rgba(255, 190, 90, 0.55), transparent 70%);
+  /* The glow stays below the horizon so it never hazes the logo or the robots. */
+  .sun { left: 30%; width: 40%; top: 86%; bottom: 0; background: radial-gradient(60% 70% at 50% 25%, rgba(255, 190, 90, 0.5), transparent 75%);
          mix-blend-mode: screen; animation: breathe 7s ease-in-out infinite alternate; }
   .sky { inset: 0 0 55% 0; background: radial-gradient(40% 80% at 30% 20%, rgba(255, 200, 140, 0.35), transparent 70%);
          mix-blend-mode: soft-light; animation: drift 20s ease-in-out infinite alternate; }
-  @keyframes breathe { from { opacity: 0.35; } to { opacity: 0.9; } }
+  @keyframes breathe { from { opacity: 0.5; } to { opacity: 0.8; } }
   @keyframes drift { from { transform: translateX(-8%); } to { transform: translateX(40%); } }
-  /* The gull is cut from the original painting and glides with a light wing beat. */
-  .gull { left: 70.31%; top: 0; width: 29.69%; transform-origin: 60% 50%; animation: glide 7s ease-in-out infinite; }
-  .gull img { width: 100%; display: block; animation: beat 1.6s ease-in-out infinite; transform-origin: 55% 60%; }
-  @keyframes glide { 0%, 100% { translate: 0 0; rotate: 0deg; } 50% { translate: -1.6% 6%; rotate: -3deg; } }
-  @keyframes beat { 0%, 100% { scale: 1 1; } 50% { scale: 1 0.95; } }
+  /* The gull is cut from the original painting, a little smaller, with room to the edges, gliding on a slow arc. */
+  .gull { left: 70%; top: 2.5%; width: 27.5%; transform-origin: 60% 50%; animation: glide 11s ease-in-out infinite; }
+  .gull img { width: 100%; display: block; }
+  @keyframes glide { 0%, 100% { translate: 0 0; rotate: 0deg; } 30% { translate: -3% 4%; rotate: -2.5deg; } 65% { translate: -1% 7%; rotate: 1deg; } }
   /* The in-game logo with a dark shadow behind it, as on the first cover. */
-  .shade { left: 19%; top: 43%; width: 62%; height: 56%;
-           background: radial-gradient(closest-side, rgba(6, 8, 26, 0.85), rgba(6, 8, 26, 0.6) 50%, transparent); }
-  .logo { left: 30.5%; top: 52%; width: 39%; filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.65)); }
+  /* Dark shadow kept tight around the letters, so the coat and Luffe stay clean. */
+  .shade { left: 29%; top: 53%; width: 43%; height: 37%;
+           background: radial-gradient(closest-side, rgba(6, 8, 26, 0.85), rgba(6, 8, 26, 0.65) 55%, transparent); }
+  .logo { left: 33.5%; top: 55.5%; width: 34%; filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.65)); }
+  /* Example of where the start buttons go: a dark band over the sea under the logo. */
+  .band { left: 25%; width: 50%; top: 87.5%; bottom: 0; display: flex; align-items: center; justify-content: center;
+          background: radial-gradient(closest-side, rgba(6, 8, 26, 0.6), transparent); }
+  .band span { font: 700 clamp(10px, 1.4vw, 22px) system-ui, sans-serif; color: #fff; background: #f88600; border-radius: 999px;
+               padding: 0.35em 1.4em; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5); }
   .note { font-size: 13px; opacity: 0.75; text-align: center; padding: 0 16px; }
-  @media (prefers-reduced-motion: reduce) { .sun, .sky, .gull, .gull img { animation: none; } }
+  @media (prefers-reduced-motion: reduce) { .sun, .sky, .gull { animation: none; } }
 </style>
 </head>
 <body>
 <div class="stage" id="stage">
-  <img class="full" src="layers/base.jpg?v=3" alt="" id="base">
+  <img class="full" src="layers/base.jpg?v=4" alt="" id="base">
   <div class="sky"></div>
   <div class="sun"></div>
   <canvas class="full" id="fx"></canvas>
-  <div class="gull" data-depth="0.6"><img src="layers/gull.png?v=3" alt=""></div>
+  <div class="gull" data-depth="0.6"><img src="layers/gull.png?v=4" alt=""></div>
   <div class="shade"></div>
-  <img class="logo" data-depth="0.3" src="layers/logo.png?v=3" alt="Chip'R Chips">
+  <img class="logo" data-depth="0.3" src="layers/logo.png?v=4" alt="Chip'R Chips">
+  <div class="band"><span>Start</span></div>
 </div>
-<div class="note">Testside 2: hele coveret som bunn, logoen fra spillet, glitter i havet, gnister med gjenskinn i gulvet og måsen som glir. Håret kommer senere.</div>
+<div class="note">Testside 3: rettet etter review fra Codex og OpenCode. Start-knappen viser bare hvor knappene kan stå. Håret kommer senere.</div>
 <script>
 const W = 1664, H = 936;
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -56,27 +63,28 @@ let water = [];
 function findWater() {
   const c = document.createElement('canvas'); c.width = W; c.height = H;
   const g = c.getContext('2d'); g.drawImage(base, 0, 0, W, H);
-  const X0 = 540, X1 = 1090, Y0 = 862, Y1 = 932;
+  // Open water under the sun, below the islands; the closer to the sun's path, the more glitter.
+  const X0 = 680, X1 = 970, Y0 = 904, Y1 = 922;
   const d = g.getImageData(X0, Y0, X1 - X0, Y1 - Y0).data;
   for (let y = 0; y < Y1 - Y0; y += 2) for (let x = 0; x < X1 - X0; x += 2) {
     const i = (y * (X1 - X0) + x) * 4, r = d[i], gr = d[i + 1], b = d[i + 2];
-    const sunPath = Math.abs(x + X0 - 822) < 70;
-    if (b > r + 10 || (sunPath && r > 150)) water.push([x + X0, y + Y0]);
+    const dist = Math.abs(x + X0 - 822);
+    const isWater = b > gr && (b > r + 5 || r > 170);
+    if (isWater && Math.random() < 1 - dist / 160) water.push([x + X0, y + Y0]);
   }
 }
 const twinkles = [];
 function drawGlitter(t) {
-  if (water.length && twinkles.length < 60 && Math.random() < 0.55) {
+  if (water.length && twinkles.length < 45 && Math.random() < 0.5) {
     const [x, y] = water[(Math.random() * water.length) | 0];
-    twinkles.push({ x, y, born: t, life: 500 + Math.random() * 900 });
+    twinkles.push({ x, y, born: t, life: 400 + Math.random() * 1100, w: 3 + Math.random() * 7, peak: 0.5 + Math.random() * 0.45 });
   }
   for (let i = twinkles.length - 1; i >= 0; i--) {
     const p = twinkles[i], k = (t - p.born) / p.life;
     if (k >= 1) { twinkles.splice(i, 1); continue; }
     const a = Math.sin(Math.PI * k);
-    fx.fillStyle = `rgba(255, 236, 190, ${0.9 * a})`;
-    fx.fillRect(p.x - 3, p.y, 6, 1.5);
-    fx.fillRect(p.x - 0.75, p.y - 2, 1.5, 5);
+    fx.fillStyle = `rgba(255, 236, 190, ${p.peak * a})`;
+    fx.fillRect(p.x - p.w / 2, p.y, p.w, 1.2);
   }
 }
 
