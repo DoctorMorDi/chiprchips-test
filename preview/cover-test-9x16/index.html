@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chip'R Chips – cover-test 9:16</title>
+<link rel="icon" href="data:,">
+<style>
+  html, body { margin: 0; height: 100%; background: #0d1020; color: #f7f5ef; font-family: system-ui, sans-serif; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+  /* The stage keeps the portrait cover's 864x1536 frame; everything is placed in percentages of it. */
+  .stage { position: relative; width: min(100vw, calc((100vh - 40px) * 9 / 16)); aspect-ratio: 9 / 16; overflow: hidden; }
+  .stage > * { position: absolute; pointer-events: none; }
+  .full { inset: 0; width: 100%; height: 100%; }
+  /* Sunset glow that breathes over the horizon, and a soft light drifting across the top sky. */
+  /* The glow stays below the horizon so it never hazes the logo or the robots. */
+  .sun { left: 20%; width: 60%; top: 76.5%; height: 9%; background: radial-gradient(60% 70% at 50% 25%, rgba(255, 190, 90, 0.5), transparent 75%);
+         mix-blend-mode: screen; animation: breathe 7s ease-in-out infinite alternate; }
+  .sky { inset: 0 0 72% 0; background: radial-gradient(40% 80% at 30% 20%, rgba(255, 200, 140, 0.35), transparent 70%);
+         mix-blend-mode: soft-light; animation: drift 20s ease-in-out infinite alternate; }
+  @keyframes breathe { from { opacity: 0.5; } to { opacity: 0.8; } }
+  @keyframes drift { from { transform: translateX(-8%); } to { transform: translateX(40%); } }
+  /* The gull is cut from the original painting, a little smaller, with room to the edges, gliding on a slow arc. */
+  .gull { left: 31.25%; top: 0.98%; width: 49.77%; transform-origin: 60% 50%; animation: glide 11s ease-in-out infinite; }
+  .gull img { width: 100%; display: block; }
+  @keyframes glide { 0%, 100% { translate: 0 0; rotate: 0deg; } 30% { translate: -3% 4%; rotate: -2.5deg; } 65% { translate: -1% 7%; rotate: 1deg; } }
+  /* The in-game logo with a dark shadow behind it, as on the first cover. */
+  /* Dark shadow kept tight around the letters, so the coat and Luffe stay clean. */
+  .shade { left: 4%; top: 43%; width: 92%; height: 30%;
+           background: radial-gradient(closest-side, rgba(6, 8, 26, 0.85), rgba(6, 8, 26, 0.65) 55%, transparent); }
+  .logo { left: 12%; top: 47%; width: 76%; filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.65)); }
+  /* Example of where the start buttons go: a dark band over the sea under the logo. */
+  .band { left: 10%; width: 80%; top: 91%; bottom: 0; display: flex; align-items: center; justify-content: center;
+          background: radial-gradient(closest-side, rgba(6, 8, 26, 0.6), transparent); }
+  .band span { font: 700 clamp(12px, 2.2vh, 24px) system-ui, sans-serif; color: #fff; background: #f88600; border-radius: 999px;
+               padding: 0.35em 1.4em; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5); }
+  .note { font-size: 13px; opacity: 0.75; text-align: center; padding: 0 16px; }
+  @media (prefers-reduced-motion: reduce) { .sun, .sky, .gull { animation: none; } }
+</style>
+</head>
+<body>
+<div class="stage" id="stage">
+  <img class="full" src="layers/base.jpg?v=1" alt="" id="base">
+  <div class="sky"></div>
+  <div class="sun"></div>
+  <canvas class="full" id="fx"></canvas>
+  <div class="gull" data-depth="0.6"><img src="layers/gull.png?v=1" alt=""></div>
+  <div class="shade"></div>
+  <img class="logo" data-depth="0.3" src="layers/logo.png?v=1" alt="Chip'R Chips">
+  <div class="band"><span>Start</span></div>
+</div>
+<div class="note">Testside 9:16 for mobil. Start-knappen viser bare hvor knappene kan stå. Liggende versjon: <a style="color:#f8c010" href="../cover-test/">cover-test</a>.</div>
+<script>
+const W = 864, H = 1536;
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const stage = document.getElementById('stage');
+const base = document.getElementById('base');
+const cv = document.getElementById('fx'); cv.width = W; cv.height = H;
+const fx = cv.getContext('2d');
+
+// Sea glitter: only on water pixels of the painting near the horizon (blue water and the sun's path).
+let water = [];
+function findWater() {
+  const c = document.createElement('canvas'); c.width = W; c.height = H;
+  const g = c.getContext('2d'); g.drawImage(base, 0, 0, W, H);
+  // Open water under the sun, below the islands; the closer to the sun's path, the more glitter.
+  const X0 = 250, X1 = 600, Y0 = 1410, Y1 = 1500;
+  const d = g.getImageData(X0, Y0, X1 - X0, Y1 - Y0).data;
+  for (let y = 0; y < Y1 - Y0; y += 2) for (let x = 0; x < X1 - X0; x += 2) {
+    const i = (y * (X1 - X0) + x) * 4, r = d[i], gr = d[i + 1], b = d[i + 2];
+    const dist = Math.abs(x + X0 - 422);
+    const isWater = b > gr && (b > r + 5 || r > 170);
+    if (isWater && Math.random() < 1 - dist / 190) water.push([x + X0, y + Y0]);
+  }
+}
+const twinkles = [];
+function drawGlitter(t) {
+  if (water.length && twinkles.length < 45 && Math.random() < 0.5) {
+    const [x, y] = water[(Math.random() * water.length) | 0];
+    twinkles.push({ x, y, born: t, life: 400 + Math.random() * 1100, w: 3 + Math.random() * 7, peak: 0.5 + Math.random() * 0.45 });
+  }
+  for (let i = twinkles.length - 1; i >= 0; i--) {
+    const p = twinkles[i], k = (t - p.born) / p.life;
+    if (k >= 1) { twinkles.splice(i, 1); continue; }
+    const a = Math.sin(Math.PI * k);
+    fx.fillStyle = `rgba(255, 236, 190, ${p.peak * a})`;
+    fx.fillRect(p.x - p.w / 2, p.y, p.w, 1.2);
+  }
+}
+
+// Sparks where the two robots meet, mirrored in the wet floor below them.
+const SPARK = { x: 215, y: 1235 }, FLOOR = 1300;
+const bits = [];
+let nextBurst = 0;
+function streak(x, y, vx, vy, k, alpha) {
+  fx.strokeStyle = `rgba(255, ${200 - 120 * k | 0}, 80, ${alpha})`;
+  fx.beginPath(); fx.moveTo(x, y); fx.lineTo(x - vx * 2, y - vy * 2); fx.stroke();
+}
+function drawSparks(t) {
+  if (t > nextBurst) {
+    for (let i = 0; i < 40; i++) {
+      const a = -Math.PI / 2 + (Math.random() - 0.5) * 2.6, v = 2 + Math.random() * 6;
+      bits.push({ x: SPARK.x, y: SPARK.y, vx: Math.cos(a) * v, vy: Math.sin(a) * v, born: t, life: 300 + Math.random() * 500 });
+    }
+    nextBurst = t + 1200 + Math.random() * 2200;
+  }
+  fx.globalCompositeOperation = 'lighter';
+  fx.lineWidth = 2;
+  for (let i = bits.length - 1; i >= 0; i--) {
+    const b = bits[i], k = (t - b.born) / b.life;
+    if (k >= 1 || b.y > FLOOR) { bits.splice(i, 1); continue; }
+    b.x += b.vx; b.y += b.vy; b.vy += 0.25;
+    streak(b.x, b.y, b.vx, b.vy, k, 1 - k);
+    streak(b.x, 2 * FLOOR - b.y, b.vx, -b.vy, k, 0.35 * (1 - k)); // reflection
+  }
+  if (bits.length) {
+    const s = Math.min(1, bits.length / 30);
+    let g = fx.createRadialGradient(SPARK.x, SPARK.y, 0, SPARK.x, SPARK.y, 70);
+    g.addColorStop(0, `rgba(255, 220, 140, ${0.55 * s})`); g.addColorStop(1, 'rgba(255, 180, 80, 0)');
+    fx.fillStyle = g; fx.fillRect(SPARK.x - 70, SPARK.y - 70, 140, 140);
+    // Glow on the floor under the sparks.
+    fx.save(); fx.translate(SPARK.x, FLOOR + 6); fx.scale(1, 0.25);
+    g = fx.createRadialGradient(0, 0, 0, 0, 0, 140);
+    g.addColorStop(0, `rgba(255, 200, 110, ${0.5 * s})`); g.addColorStop(1, 'rgba(255, 160, 60, 0)');
+    fx.fillStyle = g; fx.fillRect(-140, -140, 280, 280); fx.restore();
+  }
+  fx.globalCompositeOperation = 'source-over';
+}
+
+// Depth: gull and logo move a little against the mouse.
+if (!reduced) stage.parentElement.addEventListener('pointermove', (e) => {
+  const r = stage.getBoundingClientRect();
+  const dx = (e.clientX - r.left) / r.width - 0.5, dy = (e.clientY - r.top) / r.height - 0.5;
+  for (const el of stage.querySelectorAll('[data-depth]')) {
+    const d = +el.dataset.depth;
+    el.style.transform = `translate(${-dx * d * 16}px, ${-dy * d * 10}px)`;
+  }
+});
+
+function frame(t) {
+  fx.clearRect(0, 0, W, H);
+  drawGlitter(t);
+  drawSparks(t);
+  if (!reduced) requestAnimationFrame(frame);
+}
+(base.complete ? Promise.resolve() : new Promise((ok) => base.addEventListener('load', ok))).then(() => {
+  findWater();
+  requestAnimationFrame(frame);
+});
+</script>
+</body>
+</html>
