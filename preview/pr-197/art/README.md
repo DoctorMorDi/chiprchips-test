@@ -63,4 +63,8 @@ Built by `tools/art/build_flavour_pack.py` from the project folder `art/flavour/
 - `skipper.webp`: the Skipper Chips mascot, and `series/<id>.webp`: the twelve bags of the series. The owner's own brand
   art, from corvus `assets-and-references/decals/merkevare/` and `decals/produkter/` (the `_1024_` cutouts).
 
+- `room.webp` (1600 x 900): the test kitchen behind the people. Source `lab-room.png`: AI-generated with Codex (GPT
+  Image) 2026-11-09 from a description of the game's rendered rooms, own work. A stand-in: replace it with a render of
+  the lab from the Blender scene when there is one (same file name, nothing else changes).
+
 How a bag is put together from these: `bagSvg` in `src/flavour/bag.ts`.
