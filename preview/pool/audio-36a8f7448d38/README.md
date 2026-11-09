@@ -1,0 +1,53 @@
+# Audio
+
+Game-ready MP3s, made from masters by `npm run audio:build -- <masters folder>` (`tools/audio/build.ts`, needs ffmpeg).
+Never edit these files by hand: change the master and rebuild. Which sound plays where is set in `src/game/soundscape.ts`.
+
+## Format (rules in `tools/audio/specs.ts`)
+
+All files are MP3, 44.1 kHz. Loudness is fixed per folder; how loud each group plays is set in code.
+
+| Folder | Channels | Bitrate | Level | Loop |
+| --- | --- | --- | --- | --- |
+| `music/` (background) | stereo | 192 kbps | -16 LUFS | yes |
+| `music/collectibles/` | stereo | 192 kbps | -16 LUFS | no |
+| `music/stings/` | stereo | 192 kbps | peak -1 dBFS | no |
+| `music/lessons/` (guitar sandbox stems) | stereo | 192 kbps | own level and timing, untouched | no |
+| `ambience/` | stereo | 128 kbps | -24 LUFS | yes |
+| `sounds/ui/`, `sounds/phone/`, `sounds/menus/` | mono | 128 kbps | peak -6 dBFS | no |
+| `sounds/` (everything else) | mono | 128 kbps | peak -3 dBFS | only `*_looped` |
+| `vo/` | mono | 96 kbps | -18 LUFS | no |
+
+Loops get their last second crossfaded into the start, so they repeat without a seam. One-shots get leading silence trimmed and a 10 ms fade-out.
+
+## Masters
+
+WAV masters live outside Git on corvus in `D:\Assets\Audio\CRC\masters\`, in the same folders as here.
+The full plan (file list, sources, what plays where) is the "CRC Audio Plan (MVP)" doc in the project.
+
+## Sources and licences
+
+| Files | Source | Licence |
+| --- | --- | --- |
+| `ambience/factory/machines/` (except the two below), `ambience/office/` (except `hygiene_looped`), `sounds/footsteps/` (except `boots_step`, `splash_step`), `sounds/menus/` | Earlier Unity version of CRC (Kaizen), `D:\Assets\Blender\Assets\Unity Imports\KaizenStandard\Audio` | own project |
+| `ambience/factory/machines/washer_looped`, `peeler_faulty_looped`, `sounds/phone/card_reveal`, `sounds/hygiene/hairnet_snap`, `sounds/obs/crate_drag`, `music/stings/good_news` (4 s take 2, 2026-10-13) | Generated with ElevenLabs Sound Effects v2, picked by the owner 2026-10-12 (`peeler_faulty_looped` is a mix of two takes). Takes and prompts: `/mnt/project-files/audio/sfx-generated/2026-10-12/` | ElevenLabs paid plan, commercial use allowed |
+| `ambience/factory/factory_ambience`, `ambience/office/hygiene_looped`, `ambience/exterior/`, `ambience/home/`, `sounds/day/shift_horn`, `shift_horn_overtime`, `sounds/peeler/start`, `stop`, `sounds/footsteps/boots_step`, `splash_step`, `sounds/hygiene/soap_pump`, `soap_pump_empty`, `hand_dryer`, `sounds/obs/drip_looped`, `forklift_beep_looped`, `forklift_horn`, `mop`, `tape_rip`, `bottle_pickup`, `sounds/phone/locked`, `music/stings/bad_news` | Generated with ElevenLabs Sound Effects v2 (issue #25), one of four takes picked by the owner 2026-10-13. Takes and prompts: `/mnt/project-files/audio/sfx-generated/2026-10-13/` | ElevenLabs paid plan, commercial use allowed |
+| `sounds/phone/open` (Pixabay user 47313572, 316850), `sounds/phone/close` (litupsubway, 513359), `sounds/phone/bz_sticker` (vadim_makes_sound, 547860), `sounds/phone/bz_buddy_request` (Universfield, 352705), `sounds/phone/bz_buddy_accepted` (soundshelfstudio, 513565), `sounds/ui/click` (arnav_geddada, 374229), `sounds/ui/choice_confirm` (Universfield, 124464), `sounds/ui/hour_tick` (freesound_community, 88027), `sounds/day/alarm_looped` (freesound_community, 95792), `sounds/doors/office_door` (DRAGON-STUDIO, 450444 + 382723), `sounds/doors/badge_beep` (u_68csiaifb5, 410380), `sounds/doors/swing_door` (freesound_community, 38280), `sounds/hygiene/hand_wash` (freesound_community, 101868), `sounds/peeler/jam_thud` (floraphonic + DRAGON-STUDIO, 193356 + 504039), `sounds/obs/guard_click` (floraphonic, 200422), `sounds/obs/handled` (Universfield, 487898) | Pixabay sound effects (issue #43), cut and levelled from the downloads in `D:\Assets\Audio\CRC\pixabay sfx\` on corvus; owner-picked take. Author and Pixabay id per file; attributions in `/mnt/project-files/audio/pixabay-sfx-attributions.md` | Pixabay Content License: free for commercial use in games, no attribution required |
+| `music/stings/collectible_unlock` | Cut from the Blytung! Malmtoget master (riff from 0:05.5, 4.9 s with a fade-out; also plays at episode end), issue #72; owner-picked take. Masters on corvus in `D:\Assets\Audio\CRC\masters\music\stings\` | own work |
+| `music/lessons/barrerock-i-g/` | Owner's Suno Pro generation "Barrérock i G" (Lars-Owes gitarskole, 2026-10-29). `guitar.mp3` = the Guitar stem; `backing.mp3` = Drums + Bass + FX stems mixed at 0 dB. Stems on corvus in `D:\Assets\Audio\CRC\stems\Barrérock i G Stems\` | Suno Pro plan, commercial use allowed |
+| `music/lessons/<lesson>/` (the other eight: kraftakkord-riff-i-e, boogie-i-a, garasjeblues-i-e, moll-blues-i-am, galopp-i-e, akustisk-plukk-i-am, tostemt-melodi-i-em, nattskift) | Owner's Suno Pro generations (Lars-Owes gitarskole lessons 2-8 and the reward song Nattskift, 2026-11), Fixed-tempo stem download. `guitar.mp3` = the Guitar stem (+2.5 dB in Kraftakkord-riff, where it sat under the drums); `backing.mp3` = Drums + Bass at 0 dB, plus Vocals and Backing Vocals in Nattskift. Near-silent extra stems (Keyboard, Percussion, Brass, Other) left out. Stems on corvus in `D:\Assets\Audio\CRC\stems\<song> Stems (<bpm>BPM) (1)\`; 256 kbps copies in `/mnt/project-files/guitar-stems-*.zip` | Suno Pro plan, commercial use allowed |
+| `music/cover/ofoten` | The Blytung! song "Ofoten" (Suno, made by the owner), whole song levelled as a loop with audio:build; plays on the start screen and on into the game until a place sets its own sound (#187, #188). Master on corvus in `D:\Assets\Audio\CRC\suno songs (mp3 & wav)\Ofoten.wav` | Suno Pro plan, commercial use allowed |
+| `sounds/robots/`, `sounds/ui/robot_target_select`, `robot_target_confirm`, `robot_turn_start`, `ambience/garage/garage_looped` (picked 2026-10-31) | Generated with ElevenLabs Sound Effects v2 for the robot fight sandbox (#147), one of three takes picked by the owner 2026-10-30. Takes, prompts and picks: `/mnt/project-files/audio/sfx-generated/2026-10-29-robots/` (`picked/` holds the masters) | ElevenLabs paid plan, commercial use allowed |
+| `sounds/doors/badge_denied` | Synthesised for the game (two low beeps), issue #43 | own work |
+| `sounds/football/` (kick, fence, net, whistle, cheer, slide) | Generated with ElevenLabs Sound Effects for the kickabout (#143), 2026-10-29; first take of each picked until the owner listens; `slide_1` is the `run_gravel_1` take, used for the slide tackle (#152). Takes: `/mnt/project-files/audio/sfx-generated/2026-10-29-football/` | ElevenLabs paid plan, commercial use allowed |
+| `sounds/phone/letter_arrive`, `sounds/ui/snooze_click`, `chain_reaction`, `sounds/day/speed_camera_flash`, `sounds/luffe/`, `sounds/canteen/jukebox_pick`, `sounds/peeler/stop_alarm` | Generated with ElevenLabs Sound Effects (issue #160), 2026-10-29; one of four takes picked by the owner 2026-10-31. Takes and prompts: `/mnt/project-files/audio/sfx-generated/2026-10-29-episodes/` | ElevenLabs paid plan, commercial use allowed |
+| `vo/event.*` | World event card lines (`says` in content/events/cards.yml, issue #160), ElevenLabs Eleven v4 (owner's account), take b of each, picked by the owner 2026-10-31. Takes a and b: `/mnt/project-files/audio/vo/event_voices/`; text: `narrative/production/event-cards-lines.csv` | ElevenLabs commercial terms (paid plan) |
+| `vo/event.rainy_day.*` | The colleagues' rain barks (`bark.<who>.rain.01`, text in `narrative/production/barks-extra-lines.csv`), ElevenLabs Eleven v4 (owner's account), take a until the owner picks; levelled to -18 LUFS with ffmpeg for the rainy-day card (#191). Takes a and b: `/mnt/project-files/audio/vo/extra_voices/barks/` | ElevenLabs commercial terms (paid plan) |
+| `vo/rush.friday.*` | Rush job "Fredagspallen" voice lines (#142), ElevenLabs Eleven v4 (owner's account), the takes the owner picked on the listening page (2026-10-31). Hanne and Siri use library voices (Kristine - Norwegian (Oslo), Harper). Line ids and text: `narrative/production/rush-friday-lines.csv`; masters (all takes): `/mnt/project-files/audio/vo/rush_voices/rush.friday/`. | ElevenLabs commercial terms (paid plan) |
+| `vo/football.*` | Kickabout voice lines (#143), ElevenLabs Eleven v4 (owner's account), take a until the owner picks; Vegard and Leo voices picked by the owner. `football.bark.send.{happy,vegard}` (#156) are part 3 of the take-a barks in `barks-split/`. Takes a and b and the README: `/mnt/project-files/audio/vo/football/` | ElevenLabs commercial terms (paid plan) |
+| `vo/guitar.*` | Lars-Owe's guitar-school lines (earplugs, lesson intros, results, tips), ElevenLabs Eleven v4 (owner's account), voice Johann, the owner's picked take of each line (2026-11-04, `picks.csv`). Takes, picks and text: `/mnt/project-files/audio/vo/guitar/` (`lytteark.md`). The three `guitar.invite.*` lines are kept there for the main game. | ElevenLabs commercial terms (paid plan) |
+| `vo/fellowship.*` | Lars-Owe's fellowship lines (#98), ElevenLabs Eleven v4 (owner's account), the owner's picked take of each line (2026-10-31). Takes a-d: `/mnt/project-files/audio/vo/fellowship_voices/`; text: `narrative/production/fellowship-lars-lines.csv` | ElevenLabs commercial terms (paid plan) |
+| `vo/` | Episode 0, Episode 1 (`ep01.*`), Episode 2 (`ep02.*`) and Episode 3 (`ep03.*`, issue #69) voice lines, ElevenLabs Eleven v4 (owner's account), take a of each line until the owner picks takes in the listening page; reception, Per's office and canteen recorded by the owner. Masters on corvus in `D:\Assets\Audio\CRC\ep00_voices\`. Line ids and text: the narrative production files (ep00-lines.csv, ep00-day-loop-lines.csv, ep01-lines.csv, ep02-lines.csv, ep03-lines.csv). Episode 1, 2 and 3 masters (takes a and b): `/mnt/project-files/audio/vo/ep01_voices/`, `ep02_voices/`, `ep03_voices/`. Episode 3 adds three voices designed in the same account (Ingrid, Mei Ling, Eeli), under the same terms. | ElevenLabs commercial terms (paid plan) |
+| Einar: 21 `ep00`-`ep03` and `rush.friday.einar.*` lines (2026-11-08) | Re-made in Innherred/Verdal Trøndersk (tag `[Trøndersk] [Innherred dialect, Verdal]`), ElevenLabs Eleven v4 (owner's account), Einar's voice, the take the owner picked on the listening pages 2026-11-08. Picks, texts and masters: `/mnt/project-files/audio/vo-picks-2026-11-08/` (`picks.csv`); all takes: `/mnt/project-files/audio/quota-2026-11-07/`. | ElevenLabs commercial terms (paid plan) |
+
+The current files were rebuilt from the earlier MP3s on 2026-10-05 to fix their levels (they ranged from -20 to -52 LUFS); rebuilding from the original WAVs will give slightly better quality.
