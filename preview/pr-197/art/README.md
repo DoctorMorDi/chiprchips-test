@@ -51,3 +51,16 @@ cut from it (it glides on its own layer). Copied from the approved test pages in
 (`preview/cover-test/layers/` and `preview/cover-test-9x16/layers/`, owner approval 2026-11-08). AI-generated with Codex
 (GPT Image) from our own character references, own work; the layered PSDs are on corvus in `D:\Assets\Cover\`. The logo
 on the cover is `public/brand/chipr-chips-logo.png`. Shown by `src/cover.ts`.
+
+## Flavour lab (#195)
+
+Built by `tools/art/build_flavour_pack.py` from the project folder `art/flavour/`, into `flavour/`:
+
+- `bag/<colour>.webp` (640 x 736): one unprinted grey foil bag tinted to each bag colour (`COLOURS` in the script and in
+  `src/flavour/bag.ts`), `chips.webp` (a pile of plain crisps) and `ingredients/<id>.webp` (256 x 256, one per spice in
+  `content/flavour/lab.yml`). Sources `bag-blank.png`, `chips-pile.png` and `ingredients-sheet.png`: AI-generated with
+  Codex (GPT Image) 2026-11-09 with the owner's bag designs as style reference, own work.
+- `skipper.webp`: the Skipper Chips mascot, and `series/<id>.webp`: the twelve bags of the series. The owner's own brand
+  art, from corvus `assets-and-references/decals/merkevare/` and `decals/produkter/` (the `_1024_` cutouts).
+
+How a bag is put together from these: `bagSvg` in `src/flavour/bag.ts`.
