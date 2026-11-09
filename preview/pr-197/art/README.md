@@ -67,4 +67,5 @@ Built by `tools/art/build_flavour_pack.py` from the project folder `art/flavour/
   Image) 2026-11-09 from a description of the game's rendered rooms, own work. A stand-in: replace it with a render of
   the lab from the Blender scene when there is one (same file name, nothing else changes).
 
-How a bag is put together from these: `bagSvg` in `src/flavour/bag.ts`.
+How a bag is put together from these: `bagSvg` in `src/flavour/bag.ts`. The name is set in Baloo 2 ExtraBold
+(`@fontsource/baloo-2`, SIL OFL 1.1), squeezed a little, which comes close to the lettering on the series.
