@@ -1,0 +1,63 @@
+{
+ "state": "brown",
+ "shot": "ep3_chips",
+ "image": "ep3_chips.webp",
+ "size": [
+  1920,
+  1080
+ ],
+ "projection": "perspective",
+ "kind": "ep3",
+ "params": {
+  "dark_share": 0.6,
+  "slices": "dark",
+  "store_c": "4.0",
+  "thermo_c": "6.0",
+  "reject": "1.8",
+  "mode": "waste"
+ },
+ "built_params": null,
+ "signals": {
+  "chips": {
+   "what": "chips on the sorter belt and the de-oiler (golden, or many dark ones)",
+   "box_px": [
+    0,
+    280,
+    1916,
+    1052
+   ],
+   "boxes_px": [
+    [
+     0,
+     280,
+     1916,
+     1052
+    ]
+   ],
+   "center_px": [
+    958,
+    666
+   ],
+   "visible_frac": 0.73,
+   "in_frame_frac": 0.22
+  }
+ },
+ "not_visible": [
+  "sorter_screen",
+  "fry_sample",
+  "fry_batches",
+  "fryer",
+  "colour_chart",
+  "fryer_meter",
+  "store_display",
+  "thermometer",
+  "ice_bath"
+ ],
+ "not_in_state": [],
+ "note": "Web copy at 0.7500 x the render; box_px, boxes_px and center_px are scaled to this image. boxes_px are the separate visible patches of each signal (use them as click targets, padded a little); box_px is their union. Points hidden behind other geometry are left out; image pixels with the origin at the top left. Written by scripts/backgrounds/peeler_points.py (issues #84, #92).",
+ "source_size": [
+  2560,
+  1440
+ ],
+ "web_scale": 0.75
+}
