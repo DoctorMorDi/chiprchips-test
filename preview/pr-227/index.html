@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Første dag på Chip’R Chips</title>
+    <script>
+      // The robot fight sandbox (#147) has its own page, robot.html; ?robot is the short way in. Stop this page first
+      // so the game never starts (or touches the save) on the way.
+      if (new URLSearchParams(location.search).has('robot')) {
+        window.stop();
+        location.replace('robot.html' + location.search);
+      }
+      // The flavour lab sandbox (#195) likewise: flavour.html, or ?smak for short.
+      if (new URLSearchParams(location.search).has('smak')) {
+        window.stop();
+        location.replace('flavour.html' + location.search);
+      }
+      // The potato plot sandbox (#212) likewise: plot.html, or ?aker for short.
+      if (new URLSearchParams(location.search).has('aker')) {
+        window.stop();
+        location.replace('plot.html' + location.search);
+      }
+    </script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥔</text></svg>" />
+    <script type="module" crossorigin src="./assets/main-CD9cpxwd.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/i18n-DG7awk3m.js">
+    <link rel="modulepreload" crossorigin href="./assets/phaser.esm-DaUJOnnW.js">
+    <link rel="modulepreload" crossorigin href="./assets/dice-B2oG8VHA.js">
+    <link rel="modulepreload" crossorigin href="./assets/calendar-dzQk_SRF.js">
+    <link rel="modulepreload" crossorigin href="./assets/soundscape-QqfujnN5.js">
+    <link rel="modulepreload" crossorigin href="./assets/audio-BYeE1YAk.js">
+    <link rel="stylesheet" crossorigin href="./assets/phaser-C6nTX9e_.css">
+    <link rel="stylesheet" crossorigin href="./assets/main-DrTeKi0D.css">
+  </head>
+  <body>
+    <div id="stage"></div>
+    <div id="hud" aria-live="polite"></div>
+    <div id="toast" role="status"></div>
+    <main id="ui" aria-live="polite"></main>
+  </body>
+</html>
