@@ -16,6 +16,11 @@
         window.stop();
         location.replace('flavour.html' + location.search);
       }
+      // The repair café sandbox (#218) likewise: repair.html, or ?reparer for short.
+      if (new URLSearchParams(location.search).has('reparer')) {
+        window.stop();
+        location.replace('repair.html' + location.search);
+      }
       // The model kit sandbox (#210) likewise: kit.html, or ?bygg for short.
       if (new URLSearchParams(location.search).has('bygg')) {
         window.stop();
@@ -23,8 +28,8 @@
       }
     </script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥔</text></svg>" />
-    <script type="module" crossorigin src="./assets/main-VKUu3in7.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/i18n-DG7awk3m.js">
+    <script type="module" crossorigin src="./assets/main-CtVCxFBk.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/i18n-BwosyLci.js">
     <link rel="modulepreload" crossorigin href="./assets/dice-DsMbrS9z.js">
     <link rel="modulepreload" crossorigin href="./assets/soundscape-QqfujnN5.js">
     <link rel="modulepreload" crossorigin href="./assets/audio-BYeE1YAk.js">
