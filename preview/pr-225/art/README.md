@@ -94,6 +94,7 @@ with Codex (GPT Image) on 2026-11-11 for the side-activity art round, own work:
 - `gull-flying.webp`, `gull-diving.webp`, `gull-resting.webp`: gulls seen from above.
 - `<id>.webp` (160 x 160): the eight catches and the three lures, named by `art` in the content.
 - `jetty-grill.webp` (1280 x 720): the grill on the jetty.
-- `people/<tom|jari>-off-duty-<nn>-<mood>.webp` (768 x 1152): Tom and Jari off work, from their character refs. Kept here,
-  not in `characters/`, because they are not in the game's cast (no height) yet.
+- `people/<tom|jari|juan-pablo>-off-duty-<nn>-<mood>.webp` (768 x 1152): Tom, Jari and Juan Pablo off work, from their
+  character refs (Juan Pablo's set 2026-11-12). Kept here, not in `characters/`, because Tom and Jari are not in the
+  game's cast (no height) yet and the cast has no off-duty outfit.
 
