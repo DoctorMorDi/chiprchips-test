@@ -31,16 +31,31 @@
         window.stop();
         location.replace('plot.html' + location.search);
       }
+      // The volunteer stall sandbox (#217) likewise: stall.html, or ?bua for short.
+      if (new URLSearchParams(location.search).has('bua')) {
+        window.stop();
+        location.replace('stall.html' + location.search);
+      }
+      // The pub quiz sandbox (#211) likewise: quiz.html, or ?quiz for short.
+      if (new URLSearchParams(location.search).has('quiz')) {
+        window.stop();
+        location.replace('quiz.html' + location.search);
+      }
+      // The mackerel trip sandbox (#213) likewise: fishing.html, or ?fiske for short.
+      if (new URLSearchParams(location.search).has('fiske')) {
+        window.stop();
+        location.replace('fishing.html' + location.search);
+      }
     </script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥔</text></svg>" />
-    <script type="module" crossorigin src="./assets/main-CkPlE-zP.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/i18n-Ymto6Gmc.js">
-    <link rel="modulepreload" crossorigin href="./assets/phaser.esm-Dy6EF7im.js">
+    <script type="module" crossorigin src="./assets/main-DWhCv0z3.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/i18n-tlkZsxG8.js">
+    <link rel="modulepreload" crossorigin href="./assets/phaser.esm-CI-RB_16.js">
     <link rel="modulepreload" crossorigin href="./assets/dice-B2oG8VHA.js">
     <link rel="modulepreload" crossorigin href="./assets/calendar-dzQk_SRF.js">
     <link rel="modulepreload" crossorigin href="./assets/soundscape-QqfujnN5.js">
     <link rel="modulepreload" crossorigin href="./assets/audio-BYeE1YAk.js">
-    <link rel="stylesheet" crossorigin href="./assets/phaser-B8ELNHst.css">
+    <link rel="stylesheet" crossorigin href="./assets/phaser-gVSojcT2.css">
     <link rel="stylesheet" crossorigin href="./assets/main-Do47LITJ.css">
   </head>
   <body>

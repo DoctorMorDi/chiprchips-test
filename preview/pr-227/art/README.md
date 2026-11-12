@@ -82,3 +82,19 @@ Built by `tools/art/build_flavour_pack.py` from the project folder `art/flavour/
 
 How a bag is put together from these: `bagSvg` in `src/flavour/bag.ts`. The name is set in Baloo 2 ExtraBold
 (`@fontsource/baloo-2`, SIL OFL 1.1), squeezed a little, which comes close to the lettering on the series.
+
+## Mackerel trip (#213)
+
+In `fishing/`, made from the project folder `art/makrellturen/` (resized to WebP, nothing else changed). All AI-generated
+with Codex (GPT Image) on 2026-11-11 for the side-activity art round, own work:
+
+- `sea-chart.webp` (1000 x 700): the painted chart, laid out to match `sea` in `content/fishing/trip.yml` (islands,
+  skerries, kelp, sand, deep water, Tom's jetty). Checked against the layout with `sea-chart-check-overlay.jpg`.
+- `boat-top.webp` and `boat-side.webp`: Tom's little boat from above (bow up) and from the side (bow right).
+- `gull-flying.webp`, `gull-diving.webp`, `gull-resting.webp`: gulls seen from above.
+- `<id>.webp` (160 x 160): the eight catches and the three lures, named by `art` in the content.
+- `jetty-grill.webp` (1280 x 720): the grill on the jetty.
+- `people/<tom|jari|juan-pablo>-off-duty-<nn>-<mood>.webp` (768 x 1152): Tom, Jari and Juan Pablo off work, from their
+  character refs (Juan Pablo's set 2026-11-12). Kept here, not in `characters/`, because Tom and Jari are not in the
+  game's cast (no height) yet and the cast has no off-duty outfit.
+
