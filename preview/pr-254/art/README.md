@@ -33,8 +33,18 @@ Placing a character: pick a placement row (or interpolate), scale the cutout so 
 
 Built by `tools/art/build_football_pack.py` from the project folder `art/football/` (AI-generated with Codex image_gen,
 2026-10-29/30, own work): `football/pitch.webp` (the top-down pitch in the match), `backgrounds/kickabout_fence.webp`
-+ `.json` (after the match), `characters/<slug>/football/<look|talking|happy>.webp` (the players in kit, same cutout
-format as above) and the BuddyZone photos `content/buddyzone/photos/r-kickabout-happy*.webp`.
++ `.json` (after the match), `characters/<slug>/football/<look|talking|happy>.webp` (the players in their training
+clothes, same cutout format as above) and the BuddyZone photos `content/buddyzone/photos/r-kickabout-happy*.webp`.
+
+## Company football kit (#243)
+
+`characters/<slug>/crc-kit/<neutral|talking|happy>.webp` for Happy, Vegard, Adam, Leo and Marek: the same players in
+the company team's kit (navy jersey with orange trim, orange shorts, navy socks), worn in company matches (scene
+`company_match` in `content/scene-art.json`). Built by `tools/art/build_football_pack.py` from the project folder
+`art/football/<slug>_crc-kit_<pose>.png`. Source: AI-generated with Codex's built-in image generation (OpenAI GPT
+Image) on corvus, 2026-11-05, for this project; own work, same licence as the rest of the game's art. Approved by the
+owner 2026-11-06. Not recorded: the exact model version, and whether the backgrounds were removed in a separate step.
+The team's running figures on the pitch are rows of the map's people sheet: see `public/map-art/sprites/README.md`.
 
 ## Guitar sandbox (#169)
 
@@ -82,6 +92,16 @@ Built by `tools/art/build_flavour_pack.py` from the project folder `art/flavour/
 
 How a bag is put together from these: `bagSvg` in `src/flavour/bag.ts`. The name is set in Baloo 2 ExtraBold
 (`@fontsource/baloo-2`, SIL OFL 1.1), squeezed a little, which comes close to the lettering on the series.
+
+## BuddyZone event photos (#235)
+
+`content/buddyzone/photos/r-<id>.webp` for the reaction posts in `content/buddyzone/reactions.yml` that react to what the
+player did (batch P1: rubber rat, padlock, Blytung!, Luffe, the Friday pallet, coffee, Skipper's hairnet, spring sun, the
+episode outcomes). AI-generated with Codex (GPT Image) 2026-11-10/11 from our own character references, own work; the
+owner picked one of four variants per post and approved the finals on 2026-11-11. Prompts in the project folder
+`buddyzone/event-photos/prompts-p1.md` and `prompts-p1-final.md`; full-size PNGs on corvus in
+`test-results\buddyzone-event\finals\`. 1080 px wide, WebP q82. `lars-festival-song` and `noor-skipper-hairnet` have
+more than one approved photo (`-1` ... `-4`); the post shows one of them (`photos:` in reactions.yml).
 
 ## Mackerel trip (#213)
 

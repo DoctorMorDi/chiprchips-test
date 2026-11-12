@@ -28,7 +28,14 @@
    "happy": 15,
    "vegard": 16,
    "adam": 17,
-   "leo": 18
+   "leo": 18,
+   "player_kit": 19,
+   "happy_kit": 20,
+   "leo_kit": 21,
+   "marek_kit": 22,
+   "adam_kit": 23,
+   "vegard_kit": 24,
+   "eeli_kit": 25
   },
   "idle": 0,
   "walk": [

@@ -7,6 +7,9 @@ size in the game).
 - `people.png`: one row per person (`sprites.json` → `people.rows`): frame 0 standing, frames 1-8 a walk cycle.
   People are drawn at 1.6x real size so they read on the map. The player wears the white coverall and a hairnet; the
   colleagues wear what they wear where the map mostly shows them (see `LOOKS` in `build_sprites.py`).
+- Rows named `<person>_kit` (#243): the company football team in its kit (navy jersey, orange shorts, navy socks; the
+  keeper in green), used on the pitch in company matches (`figure` in `src/game/league.ts`). The map never shows them.
+  The kit colours are a parameter (`KITS` in `build_sprites.py`), so other teams can get rows.
 - `forklift.png`, `pallet_truck.png`: RVL kit trucks at 1.3x real size, forks pointing down.
 - Every sprite faces DOWN on the map; the game rotates it to the direction of travel (true top-down, so this is exact).
 - A dark 1 px outline keeps white coveralls readable on the light floors.
