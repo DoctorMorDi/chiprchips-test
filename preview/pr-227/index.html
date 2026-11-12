@@ -16,6 +16,16 @@
         window.stop();
         location.replace('flavour.html' + location.search);
       }
+      // The repair café sandbox (#218) likewise: repair.html, or ?reparer for short.
+      if (new URLSearchParams(location.search).has('reparer')) {
+        window.stop();
+        location.replace('repair.html' + location.search);
+      }
+      // The model kit sandbox (#210) likewise: kit.html, or ?bygg for short.
+      if (new URLSearchParams(location.search).has('bygg')) {
+        window.stop();
+        location.replace('kit.html' + location.search);
+      }
       // The potato plot sandbox (#212) likewise: plot.html, or ?aker for short.
       if (new URLSearchParams(location.search).has('aker')) {
         window.stop();
@@ -23,15 +33,15 @@
       }
     </script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥔</text></svg>" />
-    <script type="module" crossorigin src="./assets/main-CD9cpxwd.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/i18n-DG7awk3m.js">
-    <link rel="modulepreload" crossorigin href="./assets/phaser.esm-DaUJOnnW.js">
+    <script type="module" crossorigin src="./assets/main-CkPlE-zP.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/i18n-Ymto6Gmc.js">
+    <link rel="modulepreload" crossorigin href="./assets/phaser.esm-Dy6EF7im.js">
     <link rel="modulepreload" crossorigin href="./assets/dice-B2oG8VHA.js">
     <link rel="modulepreload" crossorigin href="./assets/calendar-dzQk_SRF.js">
     <link rel="modulepreload" crossorigin href="./assets/soundscape-QqfujnN5.js">
     <link rel="modulepreload" crossorigin href="./assets/audio-BYeE1YAk.js">
-    <link rel="stylesheet" crossorigin href="./assets/phaser-C6nTX9e_.css">
-    <link rel="stylesheet" crossorigin href="./assets/main-DrTeKi0D.css">
+    <link rel="stylesheet" crossorigin href="./assets/phaser-B8ELNHst.css">
+    <link rel="stylesheet" crossorigin href="./assets/main-Do47LITJ.css">
   </head>
   <body>
     <div id="stage"></div>
