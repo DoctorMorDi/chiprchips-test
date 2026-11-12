@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Første dag på Chip’R Chips</title>
+    <script>
+      // The robot fight sandbox (#147) has its own page, robot.html; ?robot is the short way in. Stop this page first
+      // so the game never starts (or touches the save) on the way.
+      if (new URLSearchParams(location.search).has('robot')) {
+        window.stop();
+        location.replace('robot.html' + location.search);
+      }
+      // The flavour lab sandbox (#195) likewise: flavour.html, or ?smak for short.
+      if (new URLSearchParams(location.search).has('smak')) {
+        window.stop();
+        location.replace('flavour.html' + location.search);
+      }
+      // The repair café sandbox (#218) likewise: repair.html, or ?reparer for short.
+      if (new URLSearchParams(location.search).has('reparer')) {
+        window.stop();
+        location.replace('repair.html' + location.search);
+      }
+      // The model kit sandbox (#210) likewise: kit.html, or ?bygg for short.
+      if (new URLSearchParams(location.search).has('bygg')) {
+        window.stop();
+        location.replace('kit.html' + location.search);
+      }
+      // The volunteer stall sandbox (#217) likewise: stall.html, or ?bua for short.
+      if (new URLSearchParams(location.search).has('bua')) {
+        window.stop();
+        location.replace('stall.html' + location.search);
+      }
+      // The pub quiz sandbox (#211) likewise: quiz.html, or ?quiz for short.
+      if (new URLSearchParams(location.search).has('quiz')) {
+        window.stop();
+        location.replace('quiz.html' + location.search);
+      }
+      // The mackerel trip sandbox (#213) likewise: fishing.html, or ?fiske for short.
+      if (new URLSearchParams(location.search).has('fiske')) {
+        window.stop();
+        location.replace('fishing.html' + location.search);
+      }
+    </script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥔</text></svg>" />
+    <script type="module" crossorigin src="./assets/main-Dge8mJMV.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/i18n-tlkZsxG8.js">
+    <link rel="modulepreload" crossorigin href="./assets/dice-DDBu96L6.js">
+    <link rel="modulepreload" crossorigin href="./assets/soundscape-QqfujnN5.js">
+    <link rel="modulepreload" crossorigin href="./assets/audio-BYeE1YAk.js">
+    <link rel="stylesheet" crossorigin href="./assets/dice-gVSojcT2.css">
+    <link rel="stylesheet" crossorigin href="./assets/main-Do47LITJ.css">
+  </head>
+  <body>
+    <div id="stage"></div>
+    <div id="hud" aria-live="polite"></div>
+    <div id="toast" role="status"></div>
+    <main id="ui" aria-live="polite"></main>
+  </body>
+</html>
