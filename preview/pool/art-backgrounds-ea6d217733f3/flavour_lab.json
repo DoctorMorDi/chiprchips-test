@@ -1,0 +1,97 @@
+{
+ "id": "flavour_lab",
+ "image": "flavour_lab.webp",
+ "size": [
+  1920,
+  1080
+ ],
+ "source_image": "lab-room-render.png",
+ "source_box": [
+  480,
+  360,
+  2400,
+  1440
+ ],
+ "scene_blend": "crc_plant_bg.blend",
+ "use": "Smakslaben: Siri asks the player in (#282)",
+ "camera": {
+  "pos_m": [
+   9.9,
+   -36.5,
+   1.5
+  ],
+  "target_m": [
+   9.9,
+   -39.5,
+   1.5
+  ],
+  "lens_mm": 12.4,
+  "sensor_mm": 36.0,
+  "fit": "horizontal",
+  "exposure": -0.6,
+  "rot_euler_deg": [
+   -90.0,
+   180.0,
+   -0.0
+  ]
+ },
+ "horizon_y_px": 360.0,
+ "eye_height_m": 1.5,
+ "note": "The bench and the fridges start about 2.5 m from the camera: keep spots at 2.0 to 2.2 m.",
+ "placement": [
+  {
+   "dist_m": 2.0,
+   "feet_y_px": 1021.3,
+   "head_y_px": 249.8,
+   "person_175_px": 771.5
+  },
+  {
+   "dist_m": 2.5,
+   "feet_y_px": 889.1,
+   "head_y_px": 271.8,
+   "person_175_px": 617.3
+  },
+  {
+   "dist_m": 3.0,
+   "feet_y_px": 800.9,
+   "head_y_px": 286.5,
+   "person_175_px": 514.4
+  },
+  {
+   "dist_m": 4.0,
+   "feet_y_px": 690.7,
+   "head_y_px": 304.9,
+   "person_175_px": 385.8
+  },
+  {
+   "dist_m": 5.0,
+   "feet_y_px": 624.5,
+   "head_y_px": 315.9,
+   "person_175_px": 308.6
+  },
+  {
+   "dist_m": 6.0,
+   "feet_y_px": 580.4,
+   "head_y_px": 323.3,
+   "person_175_px": 257.1
+  },
+  {
+   "dist_m": 8.0,
+   "feet_y_px": 525.3,
+   "head_y_px": 332.4,
+   "person_175_px": 192.9
+  },
+  {
+   "dist_m": 10.0,
+   "feet_y_px": 492.3,
+   "head_y_px": 338.0,
+   "person_175_px": 154.3
+  },
+  {
+   "dist_m": 14.0,
+   "feet_y_px": 454.5,
+   "head_y_px": 344.3,
+   "person_175_px": 110.2
+  }
+ ]
+}

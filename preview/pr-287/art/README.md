@@ -103,7 +103,8 @@ Built by `tools/art/build_flavour_pack.py` from the project folder `art/flavour/
   Re-rendered 2026-11-13 after the owner's review of the picture (#282). `smakslaben/lab-background/smak_fixes.py`
   dresses the room in memory before the render; the blend and the lab kit scripts are untouched, and the kit faults
   are listed for the WORLD pipeline. What it changes: the fire extinguisher (model and sign from the owned Cybernetic
-  Walrus "Factory Interior" pack) and a fire blanket box hang on the wall instead of half inside it; a smaller
+  Walrus "Factory Interior" pack) hangs on the wall instead of half inside it, and the fire blanket box hangs on the
+  back wall beside the fryer, where its text is whole in every cut the game uses; a smaller
   food-waste step bin with a flush label stands clear of the bench leg; the socket trunking stands further out; the
   shower and eyewash signs are larger and beside the shower; fridge and freezer are grey against the white wall; the
   eyewash has two heads over the bowl; the waste cans are grey with larger labels (`tex/T_SMAK_*.png`, own work).
