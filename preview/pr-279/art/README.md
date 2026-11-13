@@ -118,3 +118,20 @@ with Codex (GPT Image) on 2026-11-11 for the side-activity art round, own work:
   character refs (Juan Pablo's set 2026-11-12). Kept here, not in `characters/`, because Tom and Jari are not in the
   game's cast (no height) yet and the cast has no off-duty outfit.
 
+
+## Sled race (#214, round 4)
+
+Built by `tools/art/build_sled_pack.py` from the project folder `art/rattkjelke/source/` into `sled/`. All
+AI-generated with Codex (GPT Image) on 2026-11-13 for the sled race's art round, own work, in style B ("simpler and
+brighter", picked by the owner); full-size PNGs also on corvus in `test-results\rattkjelke-<sled|hill|luffe|winter>\`.
+Seen from straight above, facing up the image, with no weather or sun baked in. Where things sit in them: `SLED`,
+`WHEEL_Y`, `POLE_BASE` in `src/sled/art.ts`.
+
+- `hill/`: `snow.webp` (512 x 512 seamless tile), `spruce-1`, `spruce-2`, `stone`, `hay`, `ice`, `slush`, `ramp` (lip
+  at the bottom), `pole-red`, `pole-blue`, `finish` (the inflatable finish bar), each cut to what is in it.
+- `sled/`: `runners-narrow`, `runners-wide`, `body`, `wheel`, `driver` (you, in a helmet: no face), `einar` (helmet
+  with Luffe ears). Six layers in one shared frame (268 x 423, 1.5 x 2.36 m) that line up on top of each other.
+- `luffe/`: `sitting`, `run-1`, `run-2` (two running frames), `peek` (in Einar's sweater, when he rides along).
+- `people/<slug>-<nn>-<mood>.webp` (768 x 1152): Einar, Lars-Owe (parka, beanie, sunglasses, megaphone) and Vegard
+  (orienteering jacket) in winter clothes, made from their character poses with the same framing. Einar's helmet is a
+  separate source layer (`winter/einar/helmet-luffe.png`) that the script puts on each pose's head.
