@@ -44,6 +44,11 @@ the company team's kit (navy jersey with orange trim, orange shorts, navy socks)
 `art/football/<slug>_crc-kit_<pose>.png`. Source: AI-generated with Codex's built-in image generation (OpenAI GPT
 Image) on corvus, 2026-11-05, for this project; own work, same licence as the rest of the game's art. Approved by the
 owner 2026-11-06. Not recorded: the exact model version, and whether the backgrounds were removed in a separate step.
+Eeli, the keeper (#249): `characters/eeli/crc-kit/<neutral|talking|happy>.webp`, in the keeper's green jersey with navy
+shorts and socks. Built by the same script from `art/football/eeli_crc-kit_<pose>.png`. Source: AI-generated with
+Codex's built-in image generation (OpenAI GPT Image) on corvus, 2026-11-13, for this project, with his approved look
+(`assets-and-references/characters/eeli/`) as the identity reference; own work, same licence as the rest of the game's
+art. The backgrounds came transparent from the generator; no separate background removal.
 The team's running figures on the pitch are rows of the map's people sheet: see `public/map-art/sprites/README.md`.
 
 ## Guitar sandbox (#169)
