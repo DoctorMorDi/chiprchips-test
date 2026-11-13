@@ -103,11 +103,14 @@ Built by `tools/art/build_flavour_pack.py` from the project folder `art/flavour/
   Re-rendered 2026-11-13 after the owner's review of the picture (#282). `smakslaben/lab-background/smak_fixes.py`
   dresses the room in memory before the render; the blend and the lab kit scripts are untouched, and the kit faults
   are listed for the WORLD pipeline. What it changes: the fire extinguisher (model and sign from the owned Cybernetic
-  Walrus "Factory Interior" pack) hangs on the wall instead of half inside it, and the fire blanket box hangs on the
-  back wall beside the fryer, where its text is whole in every cut the game uses; a smaller
-  food-waste step bin with a flush label stands clear of the bench leg; the socket trunking stands further out; the
+  Walrus "Factory Interior" pack) hangs on the wall instead of half inside it, with its sign straight above it and
+  the fire blanket box beside the sign, as one fire point at the end of the fry bench; a smaller
+  food-waste step bin with a flush label stands clear of the bench leg; the socket trunking stands further out, is
+  light grey and ends before the fire point; the
   shower and eyewash signs are larger and beside the shower; fridge and freezer are grey against the white wall; the
   eyewash has two heads over the bowl; the waste cans are grey with larger labels (`tex/T_SMAK_*.png`, own work).
+  The lab's own stage shows the right part of the cut on narrow screens (`object-position` in
+  `src/flavour/flavour.css`), so the fire point is whole on phones too.
   Rules for the next room: the `blender-room-rules` skill.
 - `backgrounds/flavour_lab.webp` + `.json` (1920 x 1080): a wider cut of the same render (`SCENE_BOX`) with its placement
   table moved along, for the scene on the game's stage where Siri asks the player in (#282). People stand about 2 m
