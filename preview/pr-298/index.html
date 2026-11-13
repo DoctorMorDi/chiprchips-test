@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Første dag på Chip’R Chips</title>
+    <script>
+      // The robot fight sandbox (#147) has its own page, robot.html; ?robot is the short way in. Stop this page first
+      // so the game never starts (or touches the save) on the way.
+      if (new URLSearchParams(location.search).has('robot')) {
+        window.stop();
+        location.replace('robot.html' + location.search);
+      }
+      // The flavour lab sandbox (#195) likewise: flavour.html, or ?smak for short.
+      if (new URLSearchParams(location.search).has('smak')) {
+        window.stop();
+        location.replace('flavour.html' + location.search);
+      }
+      // The repair café sandbox (#218) likewise: repair.html, or ?reparer for short.
+      if (new URLSearchParams(location.search).has('reparer')) {
+        window.stop();
+        location.replace('repair.html' + location.search);
+      }
+      // The steering-sled race (#214) likewise: sled.html, or ?kjelke for short.
+      if (new URLSearchParams(location.search).has('kjelke')) {
+        window.stop();
+        location.replace('sled.html' + location.search);
+      }
+      // The model kit sandbox (#210) likewise: kit.html, or ?bygg for short.
+      if (new URLSearchParams(location.search).has('bygg')) {
+        window.stop();
+        location.replace('kit.html' + location.search);
+      }
+      // The orienteering sandbox (#215) likewise: orienteering.html, or ?orientering for short.
+      if (new URLSearchParams(location.search).has('orientering')) {
+        window.stop();
+        location.replace('orienteering.html' + location.search);
+      }
+      // The potato plot sandbox (#212) likewise: plot.html, or ?aker for short.
+      if (new URLSearchParams(location.search).has('aker')) {
+        window.stop();
+        location.replace('plot.html' + location.search);
+      }
+      // The volunteer stall sandbox (#217) likewise: stall.html, or ?bua for short.
+      if (new URLSearchParams(location.search).has('bua')) {
+        window.stop();
+        location.replace('stall.html' + location.search);
+      }
+      // The pub quiz sandbox (#211) likewise: quiz.html, or ?quiz for short.
+      if (new URLSearchParams(location.search).has('quiz')) {
+        window.stop();
+        location.replace('quiz.html' + location.search);
+      }
+      // The mackerel trip sandbox (#213) likewise: fishing.html, or ?fiske for short.
+      if (new URLSearchParams(location.search).has('fiske')) {
+        window.stop();
+        location.replace('fishing.html' + location.search);
+      }
+      // The city map (#294): kart.html, or ?kart for short.
+      if (new URLSearchParams(location.search).has('kart')) {
+        window.stop();
+        location.replace('kart.html' + location.search);
+      }
+    </script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥔</text></svg>" />
+    <script type="module" crossorigin src="./assets/main-CFxBNoS2.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/i18n-DlRBrqu-.js">
+    <link rel="modulepreload" crossorigin href="./assets/phaser.esm-QLV9YV6I.js">
+    <link rel="modulepreload" crossorigin href="./assets/calendar-DdCdNFRS.js">
+    <link rel="modulepreload" crossorigin href="./assets/state-DF12p7bw.js">
+    <link rel="modulepreload" crossorigin href="./assets/season-DsqrceaP.js">
+    <link rel="modulepreload" crossorigin href="./assets/dice-B2oG8VHA.js">
+    <link rel="modulepreload" crossorigin href="./assets/soundscape-QqfujnN5.js">
+    <link rel="modulepreload" crossorigin href="./assets/audio-DJlMO-LG.js">
+    <link rel="modulepreload" crossorigin href="./assets/news-BLAolSKO.js">
+    <link rel="modulepreload" crossorigin href="./assets/calendar-BLTdHR4R.js">
+    <link rel="stylesheet" crossorigin href="./assets/phaser-CiEvS8LH.css">
+    <link rel="stylesheet" crossorigin href="./assets/main-DBvd4yuk.css">
+  </head>
+  <body>
+    <div id="stage"></div>
+    <div id="hud" aria-live="polite"></div>
+    <div id="toast" role="status"></div>
+    <main id="ui" aria-live="polite"></main>
+  </body>
+</html>
