@@ -1,0 +1,85 @@
+{
+ "id": "peeler",
+ "image": "peeler.webp",
+ "size": [
+  1920,
+  1080
+ ],
+ "scene_blend": "crc_plant_bg.blend",
+ "peeler_state": "running",
+ "use": "ep00 peeling_machine (8A-8F)",
+ "camera": {
+  "pos_m": [
+   -7.4,
+   -8.6,
+   1.6
+  ],
+  "target_m": [
+   -11.25,
+   -11.85,
+   1.0
+  ],
+  "lens_mm": 24,
+  "sensor_mm": 36.0,
+  "fit": "horizontal",
+  "exposure": 0.0,
+  "rot_euler_deg": [
+   83.21,
+   -0.0,
+   130.17
+  ]
+ },
+ "horizon_y_px": 387.6,
+ "eye_height_m": 1.6,
+ "placement": [
+  {
+   "dist_m": 3.0,
+   "feet_y_px": 1038.6,
+   "head_y_px": 322.3,
+   "person_175_px": 716.3
+  },
+  {
+   "dist_m": 4.0,
+   "feet_y_px": 883.2,
+   "head_y_px": 338.7,
+   "person_175_px": 544.5
+  },
+  {
+   "dist_m": 5.0,
+   "feet_y_px": 787.7,
+   "head_y_px": 348.5,
+   "person_175_px": 439.3
+  },
+  {
+   "dist_m": 6.0,
+   "feet_y_px": 723.1,
+   "head_y_px": 355.0,
+   "person_175_px": 368.0
+  },
+  {
+   "dist_m": 8.0,
+   "feet_y_px": 641.2,
+   "head_y_px": 363.1,
+   "person_175_px": 278.0
+  },
+  {
+   "dist_m": 10.0,
+   "feet_y_px": 591.4,
+   "head_y_px": 368.0,
+   "person_175_px": 223.4
+  },
+  {
+   "dist_m": 14.0,
+   "feet_y_px": 533.9,
+   "head_y_px": 373.6,
+   "person_175_px": 160.3
+  }
+ ],
+ "note": "Web copy at 0.7500 x the render; all *_px values and px_per_* are already scaled to this image. Web cutouts (public/art/characters) are 768 x 1152 with feet at 97 % of the height. Character cutouts (crc-learning-game assets-and-references/characters/*/scenes, 1024 x 1536, feet at ~97 % of the image height, head near the top): scale = person_px / (0.97 * cutout_height_px) where person_px = person_175_px scaled by the character's height / 1.75 m; place the cutout so its bottom edge is at feet_y_px + 0.03 * scaled_height (interpolate person_175_px / feet_y_px between rows). The table is projection only: it says nothing about furniture or walls, so pick a spot with clear floor (or draw foreground objects over the character with a mask). Rows are measured straight ahead of the camera; for this roll-free camera a figure standing anywhere on the same image row has the same height (only its width foreshortens towards the frame edges).",
+ "source_size": [
+  2560,
+  1440
+ ],
+ "source_image": "peeler.png",
+ "web_scale": 0.75
+}
