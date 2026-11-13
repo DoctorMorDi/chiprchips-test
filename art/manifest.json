@@ -2951,6 +2951,294 @@
     1152
    ],
    "feet_frac": 0.97
+  },
+  {
+   "character": "vegard",
+   "id": "pose-01-neutral",
+   "kind": "pose",
+   "source": "vegard_pose-01-neutral.png",
+   "image": "characters/vegard/pose-01-neutral.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "vegard",
+   "id": "pose-02-talking",
+   "kind": "pose",
+   "source": "vegard_pose-02-talking.png",
+   "image": "characters/vegard/pose-02-talking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "vegard",
+   "id": "pose-03-listening",
+   "kind": "pose",
+   "source": "vegard_pose-03-listening.png",
+   "image": "characters/vegard/pose-03-listening.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "vegard",
+   "id": "pose-04-happy",
+   "kind": "pose",
+   "source": "vegard_pose-04-happy.png",
+   "image": "characters/vegard/pose-04-happy.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "vegard",
+   "id": "pose-05-worried",
+   "kind": "pose",
+   "source": "vegard_pose-05-worried.png",
+   "image": "characters/vegard/pose-05-worried.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "vegard",
+   "id": "pose-06-annoyed",
+   "kind": "pose",
+   "source": "vegard_pose-06-annoyed.png",
+   "image": "characters/vegard/pose-06-annoyed.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "vegard",
+   "id": "pose-07-thinking",
+   "kind": "pose",
+   "source": "vegard_pose-07-thinking.png",
+   "image": "characters/vegard/pose-07-thinking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "vegard",
+   "id": "pose-08-pointing",
+   "kind": "pose",
+   "source": "vegard_pose-08-pointing.png",
+   "image": "characters/vegard/pose-08-pointing.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lukaz",
+   "id": "pose-01-neutral",
+   "kind": "pose",
+   "source": "lukaz_pose-01-neutral.png",
+   "image": "characters/lukaz/pose-01-neutral.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lukaz",
+   "id": "pose-02-talking",
+   "kind": "pose",
+   "source": "lukaz_pose-02-talking.png",
+   "image": "characters/lukaz/pose-02-talking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lukaz",
+   "id": "pose-03-listening",
+   "kind": "pose",
+   "source": "lukaz_pose-03-listening.png",
+   "image": "characters/lukaz/pose-03-listening.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lukaz",
+   "id": "pose-04-happy",
+   "kind": "pose",
+   "source": "lukaz_pose-04-happy.png",
+   "image": "characters/lukaz/pose-04-happy.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lukaz",
+   "id": "pose-05-worried",
+   "kind": "pose",
+   "source": "lukaz_pose-05-worried.png",
+   "image": "characters/lukaz/pose-05-worried.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lukaz",
+   "id": "pose-06-annoyed",
+   "kind": "pose",
+   "source": "lukaz_pose-06-annoyed.png",
+   "image": "characters/lukaz/pose-06-annoyed.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lukaz",
+   "id": "pose-07-thinking",
+   "kind": "pose",
+   "source": "lukaz_pose-07-thinking.png",
+   "image": "characters/lukaz/pose-07-thinking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "lukaz",
+   "id": "pose-08-pointing",
+   "kind": "pose",
+   "source": "lukaz_pose-08-pointing.png",
+   "image": "characters/lukaz/pose-08-pointing.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "kristoffer",
+   "id": "pose-01-neutral",
+   "kind": "pose",
+   "source": "kristoffer_pose-01-neutral.png",
+   "image": "characters/kristoffer/pose-01-neutral.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "kristoffer",
+   "id": "pose-02-talking",
+   "kind": "pose",
+   "source": "kristoffer_pose-02-talking.png",
+   "image": "characters/kristoffer/pose-02-talking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "kristoffer",
+   "id": "pose-03-listening",
+   "kind": "pose",
+   "source": "kristoffer_pose-03-listening.png",
+   "image": "characters/kristoffer/pose-03-listening.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "kristoffer",
+   "id": "pose-04-happy",
+   "kind": "pose",
+   "source": "kristoffer_pose-04-happy.png",
+   "image": "characters/kristoffer/pose-04-happy.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "kristoffer",
+   "id": "pose-05-worried",
+   "kind": "pose",
+   "source": "kristoffer_pose-05-worried.png",
+   "image": "characters/kristoffer/pose-05-worried.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "kristoffer",
+   "id": "pose-06-annoyed",
+   "kind": "pose",
+   "source": "kristoffer_pose-06-annoyed.png",
+   "image": "characters/kristoffer/pose-06-annoyed.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "kristoffer",
+   "id": "pose-07-thinking",
+   "kind": "pose",
+   "source": "kristoffer_pose-07-thinking.png",
+   "image": "characters/kristoffer/pose-07-thinking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "kristoffer",
+   "id": "pose-08-pointing",
+   "kind": "pose",
+   "source": "kristoffer_pose-08-pointing.png",
+   "image": "characters/kristoffer/pose-08-pointing.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
   }
  ],
  "backgrounds": {
