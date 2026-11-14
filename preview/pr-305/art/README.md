@@ -179,3 +179,9 @@ The paths are in `src/orienteering/art.ts`.
   `content/orienteering/forest.yml` (swim, boot, tower, moped, anthill, cairn, sheep, cache, bench, moose).
 - `flag.webp`: the control flag on its stand with the pin punch. `start.webp` (1440 x 810): the start and finish on
   the meadow, no people.
+
+## Home sandbox (#296)
+
+`src/home/art/home_evening.webp` (1280 x 720, bundled by Vite so the preview pool cannot drop it): the evening half of the studio render `home_sheet.jpg` in the project
+folder (Blender render of the player's flat; exact source scene to be confirmed by the owner). Stand-in until the home
+gets its own render with empty spots. Souvenirs are emoji tokens for now.
