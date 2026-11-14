@@ -182,6 +182,6 @@ The paths are in `src/orienteering/art.ts`.
 
 ## Home sandbox (#296)
 
-`backgrounds/home_evening.webp` (1280 x 720): the evening half of the studio render `home_sheet.jpg` in the project
+`src/home/art/home_evening.webp` (1280 x 720, bundled by Vite so the preview pool cannot drop it): the evening half of the studio render `home_sheet.jpg` in the project
 folder (Blender render of the player's flat; exact source scene to be confirmed by the owner). Stand-in until the home
 gets its own render with empty spots. Souvenirs are emoji tokens for now.
