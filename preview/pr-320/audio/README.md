@@ -21,7 +21,7 @@ All files are MP3, 44.1 kHz. Loudness is fixed per folder; how loud each group p
 
 Loops get their last second crossfaded into the start, so they repeat without a seam. One-shots get leading silence trimmed and a 10 ms fade-out.
 
-Background music (`music/cover/`, `music/background/`) plays on its own music bus (`src/audio.ts`, rules in `src/game/music.ts`): the game plays it about 8 dB under the file level (near -24 LUFS), dips it 8 dB more while a voice line plays, and the player has a 🎵 switch and volume slider. Which song plays where is in `src/game/music.ts`.
+Background music (`music/cover/`, `music/background/`) plays on its own music bus (`src/audio.ts`, rules in `src/game/music.ts`): the game plays it about 8 dB under the file level (near -24 LUFS), dips it 8 dB more while a voice line plays, and the player has a 🎵 switch and volume slider. The song list is in `src/game/music.ts`.
 
 ## Masters
 
@@ -72,4 +72,4 @@ The full plan (file list, sources, what plays where) is the "CRC Audio Plan (MVP
 | `vo/bark.ronny.*`, `vo/ep04.*.ronny.*`, `vo/ep05.*.ronny.*` | Ronny re-recorded 2026-11-13 in his approved voice (Thomas Magne, Sørlandsk, `/mnt/project-files/audio/voice-cast.csv`), same text as before. ElevenLabs Eleven v4 (owner's account), the take the owner picked of each line (`/mnt/project-files/audio/redo-2026-11/picks-ronny.csv`; files in `/mnt/project-files/audio/vo/redo-2026-11-12/ronny/`). The 5 barks are in `content/chatter.yml` and play once Ronny is on the map; the Episode 4-5 lines wait for those episodes. | ElevenLabs commercial terms (paid plan) |
 
 The current files were rebuilt from the earlier MP3s on 2026-10-05 to fix their levels (they ranged from -20 to -52 LUFS); rebuilding from the original WAVs will give slightly better quality.
-| `music/background/posebyen` | Owner's Suno Pro instrumental "Posebyen" (made as "Kaffemaskinen", renamed by the owner 2026-11-14, background music plan stage 1), levelled with audio:build from the 320 kbps mp3; plays while walking freely in the offices. WAV master on corvus in `D:\Assets\Audio\CRC\suno songs (mp3 & wav)\instrumental background music\Posebyen.wav` | Suno Pro plan, commercial use allowed |
+| `music/background/posebyen` | Owner's Suno Pro instrumental "Posebyen" (made as "Kaffemaskinen", renamed by the owner 2026-11-14, background music plan stage 1), levelled with audio:build from the 320 kbps mp3; for the city map playlist (stage 2), not used in the factory. WAV master on corvus in `D:\Assets\Audio\CRC\suno songs (mp3 & wav)\instrumental background music\Posebyen.wav` | Suno Pro plan, commercial use allowed |
