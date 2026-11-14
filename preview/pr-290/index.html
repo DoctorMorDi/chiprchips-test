@@ -31,10 +31,20 @@
         window.stop();
         location.replace('kit.html' + location.search);
       }
+      // The player's home sandbox (#296) likewise: home.html, or ?hjem for short.
+      if (new URLSearchParams(location.search).has('hjem')) {
+        window.stop();
+        location.replace('home.html' + location.search);
+      }
       // The orienteering sandbox (#215) likewise: orienteering.html, or ?orientering for short.
       if (new URLSearchParams(location.search).has('orientering')) {
         window.stop();
         location.replace('orienteering.html' + location.search);
+      }
+      // The market sandbox (#293) likewise: marked.html, or ?marked for short.
+      if (new URLSearchParams(location.search).has('marked')) {
+        window.stop();
+        location.replace('marked.html' + location.search);
       }
       // The potato plot sandbox (#212) likewise: plot.html, or ?aker for short.
       if (new URLSearchParams(location.search).has('aker')) {
@@ -61,20 +71,25 @@
         window.stop();
         location.replace('miniputt.html' + location.search);
       }
+      // The CRC-nett sandbox (#297) likewise: crcnett.html, or ?crcnett for short.
+      if (new URLSearchParams(location.search).has('crcnett')) {
+        window.stop();
+        location.replace('crcnett.html' + location.search);
+      }
     </script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥔</text></svg>" />
-    <script type="module" crossorigin src="./assets/main-CmIruY_7.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/i18n-Ci03kxVh.js">
+    <script type="module" crossorigin src="./assets/main-BtqIcSMz.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/i18n-CX3cNQpO.js">
     <link rel="modulepreload" crossorigin href="./assets/calendar-DdCdNFRS.js">
     <link rel="modulepreload" crossorigin href="./assets/dice-B2oG8VHA.js">
-    <link rel="modulepreload" crossorigin href="./assets/calendar-Cm7363jr.js">
+    <link rel="modulepreload" crossorigin href="./assets/calendar-C62rQHZl.js">
     <link rel="modulepreload" crossorigin href="./assets/phaser.esm-C0r02wnA.js">
     <link rel="modulepreload" crossorigin href="./assets/audio-DJlMO-LG.js">
-    <link rel="modulepreload" crossorigin href="./assets/scene-C1rgq-zg.js">
+    <link rel="modulepreload" crossorigin href="./assets/scene-DYsNUu2V.js">
     <link rel="modulepreload" crossorigin href="./assets/soundscape-QqfujnN5.js">
-    <link rel="modulepreload" crossorigin href="./assets/news-Cx6k_684.js">
+    <link rel="modulepreload" crossorigin href="./assets/news-BLAolSKO.js">
     <link rel="stylesheet" crossorigin href="./assets/main-DBvd4yuk.css">
-    <link rel="stylesheet" crossorigin href="./assets/style-CPI7sUtI.css">
+    <link rel="stylesheet" crossorigin href="./assets/style-De61uP8v.css">
   </head>
   <body>
     <div id="stage"></div>
