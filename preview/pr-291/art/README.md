@@ -98,8 +98,23 @@ Built by `tools/art/build_flavour_pack.py` from the project folder `art/flavour/
   `dict(id="labw_fry_front", scene="plant", pos=(9.9, -36.5, 1.5), target=(9.9, -39.5, 1.5), lens=12.4, exposure=-0.6)`.
   The camera is level and wide, and the build script cuts the lower part of the frame (`ROOM_BOX`), because the lab
   shows people from the hips up with the speech bubble below: the bench has to sit high in the picture. The wrapper that
-  ran the render without touching the Blender project is in the project folder
-  `smakslaben/lab-background/render_candidates.py`.
+  runs the render without touching the Blender project is in the project folder
+  `smakslaben/lab-background/render_fixed.py`.
+  Re-rendered 2026-11-13 after the owner's review of the picture (#282). `smakslaben/lab-background/smak_fixes.py`
+  dresses the room in memory before the render; the blend and the lab kit scripts are untouched, and the kit faults
+  are listed for the WORLD pipeline. What it changes: the fire extinguisher (model and sign from the owned Cybernetic
+  Walrus "Factory Interior" pack) hangs on the wall instead of half inside it, with its sign straight above it and
+  the fire blanket box beside the sign, as one fire point at the end of the fry bench; a smaller
+  food-waste step bin with a flush label stands clear of the bench leg; the socket trunking stands further out, is
+  light grey and ends before the fire point; the
+  shower and eyewash signs are larger and beside the shower; fridge and freezer are grey against the white wall; the
+  eyewash has two heads over the bowl; the waste cans are grey with larger labels (`tex/T_SMAK_*.png`, own work).
+  The lab's own stage shows the right part of the cut on narrow screens (`object-position` in
+  `src/flavour/flavour.css`), so the fire point is whole on phones too.
+  Rules for the next room: the `blender-room-rules` skill.
+- `backgrounds/flavour_lab.webp` + `.json` (1920 x 1080): a wider cut of the same render (`SCENE_BOX`) with its placement
+  table moved along, for the scene on the game's stage where Siri asks the player in (#282). People stand about 2 m
+  from the camera: the bench and the fridges start at 2.5 m.
 
 How a bag is put together from these: `bagSvg` in `src/flavour/bag.ts`. The name is set in Baloo 2 ExtraBold
 (`@fontsource/baloo-2`, SIL OFL 1.1), squeezed a little, which comes close to the lettering on the series.
