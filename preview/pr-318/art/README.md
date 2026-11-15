@@ -185,3 +185,34 @@ The paths are in `src/orienteering/art.ts`.
 `src/home/art/home_evening.webp` (1280 x 720, bundled by Vite so the preview pool cannot drop it): the evening half of the studio render `home_sheet.jpg` in the project
 folder (Blender render of the player's flat; exact source scene to be confirmed by the owner). Stand-in until the home
 gets its own render with empty spots. Souvenirs are emoji tokens for now.
+The episode home scenes (`scene: home`, all episodes) use the same picture: `content/scene-art.json` points `home` at
+`home_evening`, and `src/story/bundled.ts` gives the stage the bundled picture and its placement table
+`src/home/art/home_evening.json` (estimated from the kitchen lines: no camera data for this render).
+
+## Market sandbox (#293)
+
+`src/market/art/` (bundled by Vite so the preview pool cannot drop them), imported in `src/market/art.ts`. All
+AI-generated with Codex (GPT Image) on corvus on 2026-11-14, own work, approved by the owner; full-size files on corvus
+in `D:\Assets\Art\codex-2026-11-14\market\` (local repo, branch `codex-art`). No brands or real products: the console
+is a generic black-and-red cartridge console (remade once, the first try looked like a real one).
+
+- `photo-<id>.webp` (960 x 640, from 1536 x 1024): the listing photos for the console (`console`), Lars-Owe's amp
+  (`amp`), the scam e-bike as an overly glossy ad (`ebike`) and Anntu's crates by the barn (`crates`).
+- `item-<id>.webp` (256 x 256, transparent, from 1024 x 1024): the same four things as cut-outs, shown small in the
+  list of listings.
+
+## Miniputt football (#280)
+
+`miniputt/marie-saturday.webp`: Marie on a Saturday at the kids' match (open green parka, grey hoodie, jeans,
+trainers, a coffee cup), 768 x 1152, transparent, the same framing as the character poses. AI-generated with Codex
+(GPT Image) on 2026-11-14, own work, the version the owner picked. Original PNG in the project folder
+`codex-marie-casual-2026-11-14.zip`.
+
+## The city map (#294, painted map)
+
+`citymap/kristiansand.webp` (1536 x 1024, north up, no text): Kristiansand and around, painted with Codex (GPT Image)
+on 2026-11-14, own work, traced from Kartverket N100 land cover. **Kartdata © Kartverket (CC BY 4.0)**: the map page
+shows this credit on the map. Full-size PNG, the earlier style and the reference landmarks
+(`ref/landmarks.json`, x/y in percent of the same frame) are in the project folder
+`codex-kristiansand-map-2026-11-14.zip`. Pins and district names are not in the picture: the page draws them from
+`content/citymap/places.yml`, in the picture's pixels.
