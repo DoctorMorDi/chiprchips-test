@@ -1,0 +1,1 @@
+function e(e){let t=2166136261;for(let n=0;n<e.length;n++)t=Math.imul(t^e.charCodeAt(n),16777619);return t=Math.imul(t^t>>>15,2246822507),((t^t>>>13)>>>0)/2**32}export{e as t};
