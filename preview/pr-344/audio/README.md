@@ -9,7 +9,8 @@ All files are MP3, 44.1 kHz. Loudness is fixed per folder; how loud each group p
 
 | Folder | Channels | Bitrate | Level | Loop |
 | --- | --- | --- | --- | --- |
-| `music/` (background) | stereo | 192 kbps | -16 LUFS | yes |
+| `music/` (cover) | stereo | 192 kbps | -16 LUFS | yes |
+| `music/background/` | stereo | 192 kbps | -16 LUFS | no (played once, then 30-60 s rest) |
 | `music/collectibles/` | stereo | 192 kbps | -16 LUFS | no |
 | `music/stings/` | stereo | 192 kbps | peak -1 dBFS | no |
 | `music/lessons/` (guitar sandbox stems) | stereo | 192 kbps | own level and timing, untouched | no |
@@ -19,6 +20,8 @@ All files are MP3, 44.1 kHz. Loudness is fixed per folder; how loud each group p
 | `vo/` | mono | 96 kbps | -18 LUFS | no |
 
 Loops get their last second crossfaded into the start, so they repeat without a seam. One-shots get leading silence trimmed and a 10 ms fade-out.
+
+Background music (`music/cover/`, `music/background/`) plays on its own music bus (`src/audio.ts`, rules in `src/game/music.ts`): the game plays it about 8 dB under the file level (near -24 LUFS), dips it 8 dB more while a voice line plays, and the player has a 🎵 switch and volume slider. The song list is in `src/game/music.ts`.
 
 ## Masters
 
@@ -36,7 +39,7 @@ The full plan (file list, sources, what plays where) is the "CRC Audio Plan (MVP
 | `music/stings/collectible_unlock` | Cut from the Blytung! Malmtoget master (riff from 0:05.5, 4.9 s with a fade-out; also plays at episode end), issue #72; owner-picked take. Masters on corvus in `D:\Assets\Audio\CRC\masters\music\stings\` | own work |
 | `music/lessons/barrerock-i-g/` | Owner's Suno Pro generation "Barrérock i G" (Lars-Owes gitarskole, 2026-10-29). `guitar.mp3` = the Guitar stem; `backing.mp3` = Drums + Bass + FX stems mixed at 0 dB. Stems on corvus in `D:\Assets\Audio\CRC\stems\Barrérock i G Stems\` | Suno Pro plan, commercial use allowed |
 | `music/lessons/<lesson>/` (the other eight: kraftakkord-riff-i-e, boogie-i-a, garasjeblues-i-e, moll-blues-i-am, galopp-i-e, akustisk-plukk-i-am, tostemt-melodi-i-em, nattskift) | Owner's Suno Pro generations (Lars-Owes gitarskole lessons 2-8 and the reward song Nattskift, 2026-11), Fixed-tempo stem download. `guitar.mp3` = the Guitar stem (+2.5 dB in Kraftakkord-riff, where it sat under the drums); `backing.mp3` = Drums + Bass at 0 dB, plus Vocals and Backing Vocals in Nattskift. Near-silent extra stems (Keyboard, Percussion, Brass, Other) left out. Stems on corvus in `D:\Assets\Audio\CRC\stems\<song> Stems (<bpm>BPM) (1)\`; 256 kbps copies in `/mnt/project-files/guitar-stems-*.zip` | Suno Pro plan, commercial use allowed |
-| `music/cover/ofoten` | The Blytung! song "Ofoten" (Suno, made by the owner), whole song levelled as a loop with audio:build; plays on the start screen and on into the game until a place sets its own sound (#187, #188). Master on corvus in `D:\Assets\Audio\CRC\suno songs (mp3 & wav)\Ofoten.wav` | Suno Pro plan, commercial use allowed |
+| `music/cover/ofoten` | The Blytung! song "Ofoten" (Suno, made by the owner), whole song levelled as a loop with audio:build; plays on the start screen and on into the game until a place or story scene sets its own music (#187, #188). Master on corvus in `D:\Assets\Audio\CRC\suno songs (mp3 & wav)\Ofoten.wav` | Suno Pro plan, commercial use allowed |
 | `sounds/robots/`, `sounds/ui/robot_target_select`, `robot_target_confirm`, `robot_turn_start`, `ambience/garage/garage_looped` (picked 2026-10-31) | Generated with ElevenLabs Sound Effects v2 for the robot fight sandbox (#147), one of three takes picked by the owner 2026-10-30. Takes, prompts and picks: `/mnt/project-files/audio/sfx-generated/2026-10-29-robots/` (`picked/` holds the masters) | ElevenLabs paid plan, commercial use allowed |
 | `sounds/flavour/` (`fry`, `crunch_1`-`3`, `bag_rustle`, `shake`) | Flavour lab sandbox (#195). Cut from Pixabay downloads in the owner's library on corvus (`D:\Assets\Audio\CRC\pixabay sfx\`): `fry` from deep-fryer_sizzle (freesound_community, 68660), `crunch_*` from bite-potato-chips (freesound_community, 83946), `bag_rustle` from rustling-of-chips-bag (freesound_community, 100788; the first 0.7 s), `shake` from salt-shaker (OxidVideos, 414324; the first 0.56 s, played when a spice goes into the bowl). Cuts and source list of the first three: `/mnt/project-files/smakslaben-sfx-candidates.zip` (`SOURCES.md`) | Pixabay Content License: free for commercial use in games, no attribution required |
 | `sounds/sled/snow_skid`, `ice_skid` | Rattkjelke-rennet (#214). From the owner's Unity Asset Store library on corvus (`D:\Assets\Audio\CRC\unity asset store\`), Gamemaster Audio "Footstep and Foley Sounds": `snow_skid` = footstep_snow_slide_03, `ice_skid` = footstep_ice_crunchy_slide_01. Levelled with audio:build; masters in `D:\Assets\Audio\CRC\masters\sounds\sled\` | Unity Asset Store EULA (owner's licence) |
@@ -69,3 +72,4 @@ The full plan (file list, sources, what plays where) is the "CRC Audio Plan (MVP
 | `vo/bark.ronny.*`, `vo/ep04.*.ronny.*`, `vo/ep05.*.ronny.*` | Ronny re-recorded 2026-11-13 in his approved voice (Thomas Magne, Sørlandsk, `/mnt/project-files/audio/voice-cast.csv`), same text as before. ElevenLabs Eleven v4 (owner's account), the take the owner picked of each line (`/mnt/project-files/audio/redo-2026-11/picks-ronny.csv`; files in `/mnt/project-files/audio/vo/redo-2026-11-12/ronny/`). The 5 barks are in `content/chatter.yml` and play once Ronny is on the map; the Episode 4-5 lines wait for those episodes. | ElevenLabs commercial terms (paid plan) |
 
 The current files were rebuilt from the earlier MP3s on 2026-10-05 to fix their levels (they ranged from -20 to -52 LUFS); rebuilding from the original WAVs will give slightly better quality.
+| `music/background/posebyen` | Owner's Suno Pro instrumental "Posebyen" (made as "Kaffemaskinen", renamed by the owner 2026-11-14, background music plan stage 1), levelled with audio:build from the 320 kbps mp3; for the city map playlist (stage 2), not used in the factory. WAV master on corvus in `D:\Assets\Audio\CRC\suno songs (mp3 & wav)\instrumental background music\Posebyen.wav` | Suno Pro plan, commercial use allowed |
