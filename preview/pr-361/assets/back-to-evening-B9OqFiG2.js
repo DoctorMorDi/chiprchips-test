@@ -1,0 +1,1 @@
+import{f as e,n as t,p as n}from"./evening-D8dN5nG7.js";var r=t(location.search);if(r){let t=document.createElement(`a`);t.className=`back-to-evening`,t.href=r,t.textContent=(new URLSearchParams(location.search).get(`lang`)===`en`?n:e).evening.backLink;let i=()=>document.body.append(t);document.body?i():document.addEventListener(`DOMContentLoaded`,i)}
