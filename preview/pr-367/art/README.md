@@ -220,6 +220,14 @@ separate layers. The page puts them on the map from `landmarks:` in `content/cit
 the base map's pixels), so one can be moved, resized or swapped without a new base map. The full-size PNG originals,
 a contact sheet and the prompts are on corvus in `D:\Assets\Art\codex-2026-11-14\map-v4\`.
 
+`citymap/winter/` (winter set, shown in the game's winter months, `src/citymap/winter.ts`): `kristiansand.webp`
+(1774 x 887) and `landmarks/*.webp` (same 11 names and pixel sizes as the summer ones), the summer v4 files edited by
+Codex (GPT Image) on 2026-11-16 to add snow and bare trees, own work (version v2b, owner approved 2026-11-16). Same
+Kartverket credit as the summer map. The landmarks were fitted onto the summer cut-outs with
+`tools/map/fit_winter_landmarks.py` so `x`, `y` and `w` in `places.yml` fit both. The 1024 px PNG originals and a
+contact sheet are in the project folder `art/citymap-winter/codex-v2b/citymap-v4-winter-v2b.zip`; the brief is in
+`plans/locations/map-v4-winter/prompts.md`.
+
 Pins and district names are not in the picture: the page draws them from `content/citymap/places.yml`, in the
 picture's pixels. The earlier v3 map is in the project folder `codex-kristiansand-map-2026-11-14.zip`.
 
