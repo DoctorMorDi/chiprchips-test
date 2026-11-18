@@ -36,6 +36,14 @@ Built by `tools/art/build_football_pack.py` from the project folder `art/footbal
 + `.json` (after the match), `characters/<slug>/football/<look|talking|happy>.webp` (the players in their training
 clothes, same cutout format as above) and the BuddyZone photos `content/buddyzone/photos/r-kickabout-happy*.webp`.
 
+## Malaga company logos (#353)
+
+`football/logos/<team>.webp` (128 px, trimmed and squared): the seven company logos of the teams from abroad in Malaga,
+shown before each name in the tournament's tables. Source: AI-generated with Codex's built-in image generation (OpenAI
+GPT Image) on corvus, 2026-11-16/17, for this project; own work, same licence as the rest of the game's art. Masters
+(1254 px RGBA) and the prompts in the project folder `art/football/malaga-logos/`: `logo2-<team>.png` for
+catenaccio, biscuit, dip, gurk, fizz, and `logo3-<team>.png` for siesta and mochi. Approved by the owner 2026-11-18.
+
 ## Company football kit (#243)
 
 `characters/<slug>/crc-kit/<neutral|talking|happy>.webp` for Happy, Vegard, Adam, Leo and Marek: the same players in
@@ -208,6 +216,16 @@ trainers, a coffee cup), 768 x 1152, transparent, the same framing as the charac
 (GPT Image) on 2026-11-14, own work, the version the owner picked. Original PNG in the project folder
 `codex-marie-casual-2026-11-14.zip`.
 
+The season (#349): `miniputt/marie-saturday-talking.webp` and `marie-saturday-happy.webp` (the same outfit, talking and
+happy, 424 x 1144 (cropped to the figure on 2026-11-18 so she shows bigger), transparent; Codex/GPT Image, own work, owner OK 2026-11-15; originals in the project folder
+`art/codex-2026-11-15/`). `miniputt/kid-<id>.webp` for the seven kids (Lucas, Selma, Nora, Ahmed, Vetle, Venla, Mats in
+the club's green kit, Mats in a grey keeper's shirt), 224 x 476 (one crop box for all seven, so their heights still compare), transparent, scaled and cropped from Codex/GPT Image PNGs made on
+2026-11-14, own work; originals in `miniputt-kids-349.zip` in the project folder.
+
+Tuesday's drills (#349, owner asked 2026-11-18): `miniputt/drill-{spread,pass,home,shoot,free}.webp`, 640 x 480, the kids
+doing each drill on the miniputt pitch. AI-generated with Codex (GPT Image) on 2026-11-18 from the pitch and kid
+references, own work; 1024 x 768 PNG originals in `miniputt-drills-351.zip` in the project folder.
+
 ## The city map (#294, painted map)
 
 `citymap/kristiansand.webp` (1774 x 887, map v4, north up, no text): Kristiansand and around, from Søgne to the
@@ -219,6 +237,14 @@ lighthouse, fish market, station, university, factory, zoo, airport and mall, pa
 separate layers. The page puts them on the map from `landmarks:` in `content/citymap/places.yml` (x, y and width in
 the base map's pixels), so one can be moved, resized or swapped without a new base map. The full-size PNG originals,
 a contact sheet and the prompts are on corvus in `D:\Assets\Art\codex-2026-11-14\map-v4\`.
+
+`citymap/winter/` (winter set, shown in the game's winter months, `src/citymap/winter.ts`): `kristiansand.webp`
+(1774 x 887) and `landmarks/*.webp` (same 11 names and pixel sizes as the summer ones), the summer v4 files edited by
+Codex (GPT Image) on 2026-11-16 to add snow and bare trees, own work (version v2b, owner approved 2026-11-16). Same
+Kartverket credit as the summer map. The landmarks were fitted onto the summer cut-outs with
+`tools/map/fit_winter_landmarks.py` so `x`, `y` and `w` in `places.yml` fit both. The 1024 px PNG originals and a
+contact sheet are in the project folder `art/citymap-winter/codex-v2b/citymap-v4-winter-v2b.zip`; the brief is in
+`plans/locations/map-v4-winter/prompts.md`.
 
 Pins and district names are not in the picture: the page draws them from `content/citymap/places.yml`, in the
 picture's pixels. The earlier v3 map is in the project folder `codex-kristiansand-map-2026-11-14.zip`.
@@ -248,3 +274,21 @@ from 2x2 concept sheets, stickers one image each; `runde2/` holds the robot icon
 with Codex's built-in image generation (OpenAI GPT Image) on corvus, 2026-11-15/16, for this project, with the
 packaging Skipper, the game's robot renders and the Byggesettet stickers as references; own work, same licence as the
 rest of the game's art. Picked by the owner 2026-11-16.
+
+## gulls/ (Måsekrigen, #364)
+
+Einar's webcam faces: head-and-shoulders crops of his off-duty all-year poses (`einar-allyear-*.png` in the project
+folder `art/byggesettet/off-duty/`, made for the side gigs) on a dim room background, 320 x 240. Built by
+`tools/art/build_gulls_pack.py`. The beach, stand and gulls are drawn in code (`src/gulls/draw.ts`) until the game gets
+real art; Luffe on the keyboard reuses `sled/luffe/peek.webp`.
+
+## Malaga ground (#376)
+
+Codex (GPT Image) edits, own work, approved prompts by the owner 2026-11-18 (task t38 via HUB; prompts in
+`/mnt/project-files/art/football/malaga-pitch/PROMPTS.md`):
+
+- `football/pitch-grass.webp` (1407 x 1890): the Malaga match pitch, an edit of `football/pitch.webp` with the same
+  lines and goals (grass, white wall, palms). The wall sits up to ~0.5 m inside the old fence line.
+- `backgrounds/malaga_ground.webp` (1672 x 940) + `.json`: before and after a match in Malaga, an edit of
+  `backgrounds/kickabout_fence.webp` with the same camera; the placement table is copied from it.
+- `football/logos/crc.webp`: our heart from the shirt (`public/brand/chipr-chips-heart.png`), in the Malaga tables.
