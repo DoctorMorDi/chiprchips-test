@@ -209,16 +209,52 @@ trainers, a coffee cup), 768 x 1152, transparent, the same framing as the charac
 `codex-marie-casual-2026-11-14.zip`.
 
 The season (#349): `miniputt/marie-saturday-talking.webp` and `marie-saturday-happy.webp` (the same outfit, talking and
-happy, 768 x 1152, transparent; Codex/GPT Image, own work, owner OK 2026-11-15; originals in the project folder
+happy, 424 x 1144 (cropped to the figure on 2026-11-18 so she shows bigger), transparent; Codex/GPT Image, own work, owner OK 2026-11-15; originals in the project folder
 `art/codex-2026-11-15/`). `miniputt/kid-<id>.webp` for the seven kids (Lucas, Selma, Nora, Ahmed, Vetle, Venla, Mats in
-the club's green kit, Mats in a grey keeper's shirt), 384 x 576, transparent, scaled from Codex/GPT Image PNGs made on
+the club's green kit, Mats in a grey keeper's shirt), 224 x 476 (one crop box for all seven, so their heights still compare), transparent, scaled and cropped from Codex/GPT Image PNGs made on
 2026-11-14, own work; originals in `miniputt-kids-349.zip` in the project folder.
+
+Tuesday's drills (#349, owner asked 2026-11-18): `miniputt/drill-{spread,pass,home,shoot,free}.webp`, 640 x 480, the kids
+doing each drill on the miniputt pitch. AI-generated with Codex (GPT Image) on 2026-11-18 from the pitch and kid
+references, own work; 1024 x 768 PNG originals in `miniputt-drills-351.zip` in the project folder.
 
 ## The city map (#294, painted map)
 
-`citymap/kristiansand.webp` (1536 x 1024, north up, no text): Kristiansand and around, painted with Codex (GPT Image)
-on 2026-11-14, own work, traced from Kartverket N100 land cover. **Kartdata © Kartverket (CC BY 4.0)**: the map page
-shows this credit on the map. Full-size PNG, the earlier style and the reference landmarks
-(`ref/landmarks.json`, x/y in percent of the same frame) are in the project folder
-`codex-kristiansand-map-2026-11-14.zip`. Pins and district names are not in the picture: the page draws them from
-`content/citymap/places.yml`, in the picture's pixels.
+`citymap/kristiansand.webp` (1774 x 887, map v4, north up, no text): Kristiansand and around, from Søgne to the
+Lillesand side, painted with Codex (GPT Image) on 2026-11-15, own work, traced from Kartverket N100 land cover.
+**Kartdata © Kartverket (CC BY 4.0)**: the map page shows this credit on the map. The base has no landmark buildings.
+
+`citymap/landmarks/*.webp` (11 files, longest side 384 px, transparent): cathedral, concert hall, fortress,
+lighthouse, fish market, station, university, factory, zoo, airport and mall, painted by Codex on 2026-11-15 as
+separate layers. The page puts them on the map from `landmarks:` in `content/citymap/places.yml` (x, y and width in
+the base map's pixels), so one can be moved, resized or swapped without a new base map. The full-size PNG originals,
+a contact sheet and the prompts are on corvus in `D:\Assets\Art\codex-2026-11-14\map-v4\`.
+
+Pins and district names are not in the picture: the page draws them from `content/citymap/places.yml`, in the
+picture's pixels. The earlier v3 map is in the project folder `codex-kristiansand-map-2026-11-14.zip`.
+
+## Side-page place pictures (#327)
+
+`scenes/<id>.webp`: the place picture behind a side page on a PC (`src/design/side-backdrop.ts`), resized to WebP from
+the project folder, nothing else changed. All AI-generated with Codex (GPT Image), own work.
+
+- `quiz-pub.webp` (1672 x 941): the pub, from `art/quizkvelden/pub-interior.png` (2026-11).
+- `kit-hobby-room.webp` (1671 x 941): the hobby room, from `art/byggesettet/hobby-room-v4.png` (2026-11).
+- `stall-front.webp` (1672 x 941): the stall with the hatch open, from `art/dugnadsbua/stall-front.png` (2026-11).
+- `plot-field.webp` (1672 x 941): the four rows from above, from `art/potetakeren/plot-topdown.png` (2026-11).
+- `sled-hill.webp` (1672 x 941): Timenesbakken from the start, from `art/codex-2026-11-15/sled-hill.png` (2026-11-14).
+- `miniputt-pitch.webp` (1536 x 1024): the kids' pitch, from corvus `D:\Assets\Art\codex-2026-11-14\miniputt\pitch.png`
+  (2026-11-14).
+
+Makrellturen uses its own `fishing/jetty-grill.webp`.
+
+## Tab icons and phone stickers
+
+`public/icons/<game|guitar|robot>-<32|180>.png`: the browser-tab icon (32 px) and home-screen icon (180 px) of
+`index.html` (Skipper Chips), `guitar.html` (amber pick) and `robot.html` (the player's flipper robot).
+`content/stickers/art/<id>.webp` (192 px, alpha): one picture per sticker in `content/stickers/stickers.yml`, shown in
+the phone's sticker app once the player has it. Sources: the project folder `art/codex-2026-11-16-natt/` (icons cut
+from 2x2 concept sheets, stickers one image each; `runde2/` holds the robot icon and the new coffee mug). AI-generated
+with Codex's built-in image generation (OpenAI GPT Image) on corvus, 2026-11-15/16, for this project, with the
+packaging Skipper, the game's robot renders and the Byggesettet stickers as references; own work, same licence as the
+rest of the game's art. Picked by the owner 2026-11-16.
