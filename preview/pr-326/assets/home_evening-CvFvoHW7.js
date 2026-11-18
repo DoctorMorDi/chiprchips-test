@@ -1,1 +1,0 @@
-var e=new URL(`home_evening-NRXciaKf.webp`,import.meta.url).href;export{e as t};
