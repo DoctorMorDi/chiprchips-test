@@ -36,6 +36,14 @@ Built by `tools/art/build_football_pack.py` from the project folder `art/footbal
 + `.json` (after the match), `characters/<slug>/football/<look|talking|happy>.webp` (the players in their training
 clothes, same cutout format as above) and the BuddyZone photos `content/buddyzone/photos/r-kickabout-happy*.webp`.
 
+## Malaga company logos (#353)
+
+`football/logos/<team>.webp` (128 px, trimmed and squared): the seven company logos of the teams from abroad in Malaga,
+shown before each name in the tournament's tables. Source: AI-generated with Codex's built-in image generation (OpenAI
+GPT Image) on corvus, 2026-11-16/17, for this project; own work, same licence as the rest of the game's art. Masters
+(1254 px RGBA) and the prompts in the project folder `art/football/malaga-logos/`: `logo2-<team>.png` for
+catenaccio, biscuit, dip, gurk, fizz, and `logo3-<team>.png` for siesta and mochi. Approved by the owner 2026-11-18.
+
 ## Company football kit (#243)
 
 `characters/<slug>/crc-kit/<neutral|talking|happy>.webp` for Happy, Vegard, Adam, Leo and Marek: the same players in
