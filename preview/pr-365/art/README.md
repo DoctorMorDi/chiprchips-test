@@ -238,6 +238,17 @@ the project folder, nothing else changed. All AI-generated with Codex (GPT Image
 
 Makrellturen uses its own `fishing/jetty-grill.webp`.
 
+## Tab icons and phone stickers
+
+`public/icons/<game|guitar|robot>-<32|180>.png`: the browser-tab icon (32 px) and home-screen icon (180 px) of
+`index.html` (Skipper Chips), `guitar.html` (amber pick) and `robot.html` (the player's flipper robot).
+`content/stickers/art/<id>.webp` (192 px, alpha): one picture per sticker in `content/stickers/stickers.yml`, shown in
+the phone's sticker app once the player has it. Sources: the project folder `art/codex-2026-11-16-natt/` (icons cut
+from 2x2 concept sheets, stickers one image each; `runde2/` holds the robot icon and the new coffee mug). AI-generated
+with Codex's built-in image generation (OpenAI GPT Image) on corvus, 2026-11-15/16, for this project, with the
+packaging Skipper, the game's robot renders and the Byggesettet stickers as references; own work, same licence as the
+rest of the game's art. Picked by the owner 2026-11-16.
+
 ## gulls/ (Måsekrigen, #364)
 
 Einar's webcam faces: head-and-shoulders crops of his off-duty all-year poses (`einar-allyear-*.png` in the project
