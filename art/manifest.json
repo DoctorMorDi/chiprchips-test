@@ -3239,6 +3239,102 @@
     1152
    ],
    "feet_frac": 0.97
+  },
+  {
+   "character": "william",
+   "id": "pose-01-neutral",
+   "kind": "pose",
+   "source": "william_pose-01-neutral.png",
+   "image": "characters/william/pose-01-neutral.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "william",
+   "id": "pose-02-talking",
+   "kind": "pose",
+   "source": "william_pose-02-talking.png",
+   "image": "characters/william/pose-02-talking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "william",
+   "id": "pose-03-listening",
+   "kind": "pose",
+   "source": "william_pose-03-listening.png",
+   "image": "characters/william/pose-03-listening.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "william",
+   "id": "pose-04-happy",
+   "kind": "pose",
+   "source": "william_pose-04-happy.png",
+   "image": "characters/william/pose-04-happy.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "william",
+   "id": "pose-05-worried",
+   "kind": "pose",
+   "source": "william_pose-05-worried.png",
+   "image": "characters/william/pose-05-worried.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "william",
+   "id": "pose-06-annoyed",
+   "kind": "pose",
+   "source": "william_pose-06-annoyed.png",
+   "image": "characters/william/pose-06-annoyed.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "william",
+   "id": "pose-07-thinking",
+   "kind": "pose",
+   "source": "william_pose-07-thinking.png",
+   "image": "characters/william/pose-07-thinking.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
+  },
+  {
+   "character": "william",
+   "id": "pose-08-pointing",
+   "kind": "pose",
+   "source": "william_pose-08-pointing.png",
+   "image": "characters/william/pose-08-pointing.webp",
+   "size": [
+    768,
+    1152
+   ],
+   "feet_frac": 0.97
   }
  ],
  "backgrounds": {

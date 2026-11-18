@@ -36,6 +36,14 @@ Built by `tools/art/build_football_pack.py` from the project folder `art/footbal
 + `.json` (after the match), `characters/<slug>/football/<look|talking|happy>.webp` (the players in their training
 clothes, same cutout format as above) and the BuddyZone photos `content/buddyzone/photos/r-kickabout-happy*.webp`.
 
+## Malaga company logos (#353)
+
+`football/logos/<team>.webp` (128 px, trimmed and squared): the seven company logos of the teams from abroad in Malaga,
+shown before each name in the tournament's tables. Source: AI-generated with Codex's built-in image generation (OpenAI
+GPT Image) on corvus, 2026-11-16/17, for this project; own work, same licence as the rest of the game's art. Masters
+(1254 px RGBA) and the prompts in the project folder `art/football/malaga-logos/`: `logo2-<team>.png` for
+catenaccio, biscuit, dip, gurk, fizz, and `logo3-<team>.png` for siesta and mochi. Approved by the owner 2026-11-18.
+
 ## Company football kit (#243)
 
 `characters/<slug>/crc-kit/<neutral|talking|happy>.webp` for Happy, Vegard, Adam, Leo and Marek: the same players in
@@ -98,8 +106,23 @@ Built by `tools/art/build_flavour_pack.py` from the project folder `art/flavour/
   `dict(id="labw_fry_front", scene="plant", pos=(9.9, -36.5, 1.5), target=(9.9, -39.5, 1.5), lens=12.4, exposure=-0.6)`.
   The camera is level and wide, and the build script cuts the lower part of the frame (`ROOM_BOX`), because the lab
   shows people from the hips up with the speech bubble below: the bench has to sit high in the picture. The wrapper that
-  ran the render without touching the Blender project is in the project folder
-  `smakslaben/lab-background/render_candidates.py`.
+  runs the render without touching the Blender project is in the project folder
+  `smakslaben/lab-background/render_fixed.py`.
+  Re-rendered 2026-11-13 after the owner's review of the picture (#282). `smakslaben/lab-background/smak_fixes.py`
+  dresses the room in memory before the render; the blend and the lab kit scripts are untouched, and the kit faults
+  are listed for the WORLD pipeline. What it changes: the fire extinguisher (model and sign from the owned Cybernetic
+  Walrus "Factory Interior" pack) hangs on the wall instead of half inside it, with its sign straight above it and
+  the fire blanket box beside the sign, as one fire point at the end of the fry bench; a smaller
+  food-waste step bin with a flush label stands clear of the bench leg; the socket trunking stands further out, is
+  light grey and ends before the fire point; the
+  shower and eyewash signs are larger and beside the shower; fridge and freezer are grey against the white wall; the
+  eyewash has two heads over the bowl; the waste cans are grey with larger labels (`tex/T_SMAK_*.png`, own work).
+  The lab's own stage shows the right part of the cut on narrow screens (`object-position` in
+  `src/flavour/flavour.css`), so the fire point is whole on phones too.
+  Rules for the next room: the `blender-room-rules` skill.
+- `backgrounds/flavour_lab.webp` + `.json` (1920 x 1080): a wider cut of the same render (`SCENE_BOX`) with its placement
+  table moved along, for the scene on the game's stage where Siri asks the player in (#282). People stand about 2 m
+  from the camera: the bench and the fridges start at 2.5 m.
 
 How a bag is put together from these: `bagSvg` in `src/flavour/bag.ts`. The name is set in Baloo 2 ExtraBold
 (`@fontsource/baloo-2`, SIL OFL 1.1), squeezed a little, which comes close to the lettering on the series.
@@ -146,3 +169,134 @@ Seen from straight above, facing up the image, with no weather or sun baked in. 
 - `people/<slug>-<nn>-<mood>.webp` (768 x 1152): Einar, Lars-Owe (parka, beanie, sunglasses, megaphone) and Vegard
   (orienteering jacket) in winter clothes, made from their character poses with the same framing. Einar's helmet is a
   separate source layer (`winter/einar/helmet-luffe.png`) that the script puts on each pose's head.
+
+## Company orienteering (#215, round 2 #283)
+
+Built by `tools/art/build_orienteering_pack.py` from the project folder `art/bedriftsorientering/` into `orienteering/`.
+All AI-generated with Codex (GPT Image) on 2026-11-13, own work; full-size PNGs also on corvus in
+`test-results\orientering-kit\`, prompts in the project folder
+`plans/side-activities/bedriftsorientering/grafikk-runde-2.md`. No text, weather, sun or season is baked in (the fog
+over the moose is a layer the page lays on). The map itself is not a picture: it is drawn from the data (`map.ts`).
+The paths are in `src/orienteering/art.ts`.
+
+- `people/<slug>-<talking|happy|look>.webp` (768 x 1152, the cutout format of `characters/`): Vegard (three poses),
+  Marek (mud to the knees) and Yoshi (new white shoes, cap) in the company running kit the owner picked from four
+  looks (A: orange top with graphite side panels, graphite tights), and Unni in her walking clothes (red wind jacket,
+  rucksack, thermos). Identity references: their character poses.
+- `finds/<id>.webp` (longest side 256 px): the ten things seen in the forest, by the ids of `finds` in
+  `content/orienteering/forest.yml` (swim, boot, tower, moped, anthill, cairn, sheep, cache, bench, moose).
+- `flag.webp`: the control flag on its stand with the pin punch. `start.webp` (1440 x 810): the start and finish on
+  the meadow, no people.
+
+## Home sandbox (#296)
+
+`src/home/art/home_evening.webp` (1280 x 720, bundled by Vite so the preview pool cannot drop it): the evening half of the studio render `home_sheet.jpg` in the project
+folder (Blender render of the player's flat; exact source scene to be confirmed by the owner). Stand-in until the home
+gets its own render with empty spots. Souvenirs are emoji tokens for now.
+The episode home scenes (`scene: home`, all episodes) use the same picture: `content/scene-art.json` points `home` at
+`home_evening`, and `src/story/bundled.ts` gives the stage the bundled picture and its placement table
+`src/home/art/home_evening.json` (estimated from the kitchen lines: no camera data for this render).
+
+## Market sandbox (#293)
+
+`src/market/art/` (bundled by Vite so the preview pool cannot drop them), imported in `src/market/art.ts`. All
+AI-generated with Codex (GPT Image) on corvus on 2026-11-14, own work, approved by the owner; full-size files on corvus
+in `D:\Assets\Art\codex-2026-11-14\market\` (local repo, branch `codex-art`). No brands or real products: the console
+is a generic black-and-red cartridge console (remade once, the first try looked like a real one).
+
+- `photo-<id>.webp` (960 x 640, from 1536 x 1024): the listing photos for the console (`console`), Lars-Owe's amp
+  (`amp`), the scam e-bike as an overly glossy ad (`ebike`) and Anntu's crates by the barn (`crates`).
+- `item-<id>.webp` (256 x 256, transparent, from 1024 x 1024): the same four things as cut-outs, shown small in the
+  list of listings.
+
+## Miniputt football (#280)
+
+`miniputt/marie-saturday.webp`: Marie on a Saturday at the kids' match (open green parka, grey hoodie, jeans,
+trainers, a coffee cup), 768 x 1152, transparent, the same framing as the character poses. AI-generated with Codex
+(GPT Image) on 2026-11-14, own work, the version the owner picked. Original PNG in the project folder
+`codex-marie-casual-2026-11-14.zip`.
+
+The season (#349): `miniputt/marie-saturday-talking.webp` and `marie-saturday-happy.webp` (the same outfit, talking and
+happy, 424 x 1144 (cropped to the figure on 2026-11-18 so she shows bigger), transparent; Codex/GPT Image, own work, owner OK 2026-11-15; originals in the project folder
+`art/codex-2026-11-15/`). `miniputt/kid-<id>.webp` for the seven kids (Lucas, Selma, Nora, Ahmed, Vetle, Venla, Mats in
+the club's green kit, Mats in a grey keeper's shirt), 224 x 476 (one crop box for all seven, so their heights still compare), transparent, scaled and cropped from Codex/GPT Image PNGs made on
+2026-11-14, own work; originals in `miniputt-kids-349.zip` in the project folder.
+
+Tuesday's drills (#349, owner asked 2026-11-18): `miniputt/drill-{spread,pass,home,shoot,free}.webp`, 640 x 480, the kids
+doing each drill on the miniputt pitch. AI-generated with Codex (GPT Image) on 2026-11-18 from the pitch and kid
+references, own work; 1024 x 768 PNG originals in `miniputt-drills-351.zip` in the project folder.
+
+Round 4 (#372, owner asked 2026-11-18): `miniputt/logo-{timenes,smatroll,vind,bamser,raketter}.webp`, 256 x 256,
+transparent, the five clubs' logos (flat, no shield or text: a pine and a ball, a troll, a wind face, a teddy bear, a
+rocket). `kid-lucas.webp` replaced: the same picture with the white collar the other outfield kids have, cropped like
+them. Both made with Codex (GPT Image) on 2026-11-18, own work; PNG originals in `miniputt-372.zip` in the project
+folder.
+
+## The city map (#294, painted map)
+
+`citymap/kristiansand.webp` (1774 x 887, map v4, north up, no text): Kristiansand and around, from Søgne to the
+Lillesand side, painted with Codex (GPT Image) on 2026-11-15, own work, traced from Kartverket N100 land cover.
+**Kartdata © Kartverket (CC BY 4.0)**: the map page shows this credit on the map. The base has no landmark buildings.
+
+`citymap/landmarks/*.webp` (11 files, longest side 384 px, transparent): cathedral, concert hall, fortress,
+lighthouse, fish market, station, university, factory, zoo, airport and mall, painted by Codex on 2026-11-15 as
+separate layers. The page puts them on the map from `landmarks:` in `content/citymap/places.yml` (x, y and width in
+the base map's pixels), so one can be moved, resized or swapped without a new base map. The full-size PNG originals,
+a contact sheet and the prompts are on corvus in `D:\Assets\Art\codex-2026-11-14\map-v4\`.
+
+`citymap/winter/` (winter set, shown in the game's winter months, `src/citymap/winter.ts`): `kristiansand.webp`
+(1774 x 887) and `landmarks/*.webp` (same 11 names and pixel sizes as the summer ones), the summer v4 files edited by
+Codex (GPT Image) on 2026-11-16 to add snow and bare trees, own work (version v2b, owner approved 2026-11-16). Same
+Kartverket credit as the summer map. The landmarks were fitted onto the summer cut-outs with
+`tools/map/fit_winter_landmarks.py` so `x`, `y` and `w` in `places.yml` fit both. The 1024 px PNG originals and a
+contact sheet are in the project folder `art/citymap-winter/codex-v2b/citymap-v4-winter-v2b.zip`; the brief is in
+`plans/locations/map-v4-winter/prompts.md`.
+
+Pins and district names are not in the picture: the page draws them from `content/citymap/places.yml`, in the
+picture's pixels. The earlier v3 map is in the project folder `codex-kristiansand-map-2026-11-14.zip`.
+
+## Side-page place pictures (#327)
+
+`scenes/<id>.webp`: the place picture behind a side page on a PC (`src/design/side-backdrop.ts`), resized to WebP from
+the project folder, nothing else changed. All AI-generated with Codex (GPT Image), own work.
+
+- `quiz-pub.webp` (1672 x 941): the pub, from `art/quizkvelden/pub-interior.png` (2026-11).
+- `kit-hobby-room.webp` (1671 x 941): the hobby room, from `art/byggesettet/hobby-room-v4.png` (2026-11).
+- `stall-front.webp` (1672 x 941): the stall with the hatch open, from `art/dugnadsbua/stall-front.png` (2026-11).
+- `plot-field.webp` (1672 x 941): the four rows from above, from `art/potetakeren/plot-topdown.png` (2026-11).
+- `sled-hill.webp` (1672 x 941): Timenesbakken from the start, from `art/codex-2026-11-15/sled-hill.png` (2026-11-14).
+- `miniputt-pitch.webp` (1536 x 1024): the kids' pitch, from corvus `D:\Assets\Art\codex-2026-11-14\miniputt\pitch.png`
+  (2026-11-14).
+- `guitar-garage.webp` (1536 x 1024): Lars-Owe's garage in Vennesla, from `art/guitar/garage_vennesla.png` (2026-10-29,
+  made for the guitar sandbox #169), behind the guitar menu (#373).
+
+Makrellturen uses its own `fishing/jetty-grill.webp`.
+
+## Tab icons and phone stickers
+
+`public/icons/<game|guitar|robot>-<32|180>.png`: the browser-tab icon (32 px) and home-screen icon (180 px) of
+`index.html` (Skipper Chips), `guitar.html` (amber pick) and `robot.html` (the player's flipper robot).
+`content/stickers/art/<id>.webp` (192 px, alpha): one picture per sticker in `content/stickers/stickers.yml`, shown in
+the phone's sticker app once the player has it. Sources: the project folder `art/codex-2026-11-16-natt/` (icons cut
+from 2x2 concept sheets, stickers one image each; `runde2/` holds the robot icon and the new coffee mug). AI-generated
+with Codex's built-in image generation (OpenAI GPT Image) on corvus, 2026-11-15/16, for this project, with the
+packaging Skipper, the game's robot renders and the Byggesettet stickers as references; own work, same licence as the
+rest of the game's art. Picked by the owner 2026-11-16.
+
+## gulls/ (Måsekrigen, #364)
+
+Einar's webcam faces: head-and-shoulders crops of his off-duty all-year poses (`einar-allyear-*.png` in the project
+folder `art/byggesettet/off-duty/`, made for the side gigs) on a dim room background, 320 x 240. Built by
+`tools/art/build_gulls_pack.py`. The beach, stand and gulls are drawn in code (`src/gulls/draw.ts`) until the game gets
+real art; Luffe on the keyboard reuses `sled/luffe/peek.webp`.
+
+## Malaga ground (#376)
+
+Codex (GPT Image) edits, own work, approved prompts by the owner 2026-11-18 (task t38 via HUB; prompts in
+`/mnt/project-files/art/football/malaga-pitch/PROMPTS.md`):
+
+- `football/pitch-grass.webp` (1407 x 1890): the Malaga match pitch, an edit of `football/pitch.webp` with the same
+  lines and goals (grass, white wall, palms). The wall sits up to ~0.5 m inside the old fence line.
+- `backgrounds/malaga_ground.webp` (1672 x 940) + `.json`: before and after a match in Malaga, an edit of
+  `backgrounds/kickabout_fence.webp` with the same camera; the placement table is copied from it.
+- `football/logos/crc.webp`: our heart from the shirt (`public/brand/chipr-chips-heart.png`), in the Malaga tables.
