@@ -81,6 +81,11 @@
         window.stop();
         location.replace('miniputt.html' + location.search);
       }
+      // kAI and KIm, the first slice (#381), likewise: ki.html, or ?ki for short.
+      if (new URLSearchParams(location.search).has('ki')) {
+        window.stop();
+        location.replace('ki.html' + location.search);
+      }
       // The CRC-nett sandbox (#297) likewise: crcnett.html, or ?crcnett for short.
       if (new URLSearchParams(location.search).has('crcnett')) {
         window.stop();
@@ -94,14 +99,14 @@
     </script>
     <link rel="icon" type="image/png" sizes="32x32" href="icons/game-32.png" />
     <link rel="apple-touch-icon" href="icons/game-180.png" />
-    <script type="module" crossorigin src="./assets/main-C626Yoru.js"></script>
+    <script type="module" crossorigin src="./assets/main-BFMeN91l.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/i18n-DxHqfLxM.js">
     <link rel="modulepreload" crossorigin href="./assets/routine-Cfrmm3lU.js">
     <link rel="modulepreload" crossorigin href="./assets/calendar-DjXjhs3Z.js">
     <link rel="modulepreload" crossorigin href="./assets/calendar-DYUe0puj.js">
     <link rel="modulepreload" crossorigin href="./assets/play-B8_nWiEQ.js">
     <link rel="modulepreload" crossorigin href="./assets/sprites-DLkyfyGj.js">
-    <link rel="modulepreload" crossorigin href="./assets/stamps-Cm7FGVas.js">
+    <link rel="modulepreload" crossorigin href="./assets/stamps-7qzmMWaA.js">
     <link rel="modulepreload" crossorigin href="./assets/phaser.esm-C0r02wnA.js">
     <link rel="modulepreload" crossorigin href="./assets/home_evening-CvFvoHW7.js">
     <link rel="modulepreload" crossorigin href="./assets/home-BWTxvQZo.js">
