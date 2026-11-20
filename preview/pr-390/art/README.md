@@ -315,3 +315,12 @@ Codex (GPT Image), own work, no text or brands, from the overnight batch of 2026
 - `characters/kasper/`: Kasper Drange, Blytung!'s drummer: v3 neutral, talking, listening, happy, thinking (head held
   straight, owner 2026-11-20) and v2 worried. Annoyed and pointing are stand-ins (neutral, talking) until there is a take.
 - `souvenirs/may17.webp`: the flag in a glass and the rosette (A), the home souvenir.
+
+## Off-duty clothes (#394)
+
+`characters/<slug>/off-duty/<neutral|talking|happy|worried|thinking>.webp`: colleagues in their own clothes on a day
+off, worn in the 17. mai scenes (`torvet_stall`, `torvet_parade`, `backyard`, `backyard_gig`, outfit `off-duty` in
+`content/scene-art.json`; its `who` list says who has a set, everyone else keeps their own poses). Built by
+`tools/art/build_offduty_pack.py` from the project folder: Unni and Happy from `art/off-duty/`, Einar's all-year set
+and Lars-Owe from `art/byggesettet/off-duty/`, and Marie's spring set (`art/off-duty/marie-off-*.png`, made
+2026-11-20). Source: AI-generated with Codex's built-in image generation (OpenAI GPT Image), own work.
