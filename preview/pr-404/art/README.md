@@ -44,6 +44,13 @@ GPT Image) on corvus, 2026-11-16/17, for this project; own work, same licence as
 (1254 px RGBA) and the prompts in the project folder `art/football/malaga-logos/`: `logo2-<team>.png` for
 catenaccio, biscuit, dip, gurk, fizz, and `logo3-<team>.png` for siesta and mochi. Approved by the owner 2026-11-18.
 
+Three more for the bigger pool (#369): `churros.webp`, `croissant.webp`, `surstromming.webp`, same format, and
+`surstromming-large.webp` (256 px) for the big view before a match, with the green word STANK on the tin (the text is
+drawn in the Creepster font, Font Diner, SIL Open Font License; it cannot be read at table size, so the tables use the
+plain logo). Source: Codex (GPT Image) on corvus 2026-11-19/20, own work. Masters (1254 px RGBA) in the project folder
+`art/codex-2026-11-20-natt/malaga-logos/`: `logo-churros-A.png`, `logo-croissant-A.png`, `logo-surstromming-A3.png`
+and the text layer `stank-text/stank-text-green.png` (with the font and its licence). Approved by the owner 2026-11-20.
+
 ## Company football kit (#243)
 
 `characters/<slug>/crc-kit/<neutral|talking|happy>.webp` for Happy, Vegard, Adam, Leo and Marek: the same players in
@@ -70,6 +77,12 @@ For 4 and 6 lanes (#200), cut and recoloured from the same sources by the same s
 `guitar/floor.webp` (the highway with its painted lines filled in), `guitar/gem_<3|4|5>.webp` (green, blue,
 violet: hue-turned copies of the teal gem), `guitar/target.webp` + `target_lit.webp` (one pick target from each bar)
 and `guitar/rail.webp` (a piece of the bar between targets).
+Guitar neck in perspective (#204, notes follow it: #172), from the project folder `art/codex-2026-11-20-natt/guitar/`
+(AI-generated with Codex GPT Image on corvus, 2026-11-20, own work; approved by the owner 2026-11-20), converted to
+WebP at full size (1024 x 1536): `guitar/neck_rosewood.webp` (beginner, neck-perspective-A), `neck_maple.webp` (easy,
+B), `neck_ebony.webp` (medium, C) and `guitar/strings.webp` (strings-perspective-straight-B, six strings, drawn over the
+neck on medium; fewer lanes draw their strings in code). Where the painted strings run: `NECK` in `src/guitar/neck.ts`.
+Since #204 `highway.webp` and `floor.webp` are no longer drawn (kept for the build script).
 
 ## Robot fight, isometric (#231)
 
@@ -287,8 +300,16 @@ rest of the game's art. Picked by the owner 2026-11-16.
 
 Einar's webcam faces: head-and-shoulders crops of his off-duty all-year poses (`einar-allyear-*.png` in the project
 folder `art/byggesettet/off-duty/`, made for the side gigs) on a dim room background, 320 x 240. Built by
-`tools/art/build_gulls_pack.py`. The beach, stand and gulls are drawn in code (`src/gulls/draw.ts`) until the game gets
-real art; Luffe on the keyboard reuses `sled/luffe/peek.webp`.
+`tools/art/build_gulls_pack.py`. Luffe on the keyboard reuses `sled/luffe/peek.webp`.
+
+The painted art (#386): AI-generated with Codex (GPT Image) on 2026-11-19 via HUB, own work, prompts approved by the
+owner (style "near-photoreal, painted"; prompts in the project folder
+`plans/side-activities/einar-online/masekrigen-art/prompts.md`, originals in `art/masekrigen/codex-v1/` and
+`masekrigen-art.zip`). Sliced on the sheets' fixed grids and trimmed by the same script: `beach.webp` (1536 x 922, 5:3),
+`stand.webp`, `crate-{shrimp,chips,fishcakes}.webp`, `gull-{up,mid,down,landed,flee}.webp`,
+`big-{up,down,landed,beaten}.webp`, `{you,einar}-{ready,swing}.webp`, `feather.webp` (the end screen's feather count)
+and `logo.webp` (the first screen). Frames that swap share one trimmed box. Gulls face right; `src/gulls/draw.ts`
+mirrors them and keeps the old shapes as a stand-in while a picture loads.
 
 ## Malaga ground (#376)
 
