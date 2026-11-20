@@ -307,3 +307,18 @@ Codex (GPT Image) edits, own work, approved prompts by the owner 2026-11-18 (tas
 - `backgrounds/malaga_ground.webp` (1672 x 940) + `.json`: before and after a match in Malaga, an edit of
   `backgrounds/kickabout_fence.webp` with the same camera; the placement table is copied from it.
 - `football/logos/crc.webp`: our heart from the shirt (`public/brand/chipr-chips-heart.png`), in the Malaga tables.
+
+## 17. mai (#339)
+
+Codex (GPT Image), own work, no text or brands, from the overnight batch of 2026-11-20 (owner approved the whole batch
+2026-11-20; picks in `/mnt/project-files/art/codex-2026-11-20-natt/README.md`). Built by
+`tools/art/build_may17_pack.py`:
+
+- `backgrounds/torvet_17mai_stall.webp`, `backgrounds/torvet_17mai.webp` (1672 x 940) + `.json`: Torvet dressed for
+  17 May, with and without the sports club's stall (takes A). The placement tables come from a camera guessed by eye.
+- `backgrounds/backyard_posebyen.webp` + `.json`: the Posebyen backyard (base A) with the band gear (A) and the string
+  lights (A) laid over it; `backgrounds/backyard_gig_night.webp` + `.json`: the finished evening gig (A).
+- `layers/parade_17mai.webp`: the children's parade (A), trimmed; it slides across Torvet (`layers` in scene-art.json).
+- `characters/kasper/`: Kasper Drange, Blytung!'s drummer: v3 neutral, talking, listening, happy, thinking (head held
+  straight, owner 2026-11-20) and v2 worried. Annoyed and pointing are stand-ins (neutral, talking) until there is a take.
+- `souvenirs/may17.webp`: the flag in a glass and the rosette (A), the home souvenir.
