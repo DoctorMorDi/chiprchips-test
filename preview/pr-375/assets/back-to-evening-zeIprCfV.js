@@ -1,1 +1,0 @@
-import{c as e,l as t,n}from"./evening-BuCl-lv6.js";var r=n(location.search);if(r){let n=document.createElement(`a`);n.className=`back-to-evening`,n.href=r,n.textContent=(new URLSearchParams(location.search).get(`lang`)===`en`?t:e).evening.backLink;let i=()=>document.body.append(n);document.body?i():document.addEventListener(`DOMContentLoaded`,i)}

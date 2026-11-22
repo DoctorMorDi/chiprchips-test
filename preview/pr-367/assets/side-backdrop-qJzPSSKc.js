@@ -1,1 +1,0 @@
-import"./side-pan-DjdyHze3.js";function e(e,t,n=`50% 50%`){e.classList.add(`side-panel`);let r=document.createElement(`img`);return r.className=`side-scene side-backdrop`,r.alt=``,r.decoding=`async`,r.loading=`lazy`,r.style.objectPosition=n,r.src=t,e.before(r),r}export{e as t};
