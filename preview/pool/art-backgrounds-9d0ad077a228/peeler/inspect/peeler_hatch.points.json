@@ -1,0 +1,91 @@
+{
+ "state": "inspect",
+ "shot": "peeler_hatch",
+ "image": "peeler_hatch.webp",
+ "size": [
+  1920,
+  1080
+ ],
+ "projection": "perspective",
+ "kind": "peeler",
+ "params": {
+  "roller_wear": 0.9,
+  "bearing": "failing",
+  "isolator": true,
+  "hood_open": 70,
+  "beacon": "off",
+  "hopper": 0.0,
+  "lockout": true
+ },
+ "built_params": {
+  "length": 4.6,
+  "rollers": 14,
+  "bed_r": 0.52,
+  "z_bed": 1.3,
+  "hood": "round",
+  "hood_open": 70,
+  "frame": "stainless",
+  "frame_color": "frame_grey",
+  "cabinet_side": -1,
+  "speed": 350,
+  "wear": 0.6,
+  "contam": "starch",
+  "roller_color": "motor_grey",
+  "roller_wear": 0.9,
+  "bearing": "failing",
+  "hopper": 0.0,
+  "potatoes": "normal",
+  "jam": false,
+  "beacon": "off",
+  "spray": false,
+  "inlet_gate": 1.0,
+  "isolator": true,
+  "lockout": true,
+  "seed": 7
+ },
+ "signals": {
+  "rollers_glazed": {
+   "what": "worn rollers: the glazed, smooth band in the middle of the abrasive rollers",
+   "box_px": [
+    661,
+    222,
+    1255,
+    815
+   ],
+   "boxes_px": [
+    [
+     661,
+     222,
+     1255,
+     815
+    ]
+   ],
+   "center_px": [
+    958,
+    519
+   ],
+   "visible_frac": 0.29,
+   "in_frame_frac": 1.0
+  }
+ },
+ "not_visible": [
+  "bearing_failing",
+  "grease_puddle",
+  "beacon",
+  "hmi",
+  "isolator",
+  "lockout"
+ ],
+ "not_in_state": [
+  "jam",
+  "hopper_load",
+  "spill",
+  "spray"
+ ],
+ "note": "Web copy at 0.7500 x the render; box_px, boxes_px and center_px are scaled to this image. boxes_px are the separate visible patches of each signal (use them as click targets, padded a little); box_px is their union. Points hidden behind other geometry are left out; image pixels with the origin at the top left. Written by scripts/backgrounds/peeler_points.py (issues #84, #92).",
+ "source_size": [
+  2560,
+  1440
+ ],
+ "web_scale": 0.75
+}
