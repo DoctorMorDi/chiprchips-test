@@ -10,6 +10,9 @@ size in the game).
 - Rows named `<person>_kit` (#243): the company football team in its kit (navy jersey, orange shorts, navy socks; the
   keeper in green), used on the pitch in company matches (`figure` in `src/game/league.ts`). The map never shows them.
   The kit colours are a parameter (`KITS` in `build_sprites.py`), so other teams can get rows.
+- Rows `susanne_kit` and `iben_kit` (#415, the league is mixed): Susanne (dark skin, black cornrows) and Iben (fair
+  skin, red ponytail) in the CRC kit, build 0.92. Their looks were added to `build_sprites.py` on corvus after `siri`,
+  rendered with Blender 5.2.1 on 2026-11-24 and appended under the atlas (rows 27, 28). Own work.
 - Row `siri` (#302): Siri as she stands in the flavour lab on the map, in what her cutout in the lab scene wears
   (grey shirt, black jeans, short blond hair). Her look is not in `build_sprites.py`: the wrapper
   `smakslaben/map-sprite/build_siri_sprite.py` in the project folder adds it in memory and runs the tool for her
