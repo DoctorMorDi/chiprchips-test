@@ -1,0 +1,89 @@
+{
+ "size": [
+  1672,
+  941
+ ],
+ "source": "edit of backyard_gig_night (Codex 2026-11-24, roomfix PA02)",
+ "camera": {
+  "focal_px": 1194,
+  "horizon_px": 366,
+  "height_m": 1.5
+ },
+ "placement": [
+  {
+   "dist_m": 2.5,
+   "feet_y_px": 1082.4,
+   "person_175_px": 835.8
+  },
+  {
+   "dist_m": 3,
+   "feet_y_px": 963.0,
+   "person_175_px": 696.5
+  },
+  {
+   "dist_m": 3.5,
+   "feet_y_px": 877.7,
+   "person_175_px": 597.0
+  },
+  {
+   "dist_m": 4,
+   "feet_y_px": 813.8,
+   "person_175_px": 522.4
+  },
+  {
+   "dist_m": 4.5,
+   "feet_y_px": 764.0,
+   "person_175_px": 464.3
+  },
+  {
+   "dist_m": 5,
+   "feet_y_px": 724.2,
+   "person_175_px": 417.9
+  },
+  {
+   "dist_m": 5.5,
+   "feet_y_px": 691.6,
+   "person_175_px": 379.9
+  },
+  {
+   "dist_m": 6,
+   "feet_y_px": 664.5,
+   "person_175_px": 348.2
+  },
+  {
+   "dist_m": 7,
+   "feet_y_px": 621.9,
+   "person_175_px": 298.5
+  },
+  {
+   "dist_m": 8,
+   "feet_y_px": 589.9,
+   "person_175_px": 261.2
+  },
+  {
+   "dist_m": 10,
+   "feet_y_px": 545.1,
+   "person_175_px": 208.9
+  },
+  {
+   "dist_m": 12,
+   "feet_y_px": 515.2,
+   "person_175_px": 174.1
+  },
+  {
+   "dist_m": 14,
+   "feet_y_px": 493.9,
+   "person_175_px": 149.2
+  },
+  {
+   "dist_m": 20,
+   "feet_y_px": 455.6,
+   "person_175_px": 104.5
+  },
+  {
+   "dist_m": 30,
+   "feet_y_px": 425.7,
+   "person_175_px": 69.7
+  }
+ ]
+}

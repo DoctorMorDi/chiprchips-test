@@ -1,0 +1,92 @@
+{
+ "id": "ep3_frytest",
+ "image": "ep3_frytest.webp",
+ "size": [
+  1920,
+  1080
+ ],
+ "scene_blend": "crc_plant_bg.blend",
+ "peeler_state": null,
+ "story_state": "brown",
+ "use": "ep03 raw_materials / lab: fry test, ten slices next to the colour chart and the reference trays",
+ "camera": {
+  "pos_m": [
+   8.75,
+   -38.05,
+   1.62
+  ],
+  "target_m": [
+   8.6,
+   -39.15,
+   0.92
+  ],
+  "lens_mm": 24,
+  "sensor_mm": 36.0,
+  "fit": "horizontal",
+  "exposure": -0.6,
+  "rot_euler_deg": [
+   57.77,
+   -0.0,
+   172.23
+  ]
+ },
+ "horizon_y_px": -267.1,
+ "eye_height_m": 1.62,
+ "placement": [
+  {
+   "dist_m": 1.5,
+   "feet_y_px": 882.2,
+   "head_y_px": -431.1,
+   "person_175_px": 1313.3
+  },
+  {
+   "dist_m": 2.0,
+   "feet_y_px": 692.1,
+   "head_y_px": -388.3,
+   "person_175_px": 1080.4
+  },
+  {
+   "dist_m": 2.5,
+   "feet_y_px": 555.9,
+   "head_y_px": -363.2,
+   "person_175_px": 919.1
+  },
+  {
+   "dist_m": 3.0,
+   "feet_y_px": 453.5,
+   "head_y_px": -346.8,
+   "person_175_px": 800.3
+  },
+  {
+   "dist_m": 4.0,
+   "feet_y_px": 310.0,
+   "head_y_px": -326.4,
+   "person_175_px": 636.5
+  },
+  {
+   "dist_m": 5.0,
+   "feet_y_px": 214.2,
+   "head_y_px": -314.3,
+   "person_175_px": 528.5
+  },
+  {
+   "dist_m": 6.0,
+   "feet_y_px": 145.6,
+   "head_y_px": -306.4,
+   "person_175_px": 452.0
+  },
+  {
+   "dist_m": 8.0,
+   "feet_y_px": 54.2,
+   "head_y_px": -296.5,
+   "person_175_px": 350.6
+  }
+ ],
+ "note": "Web copy at 0.7500 x the render; all *_px values and px_per_* are already scaled to this image. Web cutouts (public/art/characters) are 768 x 1152 with feet at 97 % of the height. Character cutouts (crc-learning-game assets-and-references/characters/*/scenes, 1024 x 1536, feet at ~97 % of the image height, head near the top): scale = person_px / (0.97 * cutout_height_px) where person_px = person_175_px scaled by the character's height / 1.75 m; place the cutout so its bottom edge is at feet_y_px + 0.03 * scaled_height (interpolate person_175_px / feet_y_px between rows). The table is projection only: it says nothing about furniture or walls, so pick a spot with clear floor (or draw foreground objects over the character with a mask). Rows are measured straight ahead of the camera; for this roll-free camera a figure standing anywhere on the same image row has the same height (only its width foreshortens towards the frame edges).",
+ "source_size": [
+  2560,
+  1440
+ ],
+ "source_image": "ep3_frytest.png",
+ "web_scale": 0.75
+}

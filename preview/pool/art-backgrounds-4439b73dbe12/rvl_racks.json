@@ -1,0 +1,72 @@
+{
+ "id": "rvl_racks",
+ "image": "rvl_racks.webp",
+ "size": [
+  1920,
+  1080
+ ],
+ "scene_blend": "crc_plant_bg.blend",
+ "use": "RVL dry store racks and forklifts",
+ "camera": {
+  "pos_m": [
+   2.0,
+   -47.0,
+   1.7
+  ],
+  "target_m": [
+   9.0,
+   -60.0,
+   2.0
+  ],
+  "lens_mm": 24,
+  "sensor_mm": 36.0,
+  "fit": "horizontal",
+  "exposure": 0.0,
+  "rot_euler_deg": [
+   91.16,
+   -0.0,
+   -151.7
+  ]
+ },
+ "horizon_y_px": 566.0,
+ "eye_height_m": 1.7,
+ "placement": [
+  {
+   "dist_m": 5.0,
+   "feet_y_px": 1004.4,
+   "head_y_px": 553.2,
+   "person_175_px": 451.2
+  },
+  {
+   "dist_m": 6.0,
+   "feet_y_px": 930.9,
+   "head_y_px": 555.4,
+   "person_175_px": 375.5
+  },
+  {
+   "dist_m": 8.0,
+   "feet_y_px": 839.3,
+   "head_y_px": 558.0,
+   "person_175_px": 281.3
+  },
+  {
+   "dist_m": 10.0,
+   "feet_y_px": 784.4,
+   "head_y_px": 559.6,
+   "person_175_px": 224.9
+  },
+  {
+   "dist_m": 14.0,
+   "feet_y_px": 721.9,
+   "head_y_px": 561.5,
+   "person_175_px": 160.4
+  }
+ ],
+ "note": "Web copy at 0.7500 x the render; all *_px values and px_per_* are already scaled to this image. Web cutouts (public/art/characters) are 768 x 1152 with feet at 97 % of the height. Character cutouts (crc-learning-game assets-and-references/characters/*/scenes, 1024 x 1536, feet at ~97 % of the image height, head near the top): scale = person_px / (0.97 * cutout_height_px) where person_px = person_175_px scaled by the character's height / 1.75 m; place the cutout so its bottom edge is at feet_y_px + 0.03 * scaled_height (interpolate person_175_px / feet_y_px between rows). The table is projection only: it says nothing about furniture or walls, so pick a spot with clear floor (or draw foreground objects over the character with a mask). Rows are measured straight ahead of the camera; for this roll-free camera a figure standing anywhere on the same image row has the same height (only its width foreshortens towards the frame edges).",
+ "source_size": [
+  2560,
+  1440
+ ],
+ "source_image": "rvl_racks.png",
+ "web_scale": 0.75
+}
