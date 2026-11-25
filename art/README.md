@@ -360,7 +360,7 @@ office) and `production_office_desk/door` (`.webp` + `.json`). Third-party model
 - "Office Binder" by AshenCut.
 - "Office Pack Vol.1" by MeikWModels.
 
-Open: the licence of the VizPeople chairs in Per's office is not confirmed yet.
+The visitor chairs in Per's office are our own model. The earlier VizPeople chairs were removed because no licence was found (2026-11-24).
 
 ## Off-duty clothes (#394)
 
