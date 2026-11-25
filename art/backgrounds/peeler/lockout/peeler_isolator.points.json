@@ -48,24 +48,24 @@
   "grease_puddle": {
    "what": "grease drip and puddle on the floor under the failing bearing",
    "box_px": [
-    1398,
+    1390,
     817,
-    1526,
-    882
+    1534,
+    885
    ],
    "boxes_px": [
     [
-     1398,
+     1390,
      817,
-     1526,
-     882
+     1534,
+     885
     ]
    ],
    "center_px": [
     1462,
-    849
+    850
    ],
-   "visible_frac": 0.96,
+   "visible_frac": 0.99,
    "in_frame_frac": 1.0
   },
   "isolator": {
@@ -94,24 +94,24 @@
   "lockout": {
    "what": "padlock and danger tag on the isolator",
    "box_px": [
-    914,
-    538,
-    1067,
-    1045
+    922,
+    548,
+    1077,
+    1062
    ],
    "boxes_px": [
     [
-     914,
-     538,
-     1067,
-     1045
+     922,
+     548,
+     1077,
+     1062
     ]
    ],
    "center_px": [
-    990,
-    792
+    1000,
+    806
    ],
-   "visible_frac": 0.95,
+   "visible_frac": 0.93,
    "in_frame_frac": 1.0
   }
  },

@@ -1,0 +1,41 @@
+{
+ "size": [
+  1672,
+  941
+ ],
+ "source": "debrief-canteen-A.png (Codex GPT Image, 2026-11-20, owner approved; /mnt/project-files/art/codex-2026-11-20-natt/scenes/)",
+ "use": "episode-end debrief: the canteen after the shift, nobody in it (#389)",
+ "note": "No camera data (AI picture): placement estimated from a 24 mm lens, eye height 1.6 m, horizon at y 470. Check by eye before putting people here.",
+ "placement": [
+  {
+   "dist_m": 3,
+   "feet_y_px": 1064.5,
+   "person_175_px": 650.2
+  },
+  {
+   "dist_m": 4,
+   "feet_y_px": 915.9,
+   "person_175_px": 487.7
+  },
+  {
+   "dist_m": 5,
+   "feet_y_px": 826.7,
+   "person_175_px": 390.1
+  },
+  {
+   "dist_m": 6,
+   "feet_y_px": 767.2,
+   "person_175_px": 325.1
+  },
+  {
+   "dist_m": 8,
+   "feet_y_px": 692.9,
+   "person_175_px": 243.8
+  },
+  {
+   "dist_m": 10,
+   "feet_y_px": 648.3,
+   "person_175_px": 195.1
+  }
+ ]
+}

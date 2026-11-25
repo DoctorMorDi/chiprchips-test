@@ -22,24 +22,24 @@
    "what": "chips on the sorter belt and the de-oiler (golden, or many dark ones)",
    "box_px": [
     879,
-    763,
-    1489,
-    1044
+    760,
+    1496,
+    1066
    ],
    "boxes_px": [
     [
      879,
-     763,
-     1489,
-     1044
+     760,
+     1496,
+     1066
     ]
    ],
    "center_px": [
-    1184,
-    903
+    1188,
+    914
    ],
-   "visible_frac": 0.3,
-   "in_frame_frac": 0.35
+   "visible_frac": 0.41,
+   "in_frame_frac": 0.74
   },
   "sorter_screen": {
    "what": "the colour sorter's screen: reject rate and what it sorts by",

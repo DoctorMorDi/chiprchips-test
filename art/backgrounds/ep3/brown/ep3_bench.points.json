@@ -21,47 +21,47 @@
   "thermometer": {
    "what": "the store thermometer's meter and reading",
    "box_px": [
-    648,
-    574,
-    913,
-    868
+    425,
+    717,
+    856,
+    962
    ],
    "boxes_px": [
     [
-     648,
-     574,
-     913,
-     868
+     425,
+     717,
+     856,
+     962
     ]
    ],
    "center_px": [
-    780,
-    721
+    640,
+    839
    ],
-   "visible_frac": 0.98,
+   "visible_frac": 1.0,
    "in_frame_frac": 1.0
   },
   "ice_bath": {
    "what": "the jug of ice water with the probe in it",
    "box_px": [
-    1046,
-    236,
-    1389,
-    689
+    1240,
+    181,
+    1602,
+    607
    ],
    "boxes_px": [
     [
-     1046,
-     236,
-     1389,
-     689
+     1240,
+     181,
+     1602,
+     607
     ]
    ],
    "center_px": [
-    1218,
-    462
+    1420,
+    394
    ],
-   "visible_frac": 0.45,
+   "visible_frac": 0.44,
    "in_frame_frac": 1.0
   }
  },

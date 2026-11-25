@@ -48,23 +48,23 @@
    "what": "grease drip and puddle on the floor under the failing bearing",
    "box_px": [
     1412,
-    731,
-    1457,
+    732,
+    1460,
     746
    ],
    "boxes_px": [
     [
      1412,
-     731,
-     1457,
+     732,
+     1460,
      746
     ]
    ],
    "center_px": [
-    1435,
-    738
+    1436,
+    739
    ],
-   "visible_frac": 0.95,
+   "visible_frac": 0.91,
    "in_frame_frac": 1.0
   },
   "beacon": {
@@ -93,24 +93,24 @@
   "hmi": {
    "what": "HMI screen (alarm red, running, or dark)",
    "box_px": [
-    1359,
-    451,
+    1345,
+    450,
     1414,
     514
    ],
    "boxes_px": [
     [
-     1359,
-     451,
+     1345,
+     450,
      1414,
      514
     ]
    ],
    "center_px": [
-    1387,
+    1379,
     482
    ],
-   "visible_frac": 0.83,
+   "visible_frac": 1.0,
    "in_frame_frac": 1.0
   },
   "isolator": {

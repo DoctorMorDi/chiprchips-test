@@ -51,6 +51,11 @@
         window.stop();
         location.replace('marked.html' + location.search);
       }
+      // The payslip sandbox (#295) likewise: lonning.html, or ?lonning for short.
+      if (new URLSearchParams(location.search).has('lonning')) {
+        window.stop();
+        location.replace('lonning.html' + location.search);
+      }
       // The potato plot sandbox (#212) likewise: plot.html, or ?aker for short.
       if (new URLSearchParams(location.search).has('aker')) {
         window.stop();
@@ -76,10 +81,20 @@
         window.stop();
         location.replace('miniputt.html' + location.search);
       }
+      // kAI and KIm, the first slice (#381), likewise: ki.html, or ?ki for short.
+      if (new URLSearchParams(location.search).has('ki')) {
+        window.stop();
+        location.replace('ki.html' + location.search);
+      }
       // The CRC-nett sandbox (#297) likewise: crcnett.html, or ?crcnett for short.
       if (new URLSearchParams(location.search).has('crcnett')) {
         window.stop();
         location.replace('crcnett.html' + location.search);
+      }
+      // The BE-112 course mode (#398): prosjekt.html, or ?prosjekt for short; ?laerer opens its teacher page.
+      if (new URLSearchParams(location.search).has('prosjekt') || new URLSearchParams(location.search).has('laerer')) {
+        window.stop();
+        location.replace('prosjekt.html' + location.search);
       }
       // The city map (#294): kart.html, or ?kart for short.
       if (new URLSearchParams(location.search).has('kart')) {
@@ -88,33 +103,37 @@
       }
     </script>
     <link rel="icon" type="image/png" sizes="32x32" href="icons/game-32.png" />
-    <link rel="apple-touch-icon" href="icons/game-180.png" />
-    <script type="module" crossorigin src="./assets/main-CMysde_7.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/i18n-DxHqfLxM.js">
-    <link rel="modulepreload" crossorigin href="./assets/routine-Cfrmm3lU.js">
-    <link rel="modulepreload" crossorigin href="./assets/calendar-DjXjhs3Z.js">
-    <link rel="modulepreload" crossorigin href="./assets/shared-clock-fMnEjn8i.js">
-    <link rel="modulepreload" crossorigin href="./assets/play-BD29oVKO.js">
-    <link rel="modulepreload" crossorigin href="./assets/sprites-DLkyfyGj.js">
-    <link rel="modulepreload" crossorigin href="./assets/stamps-CqjWJ0YS.js">
+    <link rel="apple-touch-icon" href="icons/game-180.png" />
+    <script type="module" crossorigin src="./assets/main-C4x-slpg.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-P2Xu9kJm.js">
+    <link rel="modulepreload" crossorigin href="./assets/routine-CuyBmnS-.js">
+    <link rel="modulepreload" crossorigin href="./assets/calendar-3iWlR4_d.js">
+    <link rel="modulepreload" crossorigin href="./assets/i18n-DO3mV0bp.js">
+    <link rel="modulepreload" crossorigin href="./assets/calendar-il68w6qN.js">
+    <link rel="modulepreload" crossorigin href="./assets/relationships-C1drbxAj.js">
+    <link rel="modulepreload" crossorigin href="./assets/play-DxDVGgqE.js">
+    <link rel="modulepreload" crossorigin href="./assets/league-CanEAL84.js">
+    <link rel="modulepreload" crossorigin href="./assets/stamps-Dw-1DxWI.js">
     <link rel="modulepreload" crossorigin href="./assets/phaser.esm-C0r02wnA.js">
+    <link rel="modulepreload" crossorigin href="./assets/scene-art-5FxKlv3K.js">
     <link rel="modulepreload" crossorigin href="./assets/home_evening-CvFvoHW7.js">
-    <link rel="modulepreload" crossorigin href="./assets/home-BWTxvQZo.js">
-    <link rel="modulepreload" crossorigin href="./assets/visit-log-EijYAwNO.js">
-    <link rel="modulepreload" crossorigin href="./assets/invites-CRECUdm3.js">
-    <link rel="modulepreload" crossorigin href="./assets/evening-y4OK6jWZ.js">
-    <link rel="modulepreload" crossorigin href="./assets/online-COTn4fnv.js">
+    <link rel="modulepreload" crossorigin href="./assets/home-CwvvoBcw.js">
+    <link rel="modulepreload" crossorigin href="./assets/shared-clock-DKH52tX9.js">
+    <link rel="modulepreload" crossorigin href="./assets/visit-log-dCVnqy1E.js">
+    <link rel="modulepreload" crossorigin href="./assets/invites-zIXpDQvE.js">
+    <link rel="modulepreload" crossorigin href="./assets/evening-Cowf_fYU.js">
+    <link rel="modulepreload" crossorigin href="./assets/online-CkfFISlx.js">
     <link rel="modulepreload" crossorigin href="./assets/soundscape-QqfujnN5.js">
     <link rel="modulepreload" crossorigin href="./assets/audio-CNPmwaff.js">
-    <link rel="modulepreload" crossorigin href="./assets/news-KKYQKWwm.js">
-    <link rel="modulepreload" crossorigin href="./assets/scene-B6CV5FGp.js">
+    <link rel="modulepreload" crossorigin href="./assets/news-B2Vq820E.js">
+    <link rel="modulepreload" crossorigin href="./assets/scene-CrOj8FiI.js">
     <link rel="stylesheet" crossorigin href="./assets/main-CWWJ1eL4.css">
-    <link rel="stylesheet" crossorigin href="./assets/style-Df5588_7.css">
+    <link rel="stylesheet" crossorigin href="./assets/style-s5yGcjDj.css">
   </head>
   <body>
     <div id="stage"></div>
     <div id="hud" aria-live="polite"></div>
     <div id="toast" role="status"></div>
-    <main id="ui" aria-live="polite"></main>
+    <main id="ui" aria-live="polite"></main>
   </body>
 </html>

@@ -68,24 +68,24 @@
   "grease_puddle": {
    "what": "grease drip and puddle on the floor under the failing bearing",
    "box_px": [
-    870,
-    928,
-    1007,
-    1025
+    866,
+    926,
+    1015,
+    1030
    ],
    "boxes_px": [
     [
-     870,
-     928,
-     1007,
-     1025
+     866,
+     926,
+     1015,
+     1030
     ]
    ],
    "center_px": [
-    939,
-    976
+    940,
+    978
    ],
-   "visible_frac": 0.99,
+   "visible_frac": 1.0,
    "in_frame_frac": 1.0
   }
  },

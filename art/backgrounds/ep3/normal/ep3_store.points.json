@@ -21,24 +21,24 @@
   "store_display": {
    "what": "the cold store's temperature display",
    "box_px": [
-    402,
-    278,
-    580,
-    407
+    398,
+    292,
+    565,
+    412
    ],
    "boxes_px": [
     [
-     402,
-     278,
-     580,
-     407
+     398,
+     292,
+     565,
+     412
     ]
    ],
    "center_px": [
-    490,
-    343
+    482,
+    352
    ],
-   "visible_frac": 0.82,
+   "visible_frac": 0.84,
    "in_frame_frac": 1.0
   }
  },

@@ -21,25 +21,25 @@
   "chips": {
    "what": "chips on the sorter belt and the de-oiler (golden, or many dark ones)",
    "box_px": [
-    0,
-    280,
-    1916,
-    1052
+    4,
+    296,
+    1918,
+    1078
    ],
    "boxes_px": [
     [
-     0,
-     280,
-     1916,
-     1052
+     4,
+     296,
+     1918,
+     1078
     ]
    ],
    "center_px": [
-    958,
-    666
+    962,
+    687
    ],
-   "visible_frac": 0.73,
-   "in_frame_frac": 0.22
+   "visible_frac": 0.82,
+   "in_frame_frac": 0.6
   }
  },
  "not_visible": [

@@ -5,7 +5,7 @@
   1920,
   1080
  ],
- "scene_blend": "crc_plant_bg.blend",
+ "scene_blend": "crc_plant_bg_workshop_v2.blend",
  "use": "workshop reverse angle (stores, cage)",
  "camera": {
   "pos_m": [

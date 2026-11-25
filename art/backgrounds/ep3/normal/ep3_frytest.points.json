@@ -21,22 +21,22 @@
   "fry_sample": {
    "what": "today's fry test: ten slices on a labelled card",
    "box_px": [
-    845,
-    547,
-    1238,
-    700
+    956,
+    544,
+    1221,
+    746
    ],
    "boxes_px": [
     [
-     845,
-     547,
-     1238,
-     700
+     956,
+     544,
+     1221,
+     746
     ]
    ],
    "center_px": [
-    1041,
-    623
+    1088,
+    645
    ],
    "visible_frac": 1.0,
    "in_frame_frac": 1.0
@@ -44,74 +44,68 @@
   "fry_batches": {
    "what": "earlier fry-test batches on their trays",
    "box_px": [
-    886,
-    449,
-    1496,
-    649
+    853,
+    440,
+    1542,
+    657
    ],
    "boxes_px": [
     [
-     1221,
-     528,
-     1496,
-     649
-    ],
-    [
-     886,
-     449,
-     1078,
-     520
+     853,
+     440,
+     1542,
+     657
     ]
    ],
    "center_px": [
-    1191,
-    549
+    1197,
+    548
    ],
-   "visible_frac": 0.85,
+   "visible_frac": 0.78,
    "in_frame_frac": 1.0
   },
   "fryer": {
    "what": "the lab fryer's basket",
    "box_px": [
-    24,
-    232,
-    487,
-    532
+    48,
+    231,
+    490,
+    475
    ],
    "boxes_px": [
     [
-     24,
-     232,
-     487,
-     532
+     48,
+     231,
+     490,
+     475
     ]
    ],
    "center_px": [
-    255,
-    382
+    268,
+    352
    ],
-   "visible_frac": 0.44,
+   "visible_frac": 0.52,
    "in_frame_frac": 1.0
   },
   "colour_chart": {
    "what": "the fry-colour chart on the fry station",
    "box_px": [
-    969,
+    963,
     363,
-    1225,
-    428
+    1232,
+    430
    ],
    "boxes_px": [
     [
-     969,
+     963,
      363,
-     1225,
-     428
+     1232,
+     430
     ]
    ],
    "center_px": [
-    1096,
-    395
+    1097,
+    397
    ],
    "visible_frac": 1.0,
    "in_frame_frac": 1.0
@@ -119,25 +113,25 @@
   "fryer_meter": {
    "what": "the fryer's digital temperature meter on its stand",
    "box_px": [
-    736,
-    145,
+    730,
+    119,
     787,
-    250
+    254
    ],
    "boxes_px": [
     [
-     736,
-     145,
+     730,
+     119,
      787,
-     250
+     254
     ]
    ],
    "center_px": [
-    761,
-    197
+    759,
+    187
    ],
-   "visible_frac": 0.9,
-   "in_frame_frac": 0.93
+   "visible_frac": 0.7,
+   "in_frame_frac": 1.0
   }
  },
  "not_visible": [

@@ -111,30 +111,30 @@
     502,
     521
    ],
-   "visible_frac": 0.84,
+   "visible_frac": 0.87,
    "in_frame_frac": 1.0
   },
   "lockout": {
    "what": "padlock and danger tag on the isolator",
    "box_px": [
     500,
-    529,
-    523,
-    603
+    530,
+    524,
+    604
    ],
    "boxes_px": [
     [
      500,
-     529,
-     523,
-     603
+     530,
+     524,
+     604
     ]
    ],
    "center_px": [
     512,
-    566
+    567
    ],
-   "visible_frac": 0.93,
+   "visible_frac": 0.91,
    "in_frame_frac": 1.0
   }
  },

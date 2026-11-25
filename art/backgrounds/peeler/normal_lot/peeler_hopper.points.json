@@ -46,37 +46,37 @@
   "hopper_load": {
    "what": "potatoes in and over the inlet hopper (overfeed heap when it rises above the rim)",
    "box_px": [
-    504,
-    79,
-    1258,
-    1064
+    470,
+    74,
+    1438,
+    1078
    ],
    "boxes_px": [
     [
-     504,
-     651,
-     977,
-     1064
+     470,
+     74,
+     1150,
+     404
     ],
     [
-     519,
-     79,
-     1138,
-     342
+     508,
+     669,
+     896,
+     1078
     ],
     [
-     1079,
-     765,
-     1258,
-     851
+     1086,
+     661,
+     1438,
+     795
     ]
    ],
    "center_px": [
-    881,
-    572
+    954,
+    576
    ],
-   "visible_frac": 0.02,
-   "in_frame_frac": 0.99
+   "visible_frac": 0.05,
+   "in_frame_frac": 0.98
   }
  },
  "not_visible": [

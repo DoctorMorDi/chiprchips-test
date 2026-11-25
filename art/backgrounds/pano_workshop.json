@@ -5,7 +5,7 @@
   4114,
   1080
  ],
- "scene_blend": "crc_plant_bg.blend",
+ "scene_blend": "crc_plant_bg_workshop_v2.blend",
  "use": "ep01 workshop (Lars)",
  "projection": "central_cylindrical_180",
  "camera": {

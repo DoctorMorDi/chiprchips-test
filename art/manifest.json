@@ -3344,6 +3344,14 @@
    "reception_desk",
    "reception_door"
   ],
+  "your_office": [
+   "your_office_desk",
+   "your_office_door"
+  ],
+  "production_office": [
+   "production_office_desk",
+   "production_office_door"
+  ],
   "per_office": [
    "per_office_desk",
    "per_office_door",

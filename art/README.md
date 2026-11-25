@@ -44,6 +44,13 @@ GPT Image) on corvus, 2026-11-16/17, for this project; own work, same licence as
 (1254 px RGBA) and the prompts in the project folder `art/football/malaga-logos/`: `logo2-<team>.png` for
 catenaccio, biscuit, dip, gurk, fizz, and `logo3-<team>.png` for siesta and mochi. Approved by the owner 2026-11-18.
 
+Three more for the bigger pool (#369): `churros.webp`, `croissant.webp`, `surstromming.webp`, same format, and
+`surstromming-large.webp` (256 px) for the big view before a match, with the green word STANK on the tin (the text is
+drawn in the Creepster font, Font Diner, SIL Open Font License; it cannot be read at table size, so the tables use the
+plain logo). Source: Codex (GPT Image) on corvus 2026-11-19/20, own work. Masters (1254 px RGBA) in the project folder
+`art/codex-2026-11-20-natt/malaga-logos/`: `logo-churros-A.png`, `logo-croissant-A.png`, `logo-surstromming-A3.png`
+and the text layer `stank-text/stank-text-green.png` (with the font and its licence). Approved by the owner 2026-11-20.
+
 ## Company football kit (#243)
 
 `characters/<slug>/crc-kit/<neutral|talking|happy>.webp` for Happy, Vegard, Adam, Leo and Marek: the same players in
@@ -57,6 +64,10 @@ shorts and socks. Built by the same script from `art/football/eeli_crc-kit_<pose
 Codex's built-in image generation (OpenAI GPT Image) on corvus, 2026-11-13, for this project, with his approved look
 (`assets-and-references/characters/eeli/`) as the identity reference; own work, same licence as the rest of the game's
 art. The backgrounds came transparent from the generator; no separate background removal.
+Susanne and Iben, on the bench since #415 (#420): `characters/<susanne|iben>/crc-kit/<neutral|talking|happy>.webp`,
+built by the same script from `art/football/<slug>_crc-kit_<pose>.png`. Source: AI-generated with Codex's built-in
+image generation (OpenAI GPT Image) on corvus via HUB, 2026-11-24, for this project (originals in `art/football/raw/`);
+own work, same licence as the rest of the game's art.
 The team's running figures on the pitch are rows of the map's people sheet: see `public/map-art/sprites/README.md`.
 
 ## Guitar sandbox (#169)
@@ -70,6 +81,12 @@ For 4 and 6 lanes (#200), cut and recoloured from the same sources by the same s
 `guitar/floor.webp` (the highway with its painted lines filled in), `guitar/gem_<3|4|5>.webp` (green, blue,
 violet: hue-turned copies of the teal gem), `guitar/target.webp` + `target_lit.webp` (one pick target from each bar)
 and `guitar/rail.webp` (a piece of the bar between targets).
+Guitar neck in perspective (#204, notes follow it: #172), from the project folder `art/codex-2026-11-20-natt/guitar/`
+(AI-generated with Codex GPT Image on corvus, 2026-11-20, own work; approved by the owner 2026-11-20), converted to
+WebP at full size (1024 x 1536): `guitar/neck_rosewood.webp` (beginner, neck-perspective-A), `neck_maple.webp` (easy,
+B), `neck_ebony.webp` (medium, C) and `guitar/strings.webp` (strings-perspective-straight-B, six strings, drawn over the
+neck on medium; fewer lanes draw their strings in code). Where the painted strings run: `NECK` in `src/guitar/neck.ts`.
+Since #204 `highway.webp` and `floor.webp` are no longer drawn (kept for the build script).
 
 ## Robot fight, isometric (#231)
 
@@ -232,6 +249,15 @@ rocket). `kid-lucas.webp` replaced: the same picture with the white collar the o
 them. Both made with Codex (GPT Image) on 2026-11-18, own work; PNG originals in `miniputt-372.zip` in the project
 folder.
 
+## Football captains' faces (2026-11-24)
+
+`football/captains/<captain>/<neutral|talking|happy>.webp`, 240 x 300: each league captain's head and chest, shown
+beside the pitch while his team plays you (talking while his bubble is up, happy while his team leads). Cut by
+`tools/art/build_football_pack.py` (`captains()`) from the project folder `art/football/captains/` (17 captains,
+Codex GPT Image via HUB, 2026-11-24, approved by the owner) and `art/football/opponents/` (Vifta, Sebb without the
+watch (-v2), Sålen); own work, same licence as the rest of the game's art. Vifta, Sebb and Sålen still wear their
+first kits, without the team logos of the 2026-11-23 kits.
+
 ## The city map (#294, painted map)
 
 `citymap/kristiansand.webp` (1774 x 887, map v4, north up, no text): Kristiansand and around, from Søgne to the
@@ -287,8 +313,16 @@ rest of the game's art. Picked by the owner 2026-11-16.
 
 Einar's webcam faces: head-and-shoulders crops of his off-duty all-year poses (`einar-allyear-*.png` in the project
 folder `art/byggesettet/off-duty/`, made for the side gigs) on a dim room background, 320 x 240. Built by
-`tools/art/build_gulls_pack.py`. The beach, stand and gulls are drawn in code (`src/gulls/draw.ts`) until the game gets
-real art; Luffe on the keyboard reuses `sled/luffe/peek.webp`.
+`tools/art/build_gulls_pack.py`. Luffe on the keyboard reuses `sled/luffe/peek.webp`.
+
+The painted art (#386): AI-generated with Codex (GPT Image) on 2026-11-19 via HUB, own work, prompts approved by the
+owner (style "near-photoreal, painted"; prompts in the project folder
+`plans/side-activities/einar-online/masekrigen-art/prompts.md`, originals in `art/masekrigen/codex-v1/` and
+`masekrigen-art.zip`). Sliced on the sheets' fixed grids and trimmed by the same script: `beach.webp` (1536 x 922, 5:3),
+`stand.webp`, `crate-{shrimp,chips,fishcakes}.webp`, `gull-{up,mid,down,landed,flee}.webp`,
+`big-{up,down,landed,beaten}.webp`, `{you,einar}-{ready,swing}.webp`, `feather.webp` (the end screen's feather count)
+and `logo.webp` (the first screen). Frames that swap share one trimmed box. Gulls face right; `src/gulls/draw.ts`
+mirrors them and keeps the old shapes as a stand-in while a picture loads.
 
 ## Malaga ground (#376)
 
@@ -300,3 +334,53 @@ Codex (GPT Image) edits, own work, approved prompts by the owner 2026-11-18 (tas
 - `backgrounds/malaga_ground.webp` (1672 x 940) + `.json`: before and after a match in Malaga, an edit of
   `backgrounds/kickabout_fence.webp` with the same camera; the placement table is copied from it.
 - `football/logos/crc.webp`: our heart from the shirt (`public/brand/chipr-chips-heart.png`), in the Malaga tables.
+
+## 17. mai (#339)
+
+Codex (GPT Image), own work, no text or brands, from the overnight batch of 2026-11-20 (owner approved the whole batch
+2026-11-20; picks in `/mnt/project-files/art/codex-2026-11-20-natt/README.md`). Built by
+`tools/art/build_may17_pack.py`:
+
+- `backgrounds/torvet_17mai_stall.webp`, `backgrounds/torvet_17mai.webp` (1672 x 940) + `.json`: Torvet dressed for
+  17 May, with and without the sports club's stall (takes A). The placement tables come from a camera guessed by eye.
+- `backgrounds/backyard_posebyen.webp` + `.json`: the Posebyen backyard (base A) with the band gear (A) and the string
+  lights (A) laid over it; `backgrounds/backyard_gig_night.webp` + `.json`: the finished evening gig (A).
+- `layers/parade_17mai.webp`: the children's parade (A), trimmed; it slides across Torvet (`layers` in scene-art.json).
+- `characters/kasper/`: Kasper Drange, Blytung!'s drummer: v3 neutral, talking, listening, happy, thinking (head held
+  straight, owner 2026-11-20) and v2 worried. Annoyed and pointing are stand-ins (neutral, talking) until there is a take.
+- `souvenirs/may17.webp`: the flag in a glass and the rosette (A), the home souvenir.
+
+## Office wing (room review, 2026-11-24)
+
+Blender renders from `crc_admin_wing_v2.blend` (room review, HUB on corvus): `backgrounds/corridor_main(_rev)`,
+`meeting_room(_rev)`, `pano_meeting`, `per_office_desk/door`, and the new `your_office_desk/door` (the player's
+office) and `production_office_desk/door` (`.webp` + `.json`). Third-party models in these rooms, CC BY:
+
+- "Laptop" by viveksha (Fab).
+- "Office Binder" by AshenCut.
+- "Office Pack Vol.1" by MeikWModels.
+
+Open: the licence of the VizPeople chairs in Per's office is not confirmed yet.
+
+## Off-duty clothes (#394)
+
+`characters/<slug>/off-duty/<neutral|talking|happy|worried|thinking>.webp`: colleagues in their own clothes on a day
+off, worn in the 17. mai scenes (`torvet_stall`, `torvet_parade`, `backyard`, `backyard_gig`, outfit `off-duty` in
+`content/scene-art.json`; its `who` list says who has a set, everyone else keeps their own poses). Built by
+`tools/art/build_offduty_pack.py` from the project folder: Unni and Happy from `art/off-duty/`, Einar's all-year set
+and Lars-Owe from `art/byggesettet/off-duty/`, and Marie's spring set (`art/off-duty/marie-off-*.png`, made
+2026-11-20). Source: AI-generated with Codex's built-in image generation (OpenAI GPT Image), own work.
+
+## Room-fix backgrounds (room review, 2026-11-23/24)
+
+Blender renders by HUB on corvus from owned Fab, ArtStation and Kaizen assets (Standard licence unless noted).
+CC BY models in the reception pictures (pano_reception, reception_wide, reception_desk, reception_door), credit lines:
+
+- "Hospital Waiting Bench - AshenCut" by AshenCut (Fab), licensed under CC BY. Modified for the game.
+- "Modern Sofa" by 3DimentionalBen (Fab), licensed under CC BY. Modified for the game.
+- "Simple Modern Coat Rack" by AlyStation (Fab), licensed under CC BY. Modified for the game.
+- "Outlets" by DustyLv (Fab), licensed under CC BY. Modified for the game.
+- "PH Store - Modern Living Room" by Pixel Hearts (Fab), licensed under CC BY. Modified for the game.
+
+The reception's sky is kloofendal_overcast_puresky (Poly Haven, CC0). No CC BY asset in the peeler, canteen, production
+hall, garderobe, huddle, ep3 chips line, hygiene lock, RVL or painted pictures.
