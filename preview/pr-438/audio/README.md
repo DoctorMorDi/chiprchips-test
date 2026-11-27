@@ -3,6 +3,10 @@
 Game-ready MP3s, made from masters by `npm run audio:build -- <masters folder>` (`tools/audio/build.ts`, needs ffmpeg).
 Never edit these files by hand: change the master and rebuild. Which sound plays where is set in `src/game/soundscape.ts`.
 
+Files added without the build step can end up too quiet or too loud. `npm run audio:level -- --check [vo|sounds|music|ambience]`
+lists files more than 2 LU (or 2 dB peak) off their target and fails; without `--check` it fixes them in place (#180).
+Run it on `vo` after adding new voice lines.
+
 ## Format (rules in `tools/audio/specs.ts`)
 
 All files are MP3, 44.1 kHz. Loudness is fixed per folder; how loud each group plays is set in code.
