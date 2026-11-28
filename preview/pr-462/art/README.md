@@ -288,7 +288,7 @@ the project folder, nothing else changed. All AI-generated with Codex (GPT Image
 
 - `quiz-pub.webp` (1672 x 941): the pub, from `art/quizkvelden/pub-interior.png` (2026-11).
 - `kit-hobby-room.webp` (1671 x 941): the hobby room, from `art/byggesettet/hobby-room-v4.png` (2026-11).
-- `stall-front.webp` (1672 x 941): the stall with the hatch open, from `art/dugnadsbua/stall-front.png` (2026-11).
+- `stall-front.webp` (1672 x 941): the stall with the hatch open, from `art/dugnadsbua/stall-front-v2.png` (2026-11-28: waffle iron, bowl and pot about 30 % smaller, owner).
 - `plot-field.webp` (1672 x 941): the four rows from above, from `art/potetakeren/plot-topdown.png` (2026-11).
 - `sled-hill.webp` (1672 x 941): Timenesbakken from the start, from `art/codex-2026-11-15/sled-hill.png` (2026-11-14).
 - `miniputt-pitch.webp` (1536 x 1024): the kids' pitch, from corvus `D:\Assets\Art\codex-2026-11-14\miniputt\pitch.png`
