@@ -21,6 +21,11 @@
         window.stop();
         location.replace('repair.html' + location.search);
       }
+      // Krimklubben (#454) likewise: krim.html, or ?krim for short.
+      if (new URLSearchParams(location.search).has('krim')) {
+        window.stop();
+        location.replace('krim.html' + location.search);
+      }
       // Måsekrigen, the online game with Einar at bedtime (#364), likewise: masekrigen.html, or ?maaker for short.
       if (new URLSearchParams(location.search).has('maaker')) {
         window.stop();
@@ -104,32 +109,34 @@
     </script>
     <link rel="icon" type="image/png" sizes="32x32" href="icons/game-32.png" />
     <link rel="apple-touch-icon" href="icons/game-180.png" />
-    <script type="module" crossorigin src="./assets/main-ByqXF0QC.js"></script>
+    <script type="module" crossorigin src="./assets/main-B7qlb4J_.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-P2Xu9kJm.js">
-    <link rel="modulepreload" crossorigin href="./assets/routine-CuyBmnS-.js">
+    <link rel="modulepreload" crossorigin href="./assets/routine-CL698qRk.js">
     <link rel="modulepreload" crossorigin href="./assets/calendar-3iWlR4_d.js">
-    <link rel="modulepreload" crossorigin href="./assets/i18n-CMRwYi9r.js">
+    <link rel="modulepreload" crossorigin href="./assets/i18n-r2_GjjM5.js">
     <link rel="modulepreload" crossorigin href="./assets/state-BMAfYCGF.js">
-    <link rel="modulepreload" crossorigin href="./assets/play-C9v26ElT.js">
-    <link rel="modulepreload" crossorigin href="./assets/save-3fxmFaE1.js">
+    <link rel="modulepreload" crossorigin href="./assets/relationships-Dh8zC7XI.js">
+    <link rel="modulepreload" crossorigin href="./assets/play-BavYiSHl.js">
+    <link rel="modulepreload" crossorigin href="./assets/save-PVIWQVPr.js">
     <link rel="modulepreload" crossorigin href="./assets/phaser.esm-C0r02wnA.js">
-    <link rel="modulepreload" crossorigin href="./assets/sprites-CB638OfM.js">
-    <link rel="modulepreload" crossorigin href="./assets/scene-art-CZRxbkRH.js">
+    <link rel="modulepreload" crossorigin href="./assets/league-DBdYPTh4.js">
+    <link rel="modulepreload" crossorigin href="./assets/cast-DguseCmA.js">
     <link rel="modulepreload" crossorigin href="./assets/home_evening-CvFvoHW7.js">
+    <link rel="modulepreload" crossorigin href="./assets/scene-art-CV3Xej62.js">
     <link rel="modulepreload" crossorigin href="./assets/home-CwvvoBcw.js">
     <link rel="modulepreload" crossorigin href="./assets/calendar-C06iKirk.js">
     <link rel="modulepreload" crossorigin href="./assets/shared-clock-BdtPFnEo.js">
-    <link rel="modulepreload" crossorigin href="./assets/visit-log-TNM6-NUJ.js">
-    <link rel="modulepreload" crossorigin href="./assets/stamps-BXfiiCW-.js">
+    <link rel="modulepreload" crossorigin href="./assets/visit-log-CChcTUMC.js">
+    <link rel="modulepreload" crossorigin href="./assets/stamps-B6PT-HL9.js">
     <link rel="modulepreload" crossorigin href="./assets/invites-BKYILNYP.js">
     <link rel="modulepreload" crossorigin href="./assets/evening-6ZivDkli.js">
-    <link rel="modulepreload" crossorigin href="./assets/online-9Otvq2KZ.js">
+    <link rel="modulepreload" crossorigin href="./assets/online-BkrNzTI0.js">
     <link rel="modulepreload" crossorigin href="./assets/soundscape-QqfujnN5.js">
     <link rel="modulepreload" crossorigin href="./assets/audio-CNPmwaff.js">
     <link rel="modulepreload" crossorigin href="./assets/news-C0dbVQi6.js">
-    <link rel="modulepreload" crossorigin href="./assets/scene-B1V1MCJ8.js">
-    <link rel="stylesheet" crossorigin href="./assets/main-CWWJ1eL4.css">
-    <link rel="stylesheet" crossorigin href="./assets/style-CRTFE7Wf.css">
+    <link rel="modulepreload" crossorigin href="./assets/scene-Dqb4sOxx.js">
+    <link rel="stylesheet" crossorigin href="./assets/main-CYNR6dOs.css">
+    <link rel="stylesheet" crossorigin href="./assets/style-DqsDm64I.css">
   </head>
   <body>
     <div id="stage"></div>

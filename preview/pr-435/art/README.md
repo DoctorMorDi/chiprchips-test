@@ -249,6 +249,15 @@ rocket). `kid-lucas.webp` replaced: the same picture with the white collar the o
 them. Both made with Codex (GPT Image) on 2026-11-18, own work; PNG originals in `miniputt-372.zip` in the project
 folder.
 
+## Football captains' faces (2026-11-24)
+
+`football/captains/<captain>/<neutral|talking|happy>.webp`, 240 x 300: each league captain's head and chest, shown
+beside the pitch while his team plays you (talking while his bubble is up, happy while his team leads). Cut by
+`tools/art/build_football_pack.py` (`captains()`) from the project folder `art/football/captains/` (17 captains,
+Codex GPT Image via HUB, 2026-11-24, approved by the owner) and `art/football/opponents/` (Vifta, Sebb without the
+watch (-v2), Sålen); own work, same licence as the rest of the game's art. Vifta, Sebb and Sålen still wear their
+first kits, without the team logos of the 2026-11-23 kits.
+
 ## The city map (#294, painted map)
 
 `citymap/kristiansand.webp` (1774 x 887, map v4, north up, no text): Kristiansand and around, from Søgne to the
@@ -279,7 +288,7 @@ the project folder, nothing else changed. All AI-generated with Codex (GPT Image
 
 - `quiz-pub.webp` (1672 x 941): the pub, from `art/quizkvelden/pub-interior.png` (2026-11).
 - `kit-hobby-room.webp` (1671 x 941): the hobby room, from `art/byggesettet/hobby-room-v4.png` (2026-11).
-- `stall-front.webp` (1672 x 941): the stall with the hatch open, from `art/dugnadsbua/stall-front.png` (2026-11).
+- `stall-front.webp` (1672 x 941): the stall with the hatch open, from `art/dugnadsbua/stall-front-v2.png` (2026-11-28: waffle iron, bowl and pot about 30 % smaller, owner).
 - `plot-field.webp` (1672 x 941): the four rows from above, from `art/potetakeren/plot-topdown.png` (2026-11).
 - `sled-hill.webp` (1672 x 941): Timenesbakken from the start, from `art/codex-2026-11-15/sled-hill.png` (2026-11-14).
 - `miniputt-pitch.webp` (1536 x 1024): the kids' pitch, from corvus `D:\Assets\Art\codex-2026-11-14\miniputt\pitch.png`
@@ -341,6 +350,18 @@ Codex (GPT Image), own work, no text or brands, from the overnight batch of 2026
   straight, owner 2026-11-20) and v2 worried. Annoyed and pointing are stand-ins (neutral, talking) until there is a take.
 - `souvenirs/may17.webp`: the flag in a glass and the rosette (A), the home souvenir.
 
+## Office wing (room review, 2026-11-24)
+
+Blender renders from `crc_admin_wing_v2.blend` (room review, HUB on corvus): `backgrounds/corridor_main(_rev)`,
+`meeting_room(_rev)`, `pano_meeting`, `per_office_desk/door`, and the new `your_office_desk/door` (the player's
+office) and `production_office_desk/door` (`.webp` + `.json`). Third-party models in these rooms, CC BY:
+
+- "Laptop" by viveksha (Fab).
+- "Office Binder" by AshenCut.
+- "Office Pack Vol.1" by MeikWModels.
+
+The visitor chairs in Per's office are our own model. The earlier VizPeople chairs were removed because no licence was found (2026-11-24).
+
 ## Off-duty clothes (#394)
 
 `characters/<slug>/off-duty/<neutral|talking|happy|worried|thinking>.webp`: colleagues in their own clothes on a day
@@ -349,3 +370,17 @@ off, worn in the 17. mai scenes (`torvet_stall`, `torvet_parade`, `backyard`, `b
 `tools/art/build_offduty_pack.py` from the project folder: Unni and Happy from `art/off-duty/`, Einar's all-year set
 and Lars-Owe from `art/byggesettet/off-duty/`, and Marie's spring set (`art/off-duty/marie-off-*.png`, made
 2026-11-20). Source: AI-generated with Codex's built-in image generation (OpenAI GPT Image), own work.
+
+## Room-fix backgrounds (room review, 2026-11-23/24)
+
+Blender renders by HUB on corvus from owned Fab, ArtStation and Kaizen assets (Standard licence unless noted).
+CC BY models in the reception pictures (pano_reception, reception_wide, reception_desk, reception_door), credit lines:
+
+- "Hospital Waiting Bench - AshenCut" by AshenCut (Fab), licensed under CC BY. Modified for the game.
+- "Modern Sofa" by 3DimentionalBen (Fab), licensed under CC BY. Modified for the game.
+- "Simple Modern Coat Rack" by AlyStation (Fab), licensed under CC BY. Modified for the game.
+- "Outlets" by DustyLv (Fab), licensed under CC BY. Modified for the game.
+- "PH Store - Modern Living Room" by Pixel Hearts (Fab), licensed under CC BY. Modified for the game.
+
+The reception's sky is kloofendal_overcast_puresky (Poly Haven, CC0). No CC BY asset in the peeler, canteen, production
+hall, garderobe, huddle, ep3 chips line, hygiene lock, RVL or painted pictures.
